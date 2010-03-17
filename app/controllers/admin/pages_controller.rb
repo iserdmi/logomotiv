@@ -1,6 +1,7 @@
 class Admin::PagesController < AdminController
   layout "admin"
   before_filter :find_page, :only => [:show, :edit, :update, :destroy]
+  after_filter :reload_routes, :only => [:create, :update]
 
   # GET /pages
   # GET /pages.xml
@@ -149,4 +150,7 @@ class Admin::PagesController < AdminController
       @page = Page.find(params[:id])
     end
 
+    def reload_routes
+       ActionController::Routing::Routes.reload!
+     end
 end

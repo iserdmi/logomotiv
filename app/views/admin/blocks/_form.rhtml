@@ -1,0 +1,30 @@
+<%= error_messages_for :block %>
+
+
+<div id="form" class="prepend-top">
+<fieldset>
+  <legend></legend>
+<% form_for ["admin", @block], :method => @method, :html => {:multipart => true} do |f| -%>
+  
+  <p>
+	<%= f.label :page, "Страница" %><br/>
+	<%= collection_select(:block, :page_id, Page.find(:all), :id, :title)%>
+  <p>
+  <%= f.label :body, "Содержание" %><br/>
+  <%= ckeditor_textarea("block", "content", :width => '700px', :height => '300px') %>
+  </p>
+  <p>
+	<%= f.label :page, "Позиция" %><br/>
+	<%= f.select :orientation, ["right", "left"] %>
+	<%#= options_for_select(["right", "left"], "right")%>
+  <p>
+  <p>
+    <%= f.file_field :data %>
+  </p>
+  <p class="buttons">
+    <div class="left"><%= f.submit "Сохранить" %></div>
+    <div class="left"><%= f.submit "Очистить" %></div>
+  </p>
+<% end -%>
+</fieldset>
+</div>

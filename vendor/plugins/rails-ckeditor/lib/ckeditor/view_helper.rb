@@ -65,6 +65,9 @@ module Ckeditor
       ckeditor_options[:width] = options[:width] unless options[:width].nil?
       ckeditor_options[:height] = options[:height] unless options[:height].nil?
       
+      ckeditor_options[:enterMode] = options[:enterMode] unless options[:enterMode].nil?
+      ckeditor_options[:shiftEnterMode] = options[:shiftEnterMode] unless options[:shiftEnterMode].nil?
+            
       ckeditor_options[:swf_params] = options[:swf_params] unless options[:swf_params].nil?
       
       ckeditor_options[:filebrowserBrowseUrl] = PLUGIN_FILE_MANAGER_URI

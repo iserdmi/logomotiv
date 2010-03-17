@@ -17,6 +17,14 @@
     <%= f.text_field :title %>
   </p>
   <p>
+	<%= f.label :meta_keywords, "META: Ключевые слова" %><br/>
+    <%= f.text_field :meta_keywords %>
+  </p>
+  <p>
+	<%= f.label :meta_description, "META: Описание" %><br/>
+    <%= f.text_field :meta_description %>
+  </p>
+  <p>
 	<%= f.label :parent_id, "Родительская страница" %><br/>
 	<%= #tree_select(Page.find(:all, :conditions => "parent_id IS NULL OR parent_id=0"),
 	                  #      'page', 'parent_id', @page) 
@@ -34,12 +42,17 @@
   </p>
   <p>
   <%= f.label :content, "Содержание" %><br/>
-  <%= ckeditor_textarea("page", "content", :width => '100%', :height => '300px') %>
+  <%= ckeditor_textarea("page", "content", :width => '780px', :height => '300px') %>
 
   </p>
   <p>
   <%= f.label :published, "Публиковать" %><br/>
   <%= f.check_box :published %>
+
+  </p>
+  <p>
+  <%= f.label :visible, "Показывать в меню" %><br/>
+  <%= f.check_box :visible %>
 
   </p>
   <p>

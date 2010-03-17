@@ -2,15 +2,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script src="http://www.google.com/jsapi?key=ABQIAAAA0br1MUc8DSpHSD1-XwntCBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxTgyztTq6xWG5LmD1VPnOUP-W1qaw" type="text/javascript"></script>
+<%= javascript_include_tag "jquery", "jquery-ui" %>
+<!--<script src="http://www.google.com/jsapi?key=ABQIAAAA0br1MUc8DSpHSD1-XwntCBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxTgyztTq6xWG5LmD1VPnOUP-W1qaw" type="text/javascript"></script>-->
 <script type="text/javascript">
-google.load("jquery", "1.4.1");
-google.load("jqueryui", "1.7.2");
+//google.load("jquery", "1.4.1");
+//google.load("jqueryui", "1.7.2");
 </script>
 <%= javascript_include_tag "ckeditor/ckeditor" %>
 <%= javascript_include_tag "admin/admin" %>
 
 <%= yield :js %>
+
 <%= stylesheet_link_tag 'reset.css' %>
 <%= stylesheet_link_tag 'admin.css' %>
 
@@ -24,9 +26,11 @@ google.load("jqueryui", "1.7.2");
 	<div class="navi">
 	<ul>
 		<li<%= ' class="current"' if params[:controller] == 'admin/pages' %>><a href="/admin/pages/">Страницы</a></li>
-		<li<%= ' class="current"' if params[:controller] == 'admin/posts' %>><a href="/admin/pages/">Новости</a></li>
-		<li<%= ' class="current"' if params[:controller] == 'admin/blocks' %>><a href="/admin/pages/">Блоки</a></li>
-		<li<%= ' class="current"' if params[:controller] == 'admin/users' %>><a href="/admin/pages/">Пользователи</a></li>
+		<li<%= ' class="current"' if params[:controller] == 'admin/clients' %>><a href="/admin/clients/">Клиенты</a></li>
+		<li<%= ' class="current"' if params[:controller] == 'admin/projects' %>><a href="/admin/projects/">Проекты</a></li>
+		<li<%= ' class="current"' if params[:controller] == 'admin/posts' %>><a href="/admin/posts/">Новости</a></li>
+		<li<%= ' class="current"' if params[:controller] == 'admin/blocks' %>><a href="/admin/blocks/">Блоки</a></li>
+		<li<%= ' class="current"' if params[:controller] == 'admin/users' %>><a href="/admin/users/">Пользователи</a></li>
     </ul>
 	</div>
 	<div class="arrow">

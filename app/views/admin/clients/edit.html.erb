@@ -1,0 +1,25 @@
+<div class="container">
+
+
+<h1>Редактирование альбома</h1>
+
+<% form_for(["admin", @client]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title, "Название" %><br />
+    <%= f.text_field :title %>
+  </p>
+
+		<div class="clear"></div>
+		
+
+
+  <p>
+    <%= f.submit 'Сохранить' %>
+  </p>
+<% end %>
+
+<%= link_to 'Просмотр', ["admin", @client] %> |
+<%= link_to 'Назад', admin_clients_path %>
+</div>

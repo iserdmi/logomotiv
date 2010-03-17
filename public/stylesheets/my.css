@@ -1,19 +1,28 @@
+
 body { margin: 28px 0px;}
+#logo { min-width: 200px;}
 a { cursor: pointer; font-family:Verdana;}
 font, p { font-family:Verdana; font-size: 0.8em;}
 /** header **/
+ul.nav {
+	width: 200px;
+	float: left;
+}
 ul.nav li {
 	margin-bottom: 5px;
 }
 a.nav:link {
 color:#717171;
 font-family:arial,Verdana,Helvetica,sans-serif;
-font-size:11px;
+font-size:1em;
 font-variant:normal;
 font-weight:normal;
 letter-spacing:normal;
 line-height:17px;
 text-decoration:none;
+}
+.nav b {
+  font-size: 1em;
 }
 a.nav:visited {
 color:#717171;
@@ -29,7 +38,7 @@ letter-spacing:normal;
 .nav {
 color:#000000;
 font-family:arial;
-font-size:0.8em;
+font-size:0.9em;
 font-weight:bold;
 letter-spacing:normal;
 line-height:17px;
@@ -106,3 +115,180 @@ font-size:0.6em;
 height:100%;
 margin-left:30px;
 }
+
+
+
+
+
+
+
+#towork {
+	height: 23px;
+	width: 137px;
+	left: 249px;
+	top: 633px;
+	position: absolute;
+	z-index: 10;
+	visibility: visible;
+}
+
+#layer4 {
+	height: 18px;
+	width: 35px;
+	left: 101px;
+	top: 2px;
+	position: absolute;
+	z-index: 10;
+	visibility: visible;
+}
+#apDiv1 {
+	position:absolute;
+	left:260px;
+	top:637px;
+	width:112px;
+	height:15px;
+	z-index:11;
+	visibility: visible;
+}
+#text {
+	font-size: 20px;
+	font-style: normal;
+	line-height: 1.5em;
+	width: 640px;
+	left: 250px;
+	top: 402px;
+	position: absolute;
+	visibility: visible;
+}
+#layer1 {
+	height: 100px;
+	width: 100px;
+	left: 33px;
+	top: 955px;
+	position: absolute;
+	visibility: visible;
+}
+#news {
+	width: 538px;
+	left: 242px;
+	top: 687px;
+	position: absolute;
+	z-index: 10;
+	visibility: visible;
+}
+#layer2 { width: 640px; left: 250px; top: 140px; position: absolute; }
+.style1 {color: #FF0000}
+
+.cal_2010{
+	width: 636px;
+	height: 273px;
+	position: absolute;
+	left: 249px;
+	top: 130px
+}
+
+#layer2 { height: 344px; width: 190px; left: 30px; top: 175px; position: absolute; }
+#head { height: 49px; width: 286px; left: 255px; top: 175px; position: absolute; z-index: 10; }
+
+
+#stolb {
+	height: 433px;
+	width: 357px;
+	left: 630px;
+	top: 179px;
+    overflow: hidden;
+	z-index: 11;
+}
+#layer1 { height: 71px; width: 160px; left: 190px; top: 115px;  z-index: 20; }
+#stolb #layer3 { position: relative; top: -290px; left: 189px; overflow: hidden;}
+
+
+#nav { height: 100px; width: 614px; left: 250px; top: 26px; position: absolute; }
+#layer2 { height: 344px; width: 190px; left: 30px; top: 175px; position: absolute; }
+
+#ivan { height: 141px; width: 555px; left: 400px; top: 175px; z-index: 10; position: absolute; }
+#photo1 { height: 120px; width: 120px; left: 250px; top: 180px; z-index: 10; position: absolute; }
+#anna { height: 120px; width: 120px; left: 250px; top: 390px; position: absolute; }
+/* #layer3 { height: 123px; width: 555px; left: 400px; top: 390px; position: absolute;} */
+#photo3 { height: 120px; width: 120px; left: 250px; top: 600px; position: absolute; z-index: 10; }
+#layer4 { height: 213px; width: 555px; left: 400px; top: 595px; position: absolute; z-index: 10; }
+
+#layer2 { height: 344px; width: 190px; left: 30px; top: 175px; position: absolute; }
+
+#black { background-color: #000; height: 440px; width: 100%; left: 0; top: 462px; position: absolute; z-index: 12; visibility: hidden; }
+
+#button { height: 21px; width: 135px; left: 15px; top: 1px; position: absolute; z-index: 1; }
+#shema { height: 319px; width: 536px; left: 180px; top: 60px; position: absolute; z-index: 1; }
+#textwhite1 { height: 73px; width: 330px; left: 440px; top: 30px; position: absolute; z-index: 2; }
+#textwhite2 { height: 40px; width: 330px; left: 440px; top: 332px; position: absolute; z-index: 2; }
+#values { height: 220px; width: 296px; left: 764px; top: 133px; position: absolute; z-index: 3; }
+
+
+#layer2 { height: auto; width: 190px; left: 30px; top: 175px; position: absolute; }
+#head { height: 0; width: 286px; left: 255px; top: 175px; position: absolute; z-index: 10; }
+
+/*vak*/
+#uslov { height: 100px; width: 150px; left: 840px; top: 242px; position: absolute; z-index: 10; visibility: hidden; }
+#layer1 { height: 100px; width: 150px; left: 840px; top: 242px; position: absolute; z-index: 10; }
+#content h1 { color: #f00000; font-size: 3em; margin-bottom: 15px;}
+
+div.scrollable { 
+ 
+    /* required settings */ 
+    position:relative; 
+    overflow:hidden; 
+    width: 90px; 
+    height:90px; 
+} 
+
+div.scrollable a.nextPage {
+	background: url('/images/right.gif');
+	float: right;
+}
+div.scrollable a.prevPage {
+	float: left;
+	background: url('/images/left.gif');
+}
+div.scrollable div.controls {
+	clear: both;
+	position: absolute;
+	bottom: 0px;
+	width: 50px;
+	left: 50%;
+	margin-left: -25px;
+}
+
+div.scrollable a.browse {
+
+	width: 15px;
+	height: 12px;
+	left: 50%;
+	bottom: 0%;
+} 
+/* 
+    root element for scrollable items. Must be absolutely positioned 
+    and it should have a extremely large width to accomodate scrollable items. 
+    it's enough that you set width and height for the root element and 
+    not for this element. 
+*/ 
+div.scrollable div.items { 
+    /* this cannot be too large */ 
+    width:20000em; 
+    position:absolute; 
+} 
+ 
+/* 
+    a single item. must be floated in horizontal scrolling. 
+    typically, this element is the one that *you* will style 
+    the most. 
+*/ 
+div.scrollable div.items div { 
+    float:left; 
+} 
+ 
+/* you may want to setup some decorations to active the item */ 
+div.items div.active { 
+    border:1px inset #ccc; 
+    background-color:#fff; 
+}
+.disabled { display: none !important;}

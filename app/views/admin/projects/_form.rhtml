@@ -1,0 +1,52 @@
+<%= error_messages_for :project %>
+
+<% content_for :js do %>
+<%= javascript_include_tag :ckeditor %>
+<% end %>
+<div class="container">
+<fieldset>
+  <legend></legend>
+<% form_for ["admin", @project], :method => @method do |f| -%>
+  <p>
+	<%= f.label :title, "Заголовок" %><br/>
+    <%= ckeditor_textarea("project", "title", :width => "200px", :height => '40px', :toolbar => "color") %>
+  </p>
+  <p>
+	<%= f.label :section, "Тип проекта" %><br/>
+
+	<%= f.select :section, ["sites", "graphical_design", "ident", "concepts"], :include_blank => true %>
+
+  </p>
+  <p>
+	<%= f.label :image, "Картинка" %><br/>
+	<%= f.file_field :image%>
+  <p>
+	<%= f.label :client_id, "Клиент" %><br/>
+
+	<%= f.select :client_id, options_from_collection_for_select(Client.all, 'id', 'title', @project.client_id), :include_blank => true %>
+
+  </p>
+
+  <p>
+  <%= f.label :body, "Содержание" %><br/>
+  <%= ckeditor_textarea("project", "body", :width => '780px', :height => '300px') %>
+
+  </p>
+  <p>
+  <%= f.label :overs, "За кадром" %><br/>
+  <%= ckeditor_textarea("project", "overs", :width => '780px', :height => '300px') %>
+
+  </p>
+  <p>
+  <%= f.label :overs, "Блок справа" %><br/>
+  <%= ckeditor_textarea("project", "sidebar", :width => '400px', :height => '300px') %>
+
+  </p>
+
+  <p>
+    <div class="span-4"><%= f.submit "Сохранить" %></div>
+    <div class="span-8 last"><%= f.submit "Очистить" %></div>
+  </p>
+<% end -%>
+</fieldset>
+</div>

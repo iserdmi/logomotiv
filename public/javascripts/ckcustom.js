@@ -7,7 +7,7 @@ CKEDITOR.editorConfig = function( config )
 {
   config.PreserveSessionOnFileBrowser = true;
   // Define changes to default configuration here. For example:
-  config.language = 'en';
+  config.language = 'ru';
   // config.uiColor = '#AADC6E';
 
   //config.ContextMenu = ['Generic','Anchor','Flash','Select','Textarea','Checkbox','Radio','TextField','HiddenField','ImageButton','Button','BulletedList','NumberedList','Table','Form'] ;
@@ -19,7 +19,10 @@ CKEDITOR.editorConfig = function( config )
   //config.resize_maxHeight = 2000;
   //config.resize_maxWidth = 750;
   
-  //config.startupFocus = true;
+  //config.startupFocus = true;	enterMode		: Number( document.getElementById( 'xEnter' ).value ),
+//	shiftEnterMode	: Number( document.getElementById( 'xShiftEnter' ).value )
+  config.enterMode = Number(2);
+  config.shiftEnterMode = Number(1);
   
   // works only with en, ru, uk languages
   config.extraPlugins = "embed,attachment";
@@ -39,4 +42,7 @@ CKEDITOR.editorConfig = function( config )
         ['Link','Unlink','Anchor'],
         ['Image','Embed','Flash','Attachment','Table','HorizontalRule','Smiley','SpecialChar','PageBreak']
     ];
+
+   // config.toolbar = 'color';
+    config.toolbar_color= [['Source'],['Styles'],['Format']];
 };

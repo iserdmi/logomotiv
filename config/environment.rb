@@ -7,6 +7,7 @@ ENV["GEM_HOME"] = File.expand_path('~/vendor/bundler_gems', __FILE__)
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
+#  config.plugins = [:active_scaffold, :awesome_nested_set, :sortable, :paperclip, :paperclippolymorph, :will_paginate, :acts_as_taggable_on_steroids]
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.

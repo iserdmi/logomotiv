@@ -1,0 +1,11 @@
+<%= @project.title %><%= ": за кадром" if params[:show] == 'overs' %>
+
+
+<%= params[:show] == 'overs' ? @project.overs : @project.body %>
+
+<% content_for :sidebar do %>
+
+<%= link_to "За кадром", "?show=overs" if @project.overs %>
+
+<%= @project.sidebar if @project.sidebar %>
+<% end %>

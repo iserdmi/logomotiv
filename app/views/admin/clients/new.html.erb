@@ -1,0 +1,17 @@
+<div class="container">
+<h1>Создать новичка</h1>
+
+<% form_for(["admin", @client]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title, "Название" %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.submit 'Создать' %>
+  </p>
+<% end %>
+
+<%= link_to 'Назад', admin_clients_path %>
+</div>

@@ -6,7 +6,7 @@ class Admin::AlbumsController < AdminController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @admin_albums }
+      format.xml  { render :xml => @albums }
     end
   end
 
