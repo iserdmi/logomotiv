@@ -1,8 +1,8 @@
 class PagesController < ApplicationController
 
   def index
-    @page = Page.first
-    render :template => "pages/show"
+    @page = Page.find(:first, :conditions =>  {:visible => false })
+    render :template => "pages/show", :layout => 'home'
   end
   
   def show

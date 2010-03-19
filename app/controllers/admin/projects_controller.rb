@@ -2,7 +2,7 @@ class Admin::ProjectsController < AdminController
   # GET /admin_projects
   # GET /admin_projects.xml
   def index
-    @projects = Project.all
+    @projects = Project.find(:all)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -82,4 +82,15 @@ class Admin::ProjectsController < AdminController
       format.xml  { head :ok }
     end
   end
+  
+    def sort
+  #render :text => params['.pages']
+      if params['#projects']
+        params['#projects'].each_with_index do |id, index|
+          Project.update_all(['position=?', index+1], ['id=?', id])
+        end
+      end
+        render :nothing => true
+    end
+
 end

@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :albums
-
+  
 
   map.resources :users
 
@@ -16,10 +16,11 @@ ActionController::Routing::Routes.draw do |map|
     admin.connect 'pages/context_menu/:id', :controller => :pages, :action => :context_menu
     admin.connect 'items/add_related_item_to_item/:id', :controller => :items, :action => :add_related_item_to_item
     admin.connect 'items/remove_item_relation/:id', :controller => :items, :action => :remove_item_relation
-    admin.resources :pages, :news, :posts, :albums, :clients, :projects
-    admin.resources :blocks, :active_scaffold => true
-    admin.resources :assets, :attachings, :active_scaffold => true
-
+    admin.resources :pages, :news, :posts, :albums, :clients, :projects, :photos
+    admin.resources :blocks
+#    admin.resources :blocks, :active_scaffold => true
+#    admin.resources :assets, :attachings, :active_scaffold => true
+#    admin.resource :gallery, :controller => :gallery
 
     #admin.resources :sessions
     admin.logout 'logout', :controller => 'sessions', :action => 'destroy'

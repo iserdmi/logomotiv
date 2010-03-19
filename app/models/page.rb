@@ -17,12 +17,15 @@ class Page < ActiveRecord::Base
   #after_save :set_path #, :reload_routes
   before_save :set_path, :typograph
   
-  default_scope :conditions => {:visible => true}, :order => "position"
+  default_scope :order => "position"
+#  named_scope :everyone, :conditions => "visible = true OR visible = false"
+  named_scope :visible, :conditions => {:visible => true}
+  named_scope :hidden, :conditions => {:visible => false}
  # named_scope :main, :conditions => {:permalink => "main", :published => false}
   
   
   def typograph
-    self.content = Typograph.run! self.content
+  #  self.content = Typograph.run! self.content
   end
   
   def path_name

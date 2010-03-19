@@ -6,7 +6,7 @@ class Admin::PagesController < AdminController
   # GET /pages
   # GET /pages.xml
   def index
-    @pages = Page.find(:all, :order => "position DESC")
+    @pages = Page.all
 
     respond_to do |wants|
       wants.html # index.html.erb

@@ -16,9 +16,10 @@
 	<% if @page.meta_keywords %><meta name="keywords" content="<%=@page.meta_keywords%>" /><% end %>
 	
 	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" %>
-	<script src="http://cdn.jquerytools.org/1.1.2/jquery.tools.min.js"></script>
+	<%= javascript_include_tag "jquery.tools.min" %>
 	<script type="text/javascript">
 	$(function() {
+	$('.scrollable-3').scrollable().circular();
 	$('.scrollable').scrollable({size: 1});
 	});
 	</script>
@@ -28,31 +29,33 @@
 <table width="100%" class="container">
 		<tbody>
 			<tr valign="top">
-				<td width="3%"></td>
+
 				<td width="16%" id="logo">
 					<% if @page.permalink == 'main' %>
-					<img src="/images/logomotiv.gif" alt="Дизайн студия Логомотив" />
+					<button onclick="window.top.location.href='/'; return false;" title="" class="master-sprite" id="logo"/>
 					<% else %>
-					<a href="/"><img src="/images/logomotiv.gif" alt="Дизайн студия Логомотив" /></a>
+					<button onclick="window.top.location.href='/'; return false;" title="" class="master-sprite" id="logo"/>
 					<% end %>
 				</td>
-				<td width="3%"></td>
-				<td width="61%">
+				<td width="3%"><img width="10" src="/images/spacer.gif" /></td>
+				<td width="61%" id="menu">
+					<div id="top-navi">
 					<ul class="nav">
-						<% Page.roots.all.each do |p| %>
+						<% Page.visible.roots.all.each do |p| %>
 
-						<li><% if @page.path.include? p.permalink %><b><%= p.title %></b><% else %><a class="nav" href="<%= p.path unless p.children.first %><%= p.children.first.path if p.children.first %>"><%= p.title %></a><% end %></li>
+						<li><% if @page.path.include? p.permalink %><b class="nav"><%= p.title %></b><% else %><a class="nav" href="<%= p.path unless p.children.first %><%= p.children.first.path if p.children.first %>"><%= p.title %></a><% end %></li>
 						<% end %>
 					</ul>
 					<% if params[:controller] == 'portfolio' %>
 					<ul class="nav">
-						<li><% if params[:section] == "sites" %><b>Сайты</b><% else %><a class="nav" href="/portfolio/sites/">Сайты</a><% end %></li>
-						<li><% if params[:section] == "ident" %><b>Айдентика</b><% else %><a class="nav" href="/portfolio/ident/">Айдентика</a><% end %></li>
-						<li><% if params[:section] == "graphical_design" %><b>Графический дизайн</b><% else %><a class="nav" href="/portfolio/graphical_design/">Графический дизайн</a><% end %></li>
-						<li><% if params[:section] == "concepts" %><b>Концепты</b><% else %><a class="nav" href="/portfolio/concepts/">Концепты</a><% end %></li>
+						<li><% if params[:section] == "sites" %><b class="nav">Сайты</b><% else %><a class="nav" href="/portfolio/sites/">Сайты</a><% end %></li>
+						<li><% if params[:section] == "ident" %><b class="nav">Айдентика</b><% else %><a class="nav" href="/portfolio/ident/">Айдентика</a><% end %></li>
+						<li><% if params[:section] == "graphical_design" %><b class="nav">Графический дизайн</b><% else %><a class="nav" href="/portfolio/graphical_design/">Графический дизайн</a><% end %></li>
+						<li><% if params[:section] == "concepts" %><b class="nav">Концепты</b><% else %><a class="nav" href="/portfolio/concepts/">Концепты</a><% end %></li>
 					</ul>
 					<% end %>
-
+					</div>
+					<td style="min-height: 10px;" width="3%"></td>
 				<td width="16%">
 					<p class="phone"><nobr><span class="phone_code">(812)</span> <span>572-39-03</span></nobr></p>
 					<a class="map">Карта проезда</a>

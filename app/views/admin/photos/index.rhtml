@@ -1,0 +1,15 @@
+<% content_for :actions do %>
+  <%= link_to 'Создать фото', new_admin_photo_path %>  
+<% end %>
+<div id="subnav">
+	<%= yield :actions %>
+</div>
+<div class="container">
+<% @photos.each do |photo| %>
+  <li><%= photo.content %> <%= link_to 'Редактировать', edit_admin_photo_path(photo) %> <%= link_to 'Удалить', admin_photo_path(photo), :method => :delete %>
+	<% photo.assets.each do |a| %>
+	<%= a.data_file_name %>
+	<% end %>
+	</li>
+<% end %>
+</div>

@@ -27,14 +27,12 @@ CKEDITOR.plugins.add( 'format',
 			{
 				label : lang.label,
 				title : lang.panelTitle,
-				voiceLabel : lang.voiceLabel,
 				className : 'cke_format',
-				multiSelect : false,
-
 				panel :
 				{
 					css : editor.skin.editor.css.concat( config.contentsCss ),
-					voiceLabel : lang.panelVoiceLabel
+					multiSelect : false,
+					attributes : { 'aria-label' : lang.panelTitle }
 				},
 
 				init : function()
@@ -102,7 +100,7 @@ CKEDITOR.plugins.add( 'format',
  * @example
  * config.format_tags = 'p;h2;h3;pre'
  */
-CKEDITOR.config.format_tags = 'p;h1;h2;h3;h4;h5;h6;pre;address;div';
+CKEDITOR.config.format_tags = 'p;h1;h2;h3;h4;h5;h6;pre;address;div;podpis';
 
 /**
  * The style definition to be used to apply the "Normal" format.
@@ -111,6 +109,7 @@ CKEDITOR.config.format_tags = 'p;h1;h2;h3;h4;h5;h6;pre;address;div';
  * @example
  * config.format_p = { element : 'p', attributes : { class : 'normalPara' } };
  */
+CKEDITOR.config.format_p = { element : 'p', attributes: { class : 'podpis' } };
 CKEDITOR.config.format_p = { element : 'p' };
 
 /**

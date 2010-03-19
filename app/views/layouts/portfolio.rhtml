@@ -1,7 +1,7 @@
 
 <%= render :partial => "shared/header" %>
 
-<div style="position: relative; width: 250px; left: 21%; background: #eee; padding: 5px;">
+<div class="sort-type">
 <% if params[:action] =='companies' %><b>По компаниям</b><% else %><a href="/portfolio/<%=params[:section]%>/companies">По компаниям</a><% end %>
 <% if params[:action] == 'images' %><b>Картинками</b><% else %><a href="/portfolio/<%=params[:section]%>/images">Картинками</a><% end %>
 </div>
@@ -10,16 +10,18 @@
 <table width="100%">
 	<tbody>
 			<tr valign="top">
-				<td width="3%"></td>
-				<td width="16%">
+				<td width="16%" class="left-col">
+					<ul class="clients">
 					<% Project.find(:all, :conditions => {:section => params[:section]}, :group => :client_id).each do |project| %>
-					  <%= link_to project.client.title, "/portfolio/#{params[:section]}/#{project.id}" %>
+					  <li><% if project==@project %><%= link_to project.client.title, "/portfolio/#{params[:section]}/#{project.id}", :class => "current" %><%= '&nbsp;'+image_tag("arrow-red.gif") %><% else %><%= link_to project.client.title, "/portfolio/#{params[:section]}/#{project.id}" %>	<% end %></li>
 					<% end %>
+					</ul>
 				</td>
-				<td width="3%"></td>
+				<td width="3%"><img width="10" src="/images/spacer.gif" /></td>
 				<td width="61%" id="content">
 					<%= yield %>
 				</td>
+				<td style="min-width: 10px;" width="3%"></td>
 				<td width="16%" id="right_col">
 					<%= yield :sidebar %>
 					</div>

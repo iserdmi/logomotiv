@@ -1,12 +1,10 @@
 <%= error_messages_for :project %>
 
-<% content_for :js do %>
-<%= javascript_include_tag :ckeditor %>
-<% end %>
+
 <div class="container">
 <fieldset>
   <legend></legend>
-<% form_for ["admin", @project], :method => @method do |f| -%>
+<% form_for ["admin", @project], :method => @method, :html => {:multipart => true} do |f| -%>
   <p>
 	<%= f.label :title, "Заголовок" %><br/>
     <%= ckeditor_textarea("project", "title", :width => "200px", :height => '40px', :toolbar => "color") %>

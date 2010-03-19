@@ -5,7 +5,12 @@
 
 <% content_for :sidebar do %>
 
-<%= link_to "За кадром", "?show=overs" if @project.overs %>
+<div>
+<%= link_to "За кадром", "?show=overs", :class => "overs" if @project.overs %>
+</div>
+<br clear="all" />
 
+<div id="sidebar">
 <%= @project.sidebar if @project.sidebar %>
+</div>
 <% end %>

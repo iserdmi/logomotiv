@@ -5,17 +5,17 @@
 <table width="100%">
 	<tbody>
 			<tr valign="top">
-				<td width="3%"></td>
+
 				<td width="16%">
 
 					<ul class="nav">
 					<% if @page.parent %>
 					<% @page.parent.children.all.each do |p| %>
-				      <li class="nav"><% if @page.path.include? p.permalink %><b><%= p.title %></b><% else %><a class="nav" href="<%= p.path %>"><%= p.title %></a><% end %></li>
+				      <li><% if @page.path.include? p.permalink %><b><%= p.title %></b><% else %><a class="nav" href="<%= p.path %>"><%= p.title %></a><% end %></li>
 				   <% end %>
 				   <% else %>
 					<% @page.children.all.each do |p| %>
-				      <li class="nav"><% if @page.path.include? p.permalink %><b><%= p.title %></b><% else %><a class="nav" href="<%= p.path %>"><%= p.title %></a><% end %></li>
+				      <li><% if @page.path.include? p.permalink %><b><%= p.title %></b><% else %><a class="nav" href="<%= p.path %>"><%= p.title %></a><% end %></li>
 				   <% end %>
 				   <% end %>
 					</ul>
@@ -29,10 +29,11 @@
 					<% end %>
 					<% end %>
 				</td>
-				<td width="3%"></td>
+				<td width="3%"><img width="10" src="/images/spacer.gif" /></td>
 				<td id="content"  <%='colspan="2"' unless @page.blocks.first %>>
 					<%= yield %>
 				<% if @page.blocks.right.first %>
+				<td width="3%"></td>
 				<td>
 				<%= @page.blocks.right.first.content %>
 				</td>

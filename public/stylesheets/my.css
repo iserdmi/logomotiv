@@ -1,48 +1,44 @@
 
-body { margin: 28px 0px;}
-#logo { min-width: 200px;}
+body {margin-top: 28px; overflow:hidden;}
+#logo { }
+#logo button { background: url('/images/logomotiv.gif') no-repeat; cursor: pointer; width: 143px; height: 83px; border: 0;}
 a { cursor: pointer; font-family:Verdana;}
 font, p { font-family:Verdana; font-size: 0.8em;}
 /** header **/
+.left-col { min-width: 143px;}
 ul.nav {
-	width: 200px;
-	float: left;
-}
-ul.nav li {
-	margin-bottom: 5px;
-}
-a.nav:link {
-color:#717171;
-font-family:arial,Verdana,Helvetica,sans-serif;
-font-size:1em;
-font-variant:normal;
-font-weight:normal;
-letter-spacing:normal;
-line-height:17px;
-text-decoration:none;
-}
-.nav b {
-  font-size: 1em;
-}
-a.nav:visited {
-color:#717171;
-font-weight:normal;
-}
-a.nav:hover {
 
-background-color:#E51F1F;
-color:#FFFFFF;
-font-weight:normal;
-letter-spacing:normal;
+	margin-right: 6%;
+	float: left;
+	min-width: 143px;
 }
-.nav {
-color:#000000;
-font-family:arial;
-font-size:0.9em;
-font-weight:bold;
-letter-spacing:normal;
-line-height:17px;
-text-decoration:none;
+
+body table {margin-left: 20px;overflow:hidden;}
+
+#top-navi {
+	min-width: 500px;
+}
+
+.nav a {
+	color: #000000;
+	font-family: Verdana,Helvetica,sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	text-decoration: none;
+}
+
+.nav a:hover {
+
+	color: white;
+	background: red;
+	padding: 0px 5px 0px 5px;
+	margin-left: -5px;
+}
+
+
+
+.nav b {
+	font-weight: bold;
 }
 
 a.green_cloud {
@@ -232,14 +228,36 @@ margin-left:30px;
 #layer1 { height: 100px; width: 150px; left: 840px; top: 242px; position: absolute; z-index: 10; }
 #content h1 { color: #f00000; font-size: 3em; margin-bottom: 15px;}
 
-div.scrollable { 
+
+div.scrollable-3 {
+	overflow: hidden;
+	positoin: relative;
+	width: 100%;
+}
+div.scrollable, { 
  
     /* required settings */ 
     position:relative; 
     overflow:hidden; 
     width: 90px; 
     height:90px; 
-} 
+}
+div.scrollable-3 {
+	height: 400px !important;
+}
+div.scrollable-3 div.slide-caption, div.scrollable-3 p {
+	background: #eeeeee;
+	margin-top: -1px;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 12px;
+	line-height: 16px;
+	padding-top: 5px;
+	height: 37px;
+}
+div.scrollable-3 div.items div {
+	width: 500px;
+}
 
 div.scrollable a.nextPage {
 	background: url('/images/right.gif');
@@ -271,7 +289,7 @@ div.scrollable a.browse {
     it's enough that you set width and height for the root element and 
     not for this element. 
 */ 
-div.scrollable div.items { 
+div.scrollable div.items, div.scrollable-3 div.items { 
     /* this cannot be too large */ 
     width:20000em; 
     position:absolute; 
@@ -282,13 +300,131 @@ div.scrollable div.items {
     typically, this element is the one that *you* will style 
     the most. 
 */ 
-div.scrollable div.items div { 
+div.scrollable div.items div, div.scrollable-3 div.items div { 
     float:left; 
 } 
  
 /* you may want to setup some decorations to active the item */ 
 div.items div.active { 
-    border:1px inset #ccc; 
+
     background-color:#fff; 
 }
 .disabled { display: none !important;}
+
+#content table { margin-bottom: 15px; margin-top: 25px; border: 0px;}
+
+#content em {
+	font-family: "times new roman",Verdana,Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	font-style: italic;
+	line-height: 16px;
+}
+
+#table, #td { vertical-align: top;}
+
+#content p, #content td {
+	font-family: arial,Verdana,Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+#right_col {
+	font-family: Verdana,Helvetica,sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+
+}
+
+#right_col p {
+	
+}
+
+#content h1 {
+	font-family: "Trebuchet MS",Helvetica,sans-serif;
+	font-size: 30px;
+	line-height: 32px;
+}
+
+.clients a {
+	color: #000000;
+	font-family: Verdana,Helvetica,sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	text-decoration: none;
+}
+
+.clients a:hover {
+	font-weight: bold;
+	color: white;
+	background: red;
+	padding: 0px 5px 0px 5px;
+	margin-left: -5px;
+}
+
+
+
+.clients a.current {
+	font-weight: bold;
+}
+
+div.sort-type {
+	position: relative; width: 235px; left: 19%; background: #f1eadf; padding: 5px; padding-top: 4px;
+}
+
+a.overs {
+	padding: 6px;
+	background: #f1eadf;
+	font-size:12px;
+
+}
+div.sort-type a, div.sort-type b {
+	font-family: Verdna,Helvetica,sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 14px;
+	color: #f0000e;
+	margin-right: 10px;
+	margin-left: 22px;
+}
+
+div.sort-type a {
+	text-decoration: underline;
+	color: black;
+}
+
+#sidebar {
+	margin-top: 40px;
+	clear: both;
+}
+.style1 {
+color:#000000;
+font-family:arial,Verdana,Helvetica,sans-serif;
+font-size:16px;
+line-height:24px;
+}
+
+p.style2 {
+color:#333333;
+font-family:Georgia,"Times New Roman",Times,serif;
+font-size:16px;
+line-height:21px;
+}
+
+.style3 { color:#000000;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:12px;
+line-height:21px;
+}
+
+.style4 {color:#000000;
+font-family:arial,Verdana,Helvetica,sans-serif;
+font-size:16px;
+line-height:24px;
+}
+
+.style5 {color:#666666;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:13px;
+line-height:21px;
+}

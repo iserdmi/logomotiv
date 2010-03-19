@@ -2,7 +2,11 @@
 	<%= link_to 'Новый проект', new_admin_project_path %>
 </div>
 <div class="container">
+<ul id="projects">
 <% @projects.each do |project| %>
-  <li><%= project.title %> <%= link_to 'Редактировать', edit_admin_project_path(project) %> <%= link_to 'Удалить', admin_project_path(project), :method => :delete %>
+  
+  <li id="<%= dom_id(project) %>"><%= project.title %> <%= link_to 'Редактировать', edit_admin_project_path(project) %> <%= link_to 'Удалить', admin_project_path(project), :method => :delete %>
 <% end %>
+</ul>
 </div>
+<%= sortable_element("#projects", :url => { :action => "sort" }	) %>

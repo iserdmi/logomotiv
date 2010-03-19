@@ -46,7 +46,7 @@
 		    <b><%= link_to p.title, edit_admin_page_path(p) %></b></li>
 		</li>
 		<% if p.children.count > 0 %>
-		<% Page.find(:all, :conditions => {:parent_id => p.id}, :order => "position ASC").each do |child_p| %>
+		<% Page.find(:all, :conditions => {:parent_id => p.id}).each do |child_p| %>
 		<% content_tag_for :li, child_p, :class => :child do %><img src="/images/admin/pen_img.png" class="context-menu-show" onclick="menu_show(this, <%=child_p.id%>);"> &nbsp;
 			<% if child_p.children.count > 0 %>
 			

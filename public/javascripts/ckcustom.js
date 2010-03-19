@@ -8,7 +8,7 @@ CKEDITOR.editorConfig = function( config )
   config.PreserveSessionOnFileBrowser = true;
   // Define changes to default configuration here. For example:
   config.language = 'ru';
-  // config.uiColor = '#AADC6E';
+  config.uiColor = '#6D6F71';
 
   //config.ContextMenu = ['Generic','Anchor','Flash','Select','Textarea','Checkbox','Radio','TextField','HiddenField','ImageButton','Button','BulletedList','NumberedList','Table','Form'] ;
   
@@ -25,7 +25,7 @@ CKEDITOR.editorConfig = function( config )
   config.shiftEnterMode = Number(1);
   
   // works only with en, ru, uk languages
-  config.extraPlugins = "embed,attachment";
+  config.extraPlugins = "typograph,stylescombo";
   
   config.toolbar = 'Easy';
   
@@ -35,7 +35,7 @@ CKEDITOR.editorConfig = function( config )
         ['Cut','Copy','Paste','PasteText','PasteFromWord',],
         ['Maximize','-','About'],
         ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
-        ['Styles','Format'],
+        ['StylesCombo','Styles','Format'],
         ['Bold','Italic','Underline','Strike','-','Subscript','Superscript', 'TextColor'],
         ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
         ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
@@ -45,4 +45,19 @@ CKEDITOR.editorConfig = function( config )
 
    // config.toolbar = 'color';
     config.toolbar_color= [['Source'],['Styles'],['Format']];
+    config.stylesCombo_stylesSet = 'my_styles';
+	
 };
+
+CKEDITOR.addStylesSet( 'my_styles',
+[
+    // Block Styles
+	{ name : 'Стиль 1', element : 'p', attributes: { 'class' : 'style1'} },
+	{ name : 'Стиль 2', element : 'p', attributes: { 'class' : 'style2'} },
+	{ name : 'Стиль 3', element : 'p', attributes: { 'class' : 'style3'} },
+	{ name : 'Стиль 4', element : 'p', attributes: { 'class' : 'style4'} },
+	{ name : 'Стиль 5', element : 'p', attributes: { 'class' : 'style5'} },
+    // Inline Styles
+    { name : 'CSS Style', element : 'span', attributes : { 'class' : 'my_style' } },
+    { name : 'Marker: Yellow', element : 'span', styles : { 'background-color' : 'Yellow' } }
+]);
