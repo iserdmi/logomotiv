@@ -1,5 +1,5 @@
 
-body {margin-top: 28px; overflow:hidden;}
+body {margin-top: 28px;}
 #logo { }
 #logo button { background: url('/images/logomotiv.gif') no-repeat; cursor: pointer; width: 143px; height: 83px; border: 0;}
 a { cursor: pointer; font-family:Verdana;}
@@ -13,7 +13,7 @@ ul.nav {
 	min-width: 143px;
 }
 
-body table {margin-left: 20px;overflow:hidden;}
+body > table {margin-left: 20px;overflow:hidden;}
 
 #top-navi {
 	min-width: 500px;
@@ -231,10 +231,10 @@ margin-left:30px;
 
 div.scrollable-3 {
 	overflow: hidden;
-	positoin: relative;
+	position: relative;
 	width: 100%;
 }
-div.scrollable, { 
+div.scrollable { 
  
     /* required settings */ 
     position:relative; 
@@ -292,7 +292,7 @@ div.scrollable a.browse {
 div.scrollable div.items, div.scrollable-3 div.items { 
     /* this cannot be too large */ 
     width:20000em; 
-    position:absolute; 
+    position:absolute;
 } 
  
 /* 
@@ -311,7 +311,7 @@ div.items div.active {
 }
 .disabled { display: none !important;}
 
-#content table { margin-bottom: 15px; margin-top: 25px; border: 0px;}
+#content > table { margin-bottom: 15px; margin-top: 25px; border: 0px;}
 
 #content em {
 	font-family: "times new roman",Verdana,Arial,Helvetica,sans-serif;
@@ -427,4 +427,10 @@ line-height:24px;
 font-family:Verdana,Arial,Helvetica,sans-serif;
 font-size:13px;
 line-height:21px;
+}
+
+.left-col > a {
+	font-size: 11px;
+	margin-top: 15px;
+	display: block;
 }

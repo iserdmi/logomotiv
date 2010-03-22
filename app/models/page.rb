@@ -7,6 +7,8 @@ class Page < ActiveRecord::Base
   has_many :blocks
 
   after_move :caching_level
+  
+  default_scope :order => "position ASC"
 
 
   #validates_presence_of :title, :content, :message => "^Поля, помеченные звездочкой (*) должны быть заполнены!"
