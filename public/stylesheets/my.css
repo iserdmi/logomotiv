@@ -524,3 +524,31 @@ div.sort-type a:hover {
 ul.clients {
 	list-style: none;
 }
+
+div.scrollable-3 a.prev {
+	float: left;
+	position: relative;
+	background: url('/images/strela_left.png');
+	display: block;
+	width: 42px;
+	height: 31px;
+	top: 319px;
+	z-index: 200;
+}
+div.scrollable-3 a.next {
+	float: right;
+	position: relative;
+	background: url('/images/strela_right.png');
+	top: 319px;
+	width: 42px;
+	height: 31px;
+	z-index: 200;
+}
+div.scrollable-3 a.prev:hover {
+	opacity: 0.90;
+	background: white url('/images/strela_left.png');
+}
+div.scrollable-3 a.next:hover{
+	opacity: 0.90;
+	background: white url('/images/strela_right.png');
+}
