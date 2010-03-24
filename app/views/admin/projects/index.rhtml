@@ -3,10 +3,23 @@
 </div>
 <div class="container">
 <ul id="projects">
-<% @projects.each do |project| %>
-  
-  <li id="<%= dom_id(project) %>"><%= project.title %> <%= link_to 'Редактировать', edit_admin_project_path(project) %> <%= link_to 'Удалить', admin_project_path(project), :method => :delete %>
+<h1>Сайты</h1>
+<% Project.find_all_by_section('sites').each do |project| %>
+  <li id="<%= dom_id(project) %>" style="padding: 10px;"><%= project.title %> <%= link_to 'Редактировать', edit_admin_project_path(project) %> <%= link_to 'Удалить', admin_project_path(project), :method => :delete %><br/></li>
 <% end %>
+<h1>Айдентика</h1>
+<% Project.find_all_by_section('ident').each do |project| %>
+  <li id="<%= dom_id(project) %>" style="padding: 10px;"><%= project.title %> <%= link_to 'Редактировать', edit_admin_project_path(project) %> <%= link_to 'Удалить', admin_project_path(project), :method => :delete %><br/></li>
+<% end %>
+<h1>Графический дизайн</h1>
+<% Project.find_all_by_section('graphical_design').each do |project| %>
+  <li id="<%= dom_id(project) %>" style="padding: 10px;"><%= project.title %> <%= link_to 'Редактировать', edit_admin_project_path(project) %> <%= link_to 'Удалить', admin_project_path(project), :method => :delete %><br/></li>
+<% end %>
+<h1>Концепты</h1>
+<% Project.find_all_by_section('concepts').each do |project| %>
+  <li id="<%= dom_id(project) %>" style="padding: 10px;"><%= project.title %> <%= link_to 'Редактировать', edit_admin_project_path(project) %> <%= link_to 'Удалить', admin_project_path(project), :method => :delete %><br/></li>
+<% end %>
+
 </ul>
 </div>
 <%= sortable_element("#projects", :url => { :action => "sort" }	) %>

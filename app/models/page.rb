@@ -1,4 +1,6 @@
 class Page < ActiveRecord::Base
+
+  default_scope :order => "position ASC"
   acts_as_nested_set
 
   has_many :posts
@@ -8,7 +10,6 @@ class Page < ActiveRecord::Base
 
   after_move :caching_level
   
-  default_scope :order => "position ASC"
 
 
   #validates_presence_of :title, :content, :message => "^Поля, помеченные звездочкой (*) должны быть заполнены!"
@@ -19,7 +20,7 @@ class Page < ActiveRecord::Base
   #after_save :set_path #, :reload_routes
   before_save :set_path, :typograph
   
-  default_scope :order => "position"
+  
 #  named_scope :everyone, :conditions => "visible = true OR visible = false"
   named_scope :visible, :conditions => {:visible => true}
   named_scope :hidden, :conditions => {:visible => false}

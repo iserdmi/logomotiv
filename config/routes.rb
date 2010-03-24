@@ -28,13 +28,12 @@ ActionController::Routing::Routes.draw do |map|
     admin.signin 'signin', :controller => 'sessions', :action => 'create'
   end
 
-  map.connect 'portfolio', :controller => :portfolio
+#  map.connect 'portfolio', :controller => :portfolio
   map.connect 'portfolio/:section', :controller => :portfolio
   map.connect 'portfolio/:section/:id', :controller => :portfolio, :action => :show, :id => /\d+/
-  
   map.connect 'portfolio/:section/:action', :controller => :portfolio
 
-  map.connect ':controller/:action'
+  
   
   map.root :controller => :pages, :action => :index
   map.resources :pages
@@ -42,4 +41,5 @@ ActionController::Routing::Routes.draw do |map|
     map.connect p.path, :controller => :pages, :action => :show, :id => p.id unless p.path.nil?
   end
   
+  map.connect ':controller/:action'
 end

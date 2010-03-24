@@ -6,4 +6,8 @@ module ApplicationHelper
     end
     return  image_tag ("asset_icon.gif")
   end
+  
+  def current_arrow
+    return '<img src="/images/arrow-red.gif" alt="Arrow-red"/>'
+  end
 end

@@ -2,7 +2,7 @@
 <%= render :partial => "shared/header" %>
 
 <div class="sort-type">
-<% if params[:action] =='companies' %><b>По компаниям</b><% else %><a href="/portfolio/<%=params[:section]%>/companies">По компаниям</a><% end %>
+<% if params[:action] =='companies' || params[:action] == 'show' %><b>По компаниям</b><% else %><a href="/portfolio/<%=params[:section]%>/companies">По компаниям</a><% end %>
 <% if params[:action] == 'images' %><b>Картинками</b><% else %><a href="/portfolio/<%=params[:section]%>/images">Картинками</a><% end %>
 </div>
 <br clear="all" />
@@ -10,15 +10,18 @@
 <table width="100%">
 	<tbody>
 			<tr valign="top">
+				<td width="20"><img src="/images/spacer.gif" width="20" /></td>
 				<td width="16%" class="left-col">
+					<% if params[:action] != 'images' %>
 					<ul class="clients">
 					<% Project.find(:all, :conditions => {:section => params[:section]}, :group => :client_id).each do |project| %>
 					  <li><% if project==@project %><%= link_to project.client.title, "/portfolio/#{params[:section]}/#{project.id}", :class => "current" %><%= '&nbsp;'+image_tag("arrow-red.gif") %><% else %><%= link_to project.client.title, "/portfolio/#{params[:section]}/#{project.id}" %>	<% end %></li>
 					<% end %>
 					</ul>
+					<% end %>
 				</td>
 				<td width="3%"><img width="10" src="/images/spacer.gif" /></td>
-				<td width="61%" id="content">
+				<td  id="content" <%='colspan="2"' if params[:action] == 'images' %>>
 					<%= yield %>
 				</td>
 				<td style="min-width: 10px;" width="3%"></td>

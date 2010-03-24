@@ -4,7 +4,7 @@ class PortfolioController < ApplicationController
   def index
 #    @clients = Client.all
     
-    redirect_to '/portfolio/sites/images' unless params[:section]
+   # redirect_to '/portfolio/sites/images' unless params[:section]
   end
 
   def companies

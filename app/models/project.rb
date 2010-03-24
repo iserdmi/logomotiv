@@ -4,6 +4,7 @@ class Project < ActiveRecord::Base
   has_attached_file :image
   before_save :typograph
   default_scope :order => 'position ASC' #client_id ASC, 
+  sortable :scope => :client_id
   def typograph
   #  self.overs = Typograph.run! self.overs
    # self.body = Typograph.run! self.body

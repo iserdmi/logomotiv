@@ -5,17 +5,17 @@
 <table width="100%">
 	<tbody>
 			<tr valign="top">
-
+				<td width="20"><img src="/images/spacer.gif" width="20" /></td>
 				<td width="16%" class="left-col">
 
 					<ul class="nav">
 					<% if @page.parent %>
 					<% @page.parent.children.all.each do |p| %>
-				      <li><% if @page.path.include? p.permalink %><b><%= p.title %></b><% else %><a class="nav" href="<%= p.path %>"><%= p.title %></a><% end %></li>
+				      <li><% if @page.path.include? p.permalink %><b><%= p.title %> <%= current_arrow %></b><% else %><a class="nav" href="<%= p.path %>"><%= p.title %></a><% end %></li>
 				   <% end %>
 				   <% else %>
 					<% @page.children.all.each do |p| %>
-				      <li><% if @page.path.include? p.permalink %><b><%= p.title %></b><% else %><a class="nav" href="<%= p.path %>"><%= p.title %></a><% end %></li>
+				      <li><% if @page.path.include? p.permalink %><b><%= p.title %> <%= current_arrow %></b><% else %><a class="nav" href="<%= p.path %>"><%= p.title %></a><% end %></li>
 				   <% end %>
 				   <% end %>
 					</ul>

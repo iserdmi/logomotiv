@@ -1,3 +1,12 @@
+<div class="projects-list">
 <% @projects.each do |project| %>
+<div class="project-overlay">
+<% content_tag('div', :id => dom_id(project), :class => "project_image") do %>
 <%= link_to image_tag(project.image.url), "/portfolio/sites/#{project.id}" if project.image %>
 <% end %>
+<% content_tag('div', :id => dom_id(project), :class => "project_text") do %>
+<p><%= project.title %>asdfdsa</p>
+<% end %>
+</div>
+<% end %>
+</div>
