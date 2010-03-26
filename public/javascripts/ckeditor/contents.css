@@ -32,6 +32,7 @@ img:-moz-broken
 img, input, textarea
 {
 	cursor: default;
+	display: none;
 }
 
 .style1 {

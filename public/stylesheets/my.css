@@ -428,14 +428,26 @@ div.sort-type {
 
 .project-nav {
 	text-align: center;
-	width: 100px;
-	padding: 6px;
+	width: 80px;
+	padding: 2px;
+	padding-top: 0px;
 	background: #f1eadf;
 	font-size:12px;
-
+	float: left;
+	margin-bottom: 20px;
+}
+.project-nav p {
+	font-family: Verdana,Helvetica,sans-serif;
+	font-size:12px;
+}
+.project-nav.active a {
+	text-decoration: none;
+}
+.project-nav.active {
+	background: #fff;
 }
 div.sort-type a, div.sort-type b {
-	font-family: Verdna,Helvetica,sans-serif;
+	font-family: Verdana,Helvetica,sans-serif;
 	font-weight: normal;
 	font-size: 12px;
 	text-decoration: none;

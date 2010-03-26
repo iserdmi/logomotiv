@@ -2,10 +2,15 @@
 
 <% content_for :sidebar do %>
 
-
-<%= content_tag('div', link_to("За кадром", "?show=overs"), :class => 'project-nav') if @project.overs.size > 10 && params[:show] != 'overs' %>
-<%= content_tag('div', link_to("За кадром", "?show=overview"), :class => 'project-nav') if params[:show] == 'overs' %>
-
+<% if @project.overs.size > 10 %>
+<% if params[:show] == 'overs' %>
+<%= content_tag('div', "<p>За кадром</p>", :class => 'project-nav active') %>
+<%= content_tag('div', link_to("Обзор", "?show=overview"), :class => 'project-nav') %>
+<% else %>
+<%= content_tag('div', link_to("За кадром", "?show=overs"), :class => 'project-nav') %>
+<%= content_tag('div', "<p>Обзор</p>", :class => 'project-nav active') %>
+<% end %>
+<% end %>
 <br clear="all" />
 
 <div id="sidebar">

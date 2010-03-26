@@ -31,5 +31,6 @@ img:-moz-broken
 }
 img, input, textarea
 {
+	display: none;
 	cursor: default;
 }

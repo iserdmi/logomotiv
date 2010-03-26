@@ -7,7 +7,7 @@
 </div>
 <br clear="all" />
 
-<table width="100%">
+<table width="100%" id="content">
 	<tbody>
 			<tr valign="top">
 				<td width="20"><img src="/images/spacer.gif" width="20" /></td>
@@ -21,7 +21,7 @@
 					<% end %>
 				</td>
 				<td width="3%"><img width="10" src="/images/spacer.gif" /></td>
-				<td  id="content" <%='colspan="2"' if params[:action] == 'images' %>>
+				<td  <%='colspan="2"' if params[:action] == 'images' %>>
 					<%= yield %>
 				</td>
 				<td style="min-width: 10px;" width="3%"></td>
