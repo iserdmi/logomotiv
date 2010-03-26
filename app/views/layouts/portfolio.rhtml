@@ -11,7 +11,7 @@
 	<tbody>
 			<tr valign="top">
 				<td width="20"><img src="/images/spacer.gif" width="20" /></td>
-				<td width="16%" class="left-col">
+				<td width="18%" class="left-col">
 					<% if params[:action] != 'images' %>
 					<ul class="clients">
 					<% Project.find(:all, :conditions => {:section => params[:section]}, :group => :client_id).each do |project| %>

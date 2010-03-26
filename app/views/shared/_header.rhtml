@@ -48,7 +48,7 @@
 						<% end %>
 					</ul>
 					<% if params[:controller] == 'portfolio' %>
-					<ul class="nav">
+					<ul class="nav border-left">
 						<li><% if params[:section] == "ident" %><b class="nav">Айдентика <%= current_arrow %></b><% else %><a class="nav" href="/portfolio/ident/">Айдентика</a><% end %></li>
 						<li><% if params[:section] == "sites" %><b class="nav">Сайты <%= current_arrow %></b><% else %><a class="nav" href="/portfolio/sites/">Сайты</a><% end %></li>
 						<li><% if params[:section] == "graphical_design" %><b class="nav">Графический дизайн <%= current_arrow %></b><% else %><a class="nav" href="/portfolio/graphical_design/">Графический дизайн</a><% end %></li>

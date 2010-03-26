@@ -8,7 +8,7 @@ CKEDITOR.editorConfig = function( config )
   config.PreserveSessionOnFileBrowser = true;
   // Define changes to default configuration here. For example:
   config.language = 'ru';
-  config.uiColor = '#6D6F71';
+  config.uiColor = '#cecece';
 
   //config.ContextMenu = ['Generic','Anchor','Flash','Select','Textarea','Checkbox','Radio','TextField','HiddenField','ImageButton','Button','BulletedList','NumberedList','Table','Form'] ;
   
@@ -25,7 +25,7 @@ CKEDITOR.editorConfig = function( config )
   config.shiftEnterMode = Number(1);
   
   // works only with en, ru, uk languages
-  config.extraPlugins = "typograph,stylescombo";
+  config.extraPlugins = "stylescombo";
   
   config.toolbar = 'Easy';
   
@@ -40,7 +40,7 @@ CKEDITOR.editorConfig = function( config )
         ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
         ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
         ['Link','Unlink','Anchor'],
-        ['Image','Embed','Flash','Attachment','Table','HorizontalRule','Smiley','SpecialChar','PageBreak']
+        ['Image','Embed','Flash','Attachment','Table','HorizontalRule','Smiley','SpecialChar','PageBreak', 'Typograph']
     ];
 
    // config.toolbar = 'color';
