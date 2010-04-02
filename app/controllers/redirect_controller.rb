@@ -1,6 +1,10 @@
 class RedirectController < ApplicationController
   def index
-    @page = Page.find_by_path("/"+params[:path].join("/"))
+    if Array === params[:path]
+      @page = Page.find_by_path("/"+params[:path].join("/"))
+    else
+      @page = Page.find_by_path("/"+params[:path])
+    end
     if @page
       #@page = @page.children.first unless @page.content
       render(@page)

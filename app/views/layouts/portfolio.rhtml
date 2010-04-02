@@ -19,6 +19,9 @@
 					<% end %>
 					</ul>
 					<% end %>
+					<% if @project && @project.sidebar_left %>
+					<div class="block_left"><%= @project.sidebar_left%></div>
+					<% end %>
 				</td>
 				<td width="3%"><img width="10" src="/images/spacer.gif" /></td>
 				<td  <%='colspan="2"' if params[:action] == 'images' %>>

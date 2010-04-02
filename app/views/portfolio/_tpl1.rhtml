@@ -1,0 +1,32 @@
+<%=@project.header%>
+<table width="100%">
+	<tbody>
+		<tr>
+			<td style="width: 50%;" valign="top">
+					<%=@project.about%>
+			</td>
+			<td style="width: 10%;" valign="top">
+				&nbsp;</td>
+			<td style="width: 40%;" valign="top">
+					<%=@project.task%>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table width="100%">
+	<tbody>
+		<tr>
+			<td style="vertical-align: top; width: 70%;">
+				<%=@project.image_html%>
+			</td>
+			<td style="vertical-align: top; width: 5%;">
+				&nbsp;</td>
+			<td style="vertical-align: top; width: 45%;" top="">
+				<em><%=@project.image_caption%></em></td>
+		</tr>
+		<tr>
+			<td colspan="3"><%=@project.solution%>
+			</td>
+		</tr>
+	</tbody>
+</table>

@@ -40,7 +40,32 @@
   <%= ckeditor_textarea("project", "sidebar", :width => '400px', :height => '300px') %>
 
   </p>
+  <p>
+  <%= f.label :overs, "Блок слева" %><br/>
+  <%= ckeditor_textarea("project", "sidebar_left", :width => '400px', :height => '300px') %>
 
+  </p>
+  <p>
+	<%= f.label :template, "Шаблон" %>
+	<%= f.select :template, ["tpl1", "tpl2", "tpl3"] %>
+  </p>
+  <p>
+   <%= f.label :template, "Внешний вид" %>
+  <div id="project_template">
+<%
+@project.header = "Шапка"+ckeditor_textarea("project", "header", :value => @project.about, :width => '100%', :height => '100%')
+@project.about = "О клиенте"+ckeditor_textarea("project", "about", :value => @project.about, :width => '100%', :height => '100%')
+@project.image_html = "Картинка (HTML)"+ckeditor_textarea("project", "image_html", :value => @project.about)
+@project.image_caption = "Подпись к картинке"+text_area("project", "image_caption", :value => @project.image_caption)
+@project.solution = "Решение"+ckeditor_textarea("project", "solution", :value => @project.solution, :width => '100%', :height => '100%')
+@project.task = "Задача"+ckeditor_textarea("project", "task", :value => @project.about, :width => '100%', :height => '100%')
+
+%>
+
+   <%= render :partial => 'portfolio/'+@project.template if @project.template %>
+   <%= 'Выберите шаблон и нажмите "сохранить"' unless @project.template %>
+  </div>
+  </p>
   <p>
     <div class="span-4"><%= f.submit "Сохранить" %></div>
     <div class="span-8 last"><%= f.submit "Очистить" %></div>

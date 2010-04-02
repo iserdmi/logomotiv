@@ -42,4 +42,5 @@ ActionController::Routing::Routes.draw do |map|
   end
   
   map.connect ':controller/:action'
+  map.connect ':path', :controller => :redirect
 end

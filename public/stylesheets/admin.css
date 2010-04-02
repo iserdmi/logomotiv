@@ -494,3 +494,10 @@ div.image {
 
 ul.banners { list-style-type: none;}
 ul.banners li { float: left; width: 230px;}
+
+#project_template {
+	width: 900px;
+}
+#project_template table td {
+	border: 1px solid;
+}
