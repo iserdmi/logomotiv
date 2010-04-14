@@ -12,12 +12,16 @@ class PortfolioController < ApplicationController
   end
   
   def images
-    @projects = Project.find(:all, :conditions => {:section => params[:section]})
+    @projects = Project.paginate(:all, :conditions => {:section => params[:section]}, :page => params[:page])
     render :template => "portfolio/images"
   end
   
   def show
     @project = Project.find(params[:id])
+  end
+  
+  def section
+    redirect_to :action => "images"
   end
 
   protected

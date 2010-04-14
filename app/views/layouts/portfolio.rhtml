@@ -1,13 +1,9 @@
 
 <%= render :partial => "shared/header" %>
 
-<div class="sort-type">
-<% if params[:action] =='companies' || params[:action] == 'show' %><b>По компаниям</b><% else %><a href="/portfolio/<%=params[:section]%>/companies">По компаниям</a><% end %>
-<% if params[:action] == 'images' %><b>Картинками</b><% else %><a href="/portfolio/<%=params[:section]%>/images">Картинками</a><% end %>
-</div>
-<br clear="all" />
 
-<table width="100%" id="content">
+<%= yield :layout %>
+<!--<table width="100%" id="content">
 	<tbody>
 			<tr valign="top">
 				<td width="20"><img src="/images/spacer.gif" width="20" /></td>
@@ -36,7 +32,7 @@
 				<td width="1%">
 			</tr>
 		</tbody>
-</table>
+</table>-->
 <%= render :partial => "shared/footer" %>
 
 </body>

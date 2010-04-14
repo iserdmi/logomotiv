@@ -1,0 +1,67 @@
+
+<div class="content">
+	<div class="gallery_menu">
+		<h1 class="color_red"><%=t params[:section]%> <span class="color_gray_light">(<%= t params[:section]+'_en' %>)</span></h1>
+		<ul>
+			<% if params[:action] == 'images' %><li><p>Картинками</p></li<% else %><li><a href="/portfolio/<%=params[:section]%>/images">Картинками</a></li><% end %>
+			<% if params[:action] =='companies' || params[:action] == 'show' %><li><p>По клиентам</b><% else %><li><a href="/portfolio/<%=params[:section]%>/companies">По компаниям</a></li><% end %>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<div class="cols_5">
+		<h2 class="client_tittle">Институты, гос. учреждения</h2>
+		<p class="client_item"><a href="#">НИИ ОЧБ</a></p>
+		<p class="client_date">20.05.09</p>
+		<p class="client_item"><a href="#">Институт печати</a></p>
+		<p class="client_date">20.05.09</p>
+		<p class="client_item"><a href="#">Федеральная служба охраны</a></p>
+		<p class="client_date">20.05.09</p>
+	</div>
+	<div class="cols_5">
+		<h2 class="client_tittle">Промышленность</h2>
+		<p class="client_item">Компания <a href="#">Энергопровод</a></p>
+		<p class="client_date">20.05.09</p>
+		<p class="client_item">Компания <a href="#">Топаз</a></p>
+		<p class="client_date">20.05.09</p>
+		<p class="client_item">Компания <a href="#">ВВС</a></p>
+		<p class="client_date">20.05.09</p>
+		<p class="client_item">Компания <a href="#">Иллион</a></p>
+		<p class="client_date">20.05.09</p>
+		<p class="client_item">Компания <a href="#">Спецстрой</a></p>
+		<p class="client_date">20.05.09</p>
+	</div>
+	<div class="cols_5">
+		3
+	</div>
+	<div class="cols_5">
+		4
+	</div>
+	<div class="cols_5">
+		5
+	</div>
+<div class="clear"><br /></div>
+	<div class="cols_5">
+		6
+	</div>
+	<div class="cols_5">
+		7
+	</div>
+	<div class="cols_5">
+		8
+	</div>
+	<div class="cols_5">
+		9
+	</div>
+	<div class="cols_5">
+		10
+	</div>
+<div class="clear"><br /></div>
+<div class="split_line_gray"></div>
+	<div class="docs">
+		<p><a href="#">Презентация проектов</a> (ppt, 13 МБ)</p>
+		<p><a href="#">Бриф на разработку</a> (doc, 250 KБ)</p>
+	</div>
+<div class="clear"></div>
+</div>
+
+

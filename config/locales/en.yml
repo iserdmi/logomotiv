@@ -3,3 +3,11 @@
 
 en:
   hello: "Hello world"
+  ident: "Айдентика"
+  ident_en: "Identity"
+  sites: "Сайты"
+  sites_en: "Sites"
+  concepts: "Концепты"
+  concepts_en: "Concepts"
+  graphical_design: "Графический дизайн"
+  graphical_design_en: "Graphical design"

@@ -1,0 +1,90 @@
+.client {
+	position: relative;
+	float: right;
+	margin-right: 30px;
+}
+.client a {position: relative;}
+.client a img {
+	position: absolute;
+	left: -20px;
+	top: 3px;
+}
+.login {
+	position: absolute;
+	top: 18px;
+	left: 0px;
+	background-color: #7f8ca3;
+	background-image: url("../images/client/right.png");
+	background-position: top right;
+	background-repeat: repeat-y;
+	width: 195px;
+	//width: 200px;
+	padding-left: 15px;
+	margin-left: -5px;
+}
+.login .bottom {
+	background-image: url("../images/client/bottom.png");
+	background-repeat: repeat-x;
+	height: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+.login .top {
+	background-image: url("../images/client/top.png");
+	background-repeat: repeat-x;
+	height: 20px;
+}
+.login .b_r {
+	background-image: url("../images/client/b_r.png");
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	float: right;
+}
+.login .b_l {
+	background-image: url("../images/client/b_l.png");
+	height: 20px;
+	width: 23px;
+	float: left;
+	margin-left: -23px;
+	position: relative;
+}
+.login .t_r {
+	background-image: url("../images/client/t_r.png");
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	float: right;
+}
+.login .t_l {
+	background-image: url("../images/client/t_l.png");
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 23px;
+	float: left;
+	margin-left: -23px;
+	position: relative;
+}
+.login form { margin-top: -8px; margin-bottom: -4px;}
+.login form p {color: white; font-size: 10px; line-height: 15px;}
+.login form input {width: 170px; display: block; clear: both; border: none;}
+.login .submit {
+	color: white;
+	margin-top: 5px;
+	margin-left: 57px;
+	text-align: center;
+	line-height: 19px;
+	display: block;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	background-image: url("../images/client/client_button.png");
+	width: 60px; height: 20px;
+}
+.login .close {
+	font-size: 12px;
+	color: white;
+	position: absolute;
+	right: 18px;
+	top: 7px;
+}

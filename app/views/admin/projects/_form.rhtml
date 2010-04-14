@@ -16,6 +16,12 @@
 
   </p>
   <p>
+	<%= f.label :section, "Отрасль" %><br/>
+
+	<%= f.select :section, options_from_collection_for_select(Branch.all, 'id', 'title', @project.branch_id) %>
+
+  </p>
+  <p>
 	<%= f.label :image, "Картинка" %><br/>
 	<%= f.file_field :image%>
   <p>

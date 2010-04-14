@@ -28,8 +28,8 @@ ActionController::Routing::Routes.draw do |map|
     admin.signin 'signin', :controller => 'sessions', :action => 'create'
   end
 
-#  map.connect 'portfolio', :controller => :portfolio
-  map.connect 'portfolio/:section', :controller => :portfolio
+  map.connect 'portfolio', :controller => :portfolio
+  map.connect 'portfolio/:section', :controller => :portfolio, :action => :section
   map.connect 'portfolio/:section/:id', :controller => :portfolio, :action => :show, :id => /\d+/
   map.connect 'portfolio/:section/:action', :controller => :portfolio
 

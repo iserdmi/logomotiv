@@ -1,12 +1,35 @@
-<div class="projects-list">
-<% @projects.each do |project| %>
-<div class="project-overlay">
-<% content_tag('div', :id => dom_id(project), :class => "project_image") do %>
-<%= link_to image_tag(project.image.url), "/portfolio/sites/#{project.id}" if project.image %>
-<% end %>
-<% content_tag('div', :id => dom_id(project), :class => "project_text") do %>
-<p><%= project.title %>asdfdsa</p>
-<% end %>
-</div>
-<% end %>
+<div class="content">
+	<div class="gallery_menu">
+		<h1 class="color_red"><%= t params[:section] %> <span class="color_gray_light">(<%= t params[:section]+'_en'%>)</span></h1>
+		<ul>
+			<% if params[:action] == 'images' %><li><p>Картинками</p></li<% else %><li><a href="/portfolio/<%=params[:section]%>/images">Картинками</a></li><% end %>
+			<% if params[:action] =='companies' || params[:action] == 'show' %><li><p>По клиентам</b><% else %><li><a href="/portfolio/<%=params[:section]%>/companies">По компаниям</a></li><% end %>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<div class="gallery_small">
+		<div class="items_container">
+			
+			<% @projects[1..8].each do |project| %>
+			<div class="gallery_item"><%= image_tag project.image.url %></div>
+			<% end %>
+		</div>
+		<div class="items_container">
+			<% if @projects.count > 8 %>
+			<% @projects[8..15].each do |project| %>
+			<div class="gallery_item"><%= image_tag project.image.url %></div>
+			<% end %>
+			<% end %>
+		</div>
+		<div class="left">
+			<a class="arrow_left" <%='style="display:none;"' unless params[:page] && params[:page]==1 %> href="?page=<%=params[:page].to_i-1!=0 ? params[:page].to_i-1:1%>"><img src="/images/gallery_arrow_left_off.png" /></a>
+			<a class="arrow_right" <%='style="display:none;"' if @projects.current_page+1 > @projects.total_pages %> href="?page=<%=params[:page].to_i>=2?params[:page].to_i+1:2%>"><img src="/images/gallery_arrow_right_off.png" /></a>
+		</div>
+	</div>
+
+	<div class="docs">
+		<p><a href="#">Презентация проектов</a> (ppt, 13 МБ)</p>
+		<p><a href="#">Бриф на разработку</a> (doc, 250 KБ)</p>
+	</div>
+	<div class="clear"></div>
 </div>
