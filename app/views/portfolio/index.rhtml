@@ -1,19 +1,19 @@
 <div class="content">
 	<div class="cols_4">
 		<a class="proj_title" href="/portfolio/ident/">Айдентика</a>
-		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'ident'}).count %> проектов</p>
+		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'ident'}).size %> проектов</p>
 	</div>
 	<div class="cols_4">
 		<a class="proj_title" href="/portfolio/graphical_design/">Графический дизайн</a>
-		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'graphical_design'}).count %> проект</p>
+		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'graphical_design'}).size %> проект</p>
 	</div>
 	<div class="cols_4">
 		<a class="proj_title" href="/portfolio/sites/">Сайты</a>
-		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'sites'}).count %> проектов</p>
+		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'sites'}).size %> проектов</p>
 	</div>
 	<div class="cols_4">
 		<a class="proj_title" href="/portfolio/concepts/">Концепты</a>
-		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'concepts'}).count %> проекта</p>
+		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'concepts'}).size %> проекта</p>
 	</div>
 	<div class="clear"></div>
 	<div class="split_line_gray"></div>
