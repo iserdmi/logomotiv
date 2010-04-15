@@ -13,7 +13,7 @@
 	<div class="cols_5">
 		<h2 class="client_tittle"><%= branch.title %></h2>
 		<% branch.projects.each do |project| %>
-		<p class="client_item"><a href="/portfolio/<%=params[:section]%>/<%=project.id%>"><%=h project.title%></a></p>
+		<p class="client_item"><a href="/portfolio/<%=params[:section]%>/<%=project.id%>"><%=project.nav_title%></a></p>
 		<p class="client_date">20.05.09</p>
 		<% end %>
 	</div>

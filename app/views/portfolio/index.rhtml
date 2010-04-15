@@ -31,22 +31,22 @@ $('.gallery_large_portfolio').scrollable({size: 1, clickable: true}).circular();
 	<div class="split_line_gray"></div>
 	<div class="cols_4">
 		<% Project.find(:all, :conditions => {:section => 'ident'}, :limit => 5).each do |p| %>
-		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= h p.title %></a></p>
+		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= p.nav_title %></a></p>
 		<% end %>
 	</div>
 	<div class="cols_4">
 		<% Project.find(:all, :conditions => {:section => 'graphical_design'}, :limit => 5).each do |p| %>
-		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= h p.title %></a></p>
+		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= p.nav_title %></a></p>
 		<% end %>
 	</div>
 	<div class="cols_4">
 		<% Project.find(:all, :conditions => {:section => 'sites'}, :limit => 5).each do |p| %>
-		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= h p.title %></a></p>
+		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= p.nav_title %></a></p>
 		<% end %>
 	</div>
 	<div class="cols_4">
 		<% Project.find(:all, :conditions => {:section => 'concepts'}, :limit => 5).each do |p| %>
-		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= h p.title %></a></p>
+		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= p.nav_title %></a></p>
 		<% end %>
 	</div>
 	
