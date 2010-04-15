@@ -1,0 +1,13 @@
+<% content_for :actions do %>
+  <%= link_to 'Создать фото', new_admin_image_path %>  
+<% end %>
+<div id="subnav">
+	<%= yield :actions %>
+</div>
+<div class="container">
+<% @images.each do |image| %>
+  <li><%= image_tag image.image.url %> <%= link_to 'Редактировать', edit_admin_image_path(image) %> <%= link_to 'Удалить', admin_image_path(image), :method => :delete %>
+
+	</li>
+<% end %>
+</div>
