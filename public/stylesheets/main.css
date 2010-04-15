@@ -382,7 +382,7 @@ float: left; overflow: hidden;}
 			display: block;
 		}
 		
-		.gallery_large .items_container {
+		.gallery_large_portfolio .items_container {
 			width: 30000px;
 			position: relative;
 			clear: both;
