@@ -10,6 +10,10 @@
     <%= ckeditor_textarea("project", "title", :width => "200px", :height => '40px', :toolbar => "color") %>
   </p>
   <p>
+	<%= f.label :title, "Заголовок (nav)" %><br/>
+    <%= ckeditor_textarea("project", "title", :width => "200px", :height => '40px') %>
+  </p>
+  <p>
 	<%= f.label :section, "Тип проекта" %><br/>
 
 	<%= f.select :section, ["sites", "graphical_design", "ident", "concepts"], :include_blank => true %>

@@ -2,11 +2,6 @@
 <%= render :partial => "shared/header" %>
 
 
-<table width="100%">
-	<tbody>
-			<tr valign="top">
-				<td width="20"><img src="/images/spacer.gif" width="20" /></td>
-				<td width="18%" class="left-col">
 
 					<ul class="main_menu">
 					<% if @page.parent %>
@@ -28,21 +23,11 @@
 					  <% end %>
 					<% end %>
 					<% end %>
-				</td>
-				<td width="3%"><img width="10" src="/images/spacer.gif" /></td>
-				<td id="content"  <%='colspan="2"' unless @page.blocks.first %>>
-					<%= yield %>
-				<% if @page.blocks.right.first %>
-				<td width="3%"></td>
-				<td>
-				<%= @page.blocks.right.first.content %>
-				</td>
-				<% end %>	
-				<td width="1%">
-			</tr>
-		</tbody>
-</table>
-<br clear="all" />
+			
+				<%#='colspan="2"' unless @page.blocks.first %>>
+<div id="content">
+   <%= yield %>
+</div>
 <%= render :partial => "shared/footer" %>
 
 </body>
