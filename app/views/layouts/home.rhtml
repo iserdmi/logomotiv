@@ -3,8 +3,55 @@
 
 
 
-					<%= yield %>
+					<%#= yield %>
+					<div class="gallery_large">
+						<div class="items_container items">
+							<% Image.all.each do |image| %>
+							<div class="gallery_item"><a class="title" href="<%= image.url %>"><%= image.alt %></a><%= image_tag image.image.url, :alt => image.alt %></div>
+							<% end %>
+						</div>
+						
+					</div>
+					
+					<div class="gallery_large_controls">
+						<a class="fade_left prev" href="#"><span class="arrow_left"></span></a>
+						<a class="fade_right next" href="#"><span class="arrow_right"></span></a>
+					</div>
+					<div class="content">
+						<div class="main_left_col">
+							<!--bannerplace class='clear'-->
+							<div class="consult">
+								<p>Онлайн-консультация:</p>
+								<a class="icq" href="#">ICQ Анна</a>
+								<a class="skype" href="#">Позвонить</a>
+							</div>
+						</div>
+						<div class="content_right_col">
+							<div class="content_text_col">
+							    <!--bannerplace class='clear'-->
+								<h1>Дизайн-студия <span class="color_red">Logomotiv</span> <br /><span class="color_black">была создана, чтобы помогать компаниям эффективно использовать дизайн в своем развитии.</span></h1>
+						<p class="size_13">На основе ценностей и целей мы создаем визуальную среду, в которой развиваются бизнес-лидеры. Мы привносим в бизнес эмоции, которые помогают организациям становиться ближе к людям.</p><br />
+						<p class="size_13">Мы верим, что будущее за яркими и эмоциональными компаниями. Компаниями, которые обладают душой и человеческим лицом.</p>
+								<div class="hmenu_container">
+									<ul class="horizontal_menu">
+									<li style="z-index: 4;"><p>Посмотреть работы<span class="red_arrow"></span></p></li>
+									<li style="z-index: 3;"><a href="#">Айдентика<span class="gray_arrow"></span></a></li>
+									<li style="z-index: 2;"><a href="#">Графический дизайн<span class="gray_arrow"></span></a></li>
+									<li style="z-index: 1;"><a href="#">Web-дизайн<span class="gray_arrow"></span></a></li>
+									</ul>
+								</div>
+							</div>
 
+							<div class="content_news_col">
+								<% Post.all.each do |post| %>
+								<p class="news"><%= post.content %></p>
+								<% end %>
+								
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
 <%= render :partial => "shared/footer" %>
 
 </body>

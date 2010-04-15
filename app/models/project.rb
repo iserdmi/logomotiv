@@ -7,7 +7,7 @@ class Project < ActiveRecord::Base
   sortable :scope => :client_id
   belongs_to :branch
   cattr_reader :per_page
-  @@per_page = 15
+  @@per_page = 10
   
   def typograph
   #  self.overs = Typograph.run! self.overs

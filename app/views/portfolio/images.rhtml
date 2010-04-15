@@ -2,34 +2,34 @@
 	<div class="gallery_menu">
 		<h1 class="color_red"><%= t params[:section] %> <span class="color_gray_light">(<%= t params[:section]+'_en'%>)</span></h1>
 		<ul>
-			<% if params[:action] == 'images' %><li><p>Картинками</p></li<% else %><li><a href="/portfolio/<%=params[:section]%>/images">Картинками</a></li><% end %>
-			<% if params[:action] =='companies' || params[:action] == 'show' %><li><p>По клиентам</b><% else %><li><a href="/portfolio/<%=params[:section]%>/companies">По компаниям</a></li><% end %>
+			<% if params[:action] == 'images' %><li><p>Картинками</p></li<% else %><li><a href="/portfolio/<%=h params[:section]%>/images">Картинками</a></li><% end %>
+			<% if params[:action] =='companies' || params[:action] == 'show' %><li><p>По клиентам</b><% else %><li><a href="/portfolio/<%=h params[:section]%>/companies">По компаниям</a></li><% end %>
 		</ul>
 		<div class="clear"></div>
 	</div>
 	<div class="gallery_small">
-		<div class="items_container">
+		<div class="items_container items">
 			
-			<% @projects[1..8].each do |project| %>
-			<div class="gallery_item"><%= image_tag project.image.url %></div>
+			<% @projects.each do |project| %>
+			<%=cycle('<div class="gallery_item_container">','', :name => "open")%>
+			<div class="gallery_item"><a href="/portfolio/<%=h params[:section] %>/<%=project.id%>"><%= image_tag project.image.url %></a>
+			</div>
+		    <%=cycle("","</div>", :name => "close")%>
 			<% end %>
+		
 		</div>
-		<div class="items_container">
-			<% if @projects.size > 8 %>
-			<% @projects[8..15].each do |project| %>
-			<div class="gallery_item"><%= image_tag project.image.url %></div>
-			<% end %>
-			<% end %>
-		</div>
-		<div class="left">
-			<a class="arrow_left" <%='style="display:none;"' unless params[:page] && params[:page]==1 %> href="?page=<%=params[:page].to_i-1!=0 ? params[:page].to_i-1:1%>"><img src="/images/gallery_arrow_left_off.png" /></a>
-			<a class="arrow_right" <%='style="display:none;"' if @projects.current_page+1 > @projects.total_pages %> href="?page=<%=params[:page].to_i>=2?params[:page].to_i+1:2%>"><img src="/images/gallery_arrow_right_off.png" /></a>
-		</div>
+		
 	</div>
-
+	<div class="left gallery_controls">
+		<a class="arrow_left prev" href="javascript:void(0);"><img src="/images/gallery_arrow_left_off.gif" /></a>
+		<a class="arrow_right next" href="javascript:void(0);"><img src="/images/gallery_arrow_right_off.gif" /></a>
+	</div>
 	<div class="docs">
 		<p><a href="#">Презентация проектов</a> (ppt, 13 МБ)</p>
 		<p><a href="#">Бриф на разработку</a> (doc, 250 KБ)</p>
 	</div>
 	<div class="clear"></div>
 </div>
+<script type="text/javascript">
+$('.gallery_small').scrollable({clickable: false});
+</script>

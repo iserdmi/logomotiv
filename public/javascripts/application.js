@@ -10,7 +10,7 @@ $('.project-overlay').mouseout(function(){
 //	$(this).find('.project_image').hide();
 });
 });
-
+/*
 $(window).resize(function() { //min-width = 948 //second=1106 //last= 1276
 //	$(".head").html($(window).width());
 	if($(window).width() > 1300) {
@@ -22,3 +22,4 @@ $(window).resize(function() { //min-width = 948 //second=1106 //last= 1276
 	}
 //	$('.arrow_right')
 });
+*/

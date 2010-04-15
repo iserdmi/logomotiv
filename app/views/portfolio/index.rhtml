@@ -18,22 +18,22 @@
 	<div class="clear"></div>
 	<div class="split_line_gray"></div>
 	<div class="cols_4">
-		<% Project.find(:all, :conditions => {:section => 'ident'}).each do |p| %>
+		<% Project.find(:all, :conditions => {:section => 'ident'}, :limit => 5).each do |p| %>
 		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= h p.title %></a></p>
 		<% end %>
 	</div>
 	<div class="cols_4">
-		<% Project.find(:all, :conditions => {:section => 'graphical_design'}).each do |p| %>
+		<% Project.find(:all, :conditions => {:section => 'graphical_design'}, :limit => 5).each do |p| %>
 		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= h p.title %></a></p>
 		<% end %>
 	</div>
 	<div class="cols_4">
-		<% Project.find(:all, :conditions => {:section => 'sites'}).each do |p| %>
+		<% Project.find(:all, :conditions => {:section => 'sites'}, :limit => 5).each do |p| %>
 		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= h p.title %></a></p>
 		<% end %>
 	</div>
 	<div class="cols_4">
-		<% Project.find(:all, :conditions => {:section => 'concepts'}).each do |p| %>
+		<% Project.find(:all, :conditions => {:section => 'concepts'}, :limit => 5).each do |p| %>
 		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= h p.title %></a></p>
 		<% end %>
 	</div>

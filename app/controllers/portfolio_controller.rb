@@ -12,7 +12,7 @@ class PortfolioController < ApplicationController
   end
   
   def images
-    @projects = Project.paginate(:all, :conditions => {:section => params[:section]}, :page => params[:page])
+    @projects = Project.find(:all, :conditions => {:section => params[:section]})
     render :template => "portfolio/images"
   end
   
