@@ -15,7 +15,7 @@ end
 ActionView::Base.send(:include, Ckeditor::ViewHelper)
 ActionView::Helpers::FormBuilder.send(:include, Ckeditor::FormBuilder)
 
-Ckeditor::Utils.check_and_install
+#Ckeditor::Utils.check_and_install
 
 class ActionController::Routing::RouteSet
   unless (instance_methods.include?('draw_with_ckeditor'))
