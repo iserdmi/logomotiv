@@ -14,9 +14,12 @@
 					</div>
 					
 					<div class="gallery_large_controls">
-						<a class="prev arrow_left"></a>
-						<a class="next arrow_right" href="#"></a>
+						<a class="prev arrow_left" href="javascript:void(0);">&nbsp;</a>
+						<a class="next arrow_right" href="javascript:void(0);">&nbsp;</a>
 					</div>
+					<script type="text/javascript">
+					$('.gallery_large').scrollable({keyboard: true, size:1}).circular();
+					</script>
 					<div class="content">
 						<div class="main_left_col">
 							<!--bannerplace class='clear'-->

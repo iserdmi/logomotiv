@@ -370,7 +370,7 @@ float: left; overflow: hidden;}
 		border: 10px solid white;
 
 	}
-		.gallery_large_portfolio_controls .arrow_left, .gallery_large_controls .arrow_right {
+		.gallery_large_portfolio_controls .arrow_left, .gallery_large_portfolio_controls .arrow_right {
 			background-image: url("../images/gallery_arrow_left.png");
 			background-repeat: no-repeat;
 			width: 16px;
