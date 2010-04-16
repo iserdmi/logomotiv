@@ -47,7 +47,7 @@ float: left; overflow: hidden;}
 		margin: 0px 28px;
 		background-color: #c8c8c8;
 	}
-	.main_menu a:hover {background-color: #fb0303; color: white;}
+	.main_menu a:hover {background-color: #fb0303; color: white; font-weight: bold;}
 	.phone {
 		font-family: Arial,Helvetica,sans-serif;
 		font-size: 22px;
@@ -119,6 +119,27 @@ float: left; overflow: hidden;}
 .gallery_large_controls .arrow_right {background-image: url("../images/gallery_arrow_right_on.gif"); !important; float: right; margin-left: 741px;}
 .gallery_large_controls .arrow_left:hover img {opacity: 0; filter: alpha(opacity = 0);}
 .gallery_large_controls .arrow_right:hover img {opacity: 0; filter: alpha(opacity = 0);}
+
+
+.gallery_large_portfolio .left {
+	display: block;
+	position: absolute;
+}
+.gallery_large_portfolio .next, .gallery_large_portfolio .prev {
+	background-image: url("../images/gallery_arrow_left.png");
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 33px;
+	position: absolute;
+	margin-top: -10px;
+	top:50%;
+	display: block;
+}
+.disabled { display: block !important;}
+.gallery_large_portfolio .prev{margin-left: 15px;}
+.gallery_large_portfolio .next {background-image: url("../images/gallery_arrow_right.png") !important; float: right; margin-left: 741px;}
+/*.fade_left:hover .arrow_left, .fade_right:hover .arrow_right {display: block;}
+.fade_left, .fade_right {*/
 /*
 	.gallery_large_controls .arrow_left, .gallery_large_controls .arrow_right {
 		background-image: url("../images/gallery_arrow_left.png");
