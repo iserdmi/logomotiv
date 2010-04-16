@@ -25,7 +25,7 @@ float: left; overflow: hidden;}
 		display: block;
 		float: left;
 		clear:both;
-		font-size: 10px;
+
 		padding: 0px 4px;
 		padding-bottom: 2px;
 	}
@@ -395,3 +395,156 @@ float: left; overflow: hidden;}
 		}
 
 .disabled { display: none !important;}
+div.scrollable { 
+ 
+    /* required settings */ 
+    position:relative; 
+    overflow:hidden; 
+    width: 90px; 
+    height:90px; 
+}
+div.controls a.nextPage {
+	background: url('../images/right.gif');
+	float: right;
+}
+div.controls a.prevPage {
+	float: left;
+	background: url('../images/left.gif');
+}
+div.controls {
+	clear: both;
+	position: absolute;
+	bottom: 0px;
+	width: 50px;
+	left: 50%;
+	margin-top: 20px;
+	margin-left: -25px;
+}
+
+.container {
+	position: relative;
+	display: block;
+	left: 30px;
+	width: 960px;
+}
+.container .page_content {
+	float: right;
+	width: 680px;
+	padding: 0;
+	background: transparent white !important;
+
+	margin: 30px;
+	margin-top: 5px;
+}
+div#sidebar {
+	width: 200px;
+
+	position: absolute;
+	float: left;
+}
+
+div.scrollable a.browse {
+
+	width: 15px;
+	height: 12px;
+	left: 50%;
+	bottom: 0%;
+} 
+/* 
+    root element for scrollable items. Must be absolutely positioned 
+    and it should have a extremely large width to accomodate scrollable items. 
+    it's enough that you set width and height for the root element and 
+    not for this element. 
+*/ 
+div.scrollable div.items, div.scrollable-3 div.items { 
+    /* this cannot be too large */ 
+    width:20000em; 
+    position:absolute;
+} 
+ 
+/* 
+    a single item. must be floated in horizontal scrolling. 
+    typically, this element is the one that *you* will style 
+    the most. 
+*/ 
+div.scrollable div.items div, div.scrollable-3 div.items div { 
+    float:left; 
+} 
+ 
+/* you may want to setup some decorations to active the item */ 
+div.items div.active { 
+
+    background-color:#fff; 
+}
+#black {
+	background-color: #000;
+	width: 100%;
+}
+
+#black { background-color: #000; height: 440px; margin-left: -30px; padding: 10px; margin-top: 10px; overflow: hidden; width: 1000px; position: absolute; z-index: 12; left: 0px; padding-left: 50px;	}
+#black > div { position: relative;}
+.toggle-button { color: black; height: 21px; width: 135px; left: 15px; top: 1px; z-index: 1; visibility: visible; }
+#shema { height: 319px; width: 536px; left: 180px; top: 60px; position: absolute; z-index: 1; }
+#textwhite1 { height: 73px; width: 330px; left: 440px; top: 30px; position: absolute; z-index: 2; }
+#textwhite2 { height: 40px; width: 330px; left: 440px; top: 332px; position: absolute; z-index: 2; }
+#values { height: 220px; width: 296px; left: 764px; top: 133px; position: absolute; z-index: 3; }
+.page_content span.style2 {
+	color:#000000;
+	font-family:arial,Verdana,Helvetica,sans-serif;
+	font-size:16px;
+	line-height:24px;
+	}
+
+	.page_content span.style2 {
+	color:#333333;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:16px;
+	font-style: italic;
+	line-height:21px;
+	}
+
+	.page_content span.style3 { color:#000000;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:12px;
+	line-height:21px;
+	}
+
+	.page_content span.style4 {color:#000000;
+	font-family:arial,Verdana,Helvetica,sans-serif;
+	font-size:16px;
+	line-height:24px;
+	}
+
+	.page_content span.style5 {color:#666666;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:13px;
+	line-height:21px;
+	}
+	
+#sidebar .main_menu li {
+	width: 200px;
+	height: 17px;
+	float: left;
+}
+
+#sidebar .main_menu {
+	margin-bottom: 20px;
+}
+
+.project-nav {
+	text-align: center;
+	width: 80px;
+	padding-top: 0px;
+	background: #f1eadf;
+	font-size:12px !important;
+	float: left;
+	margin-bottom: 20px;
+	font-family: Verdana,Helvetica,sans-serif;
+}
+.project-nav p, .project-nav a {
+	font-size:12px !important;
+}
+
+.project-nav.active {
+	background: none;
+}

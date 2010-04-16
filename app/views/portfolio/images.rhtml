@@ -12,9 +12,12 @@
 			
 			<% @projects.each do |project| %>
 			<%=cycle('<div class="gallery_item_container">','', :name => "open")%>
-			<div class="gallery_item"><a href="/portfolio/<%=h params[:section] %>/<%=project.id%>"><%= image_tag project.image.url %></a>
+			<div class="gallery_item">
+				<a href="/portfolio/<%=h params[:section] %>/<%=project.id%>"><%= image_tag project.image.url %></a>
 			</div>
 		    <%=cycle("","</div>", :name => "close")%>
+
+		    <% if project == @projects.last && current_cycle("close") == "" %></div><% end %>
 			<% end %>
 		
 		</div>

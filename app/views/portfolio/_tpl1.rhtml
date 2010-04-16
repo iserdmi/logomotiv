@@ -1,3 +1,4 @@
+<% if params[:show] != 'overs' %>
 <%=@project.header%>
 <table width="100%">
 	<tbody>
@@ -11,6 +12,7 @@
 					<%=@project.task%>
 			</td>
 		</tr>
+		<tr height="15"></tr>
 	</tbody>
 </table>
 <table width="100%">
@@ -30,3 +32,6 @@
 		</tr>
 	</tbody>
 </table>
+<% else %>
+<%= @project.overs %>
+<% end %>

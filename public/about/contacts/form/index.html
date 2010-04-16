@@ -1,0 +1,193 @@
+ <!-- Copyright © Logomotiv design studio | http://www.logomotiv.ru/ -->
+
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=windows-1251">
+<link rel="SHORTCUT ICON" href="http://www.logomotiv.ru/icon.ico" />
+<title>Контактная информация</title>
+<link href="../../../css/basic.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css" media="screen"><!--
+#logo { height: 60px; width: 112px; left: 30px; top: 30px; position: absolute; z-index: 10; visibility: visible; }
+#nav { height: 100px; width: 614px; left: 250px; top: 26px; position: absolute; visibility: visible; }
+#layer2 { height: 344px; width: 190px; left: 30px; top: 175px; position: absolute; visibility: visible; }
+#photo { visibility: visible; position: absolute; z-index: 10; top: 175px; left: 255px; width: 619px; height: 233px; }
+#text { visibility: visible; position: absolute; z-index: 10; top: 418px; left: 255px; width: 619px; }
+#layer1 { height: 17px; width: 19px; left: 445px; top: 32px; position: absolute; z-index: 11; visibility: visible; }
+#error { visibility: hidden; }
+#layer3 { height: 112px; width: 619px; left: 255px; top: 787px; position: absolute; visibility: visible; }
+--></style>
+
+<script>
+function checkForm(form)
+{
+error = document.getElementById('error');
+
+if(form.name.value=="")
+{
+error.style.visibility = 'visible';
+error.innerHTML='Укажите, пожалуйста, Ваше имя.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+return false;
+}
+
+if(form.email.value=="")
+{
+error.style.visibility = 'visible';
+error.innerHTML='Укажите, пожалуйста, Ваш эл. адрес.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+return false;
+}
+
+if((form.email.value.match("@")==null) || (form.email.value.match("\.")==null))
+{
+error.style.visibility = 'visible';
+error.innerHTML='Не правильно указан эл. адрес.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+return false;
+}
+
+
+if(form.message.value=="")
+{
+error.style.visibility = 'visible';
+error.innerHTML='Вы ничего не написали.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+return false;
+}
+
+
+error.style.visibility = 'visible';
+error.innerHTML='Ваше сообщение отправлено.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+setTimeout('return true;', 5000);
+}
+</script>
+</head>
+
+<body leftmargin="0" topmargin="0">
+<div id="logo">
+<a href="http://www.logomotiv.ru/"><img src="../../../images/logo.gif" alt="Logomotiv" height="60" width="112" border="0"></a></div>
+<div id="nav">
+<a class="nav" href="../../studio/">&nbsp;&nbsp;О компании&nbsp;&nbsp;</a><br>
+<a class="nav" href="../../../portfolio/">&nbsp;&nbsp;Наши работы&nbsp;&nbsp;</a><br>
+<a class="nav" href="../../../identity/">&nbsp;&nbsp;Визуальная айдентика&nbsp;&nbsp;</a><br>
+<font class="nav">&nbsp;&nbsp;Контактная информация&nbsp;&nbsp;</font><br>
+</div>
+<div id="photo">
+<img src="../images/exterior.jpg" alt="Бизнес-центр &quot;Лиговка&quot;" border="0"></div>
+<div id="layer2">
+<a class="nav" href="../../studio/">&nbsp;&nbsp;Студия&nbsp;&nbsp;</a><br>
+<a class="nav" href="../../leadership/">&nbsp;&nbsp;Руководство компании&nbsp;&nbsp;</a><br>
+<a class="nav" href="../../why/">&nbsp;&nbsp;Почему мы этим занимаемся&nbsp;&nbsp;</a><br>
+<a class="nav" href="../../vacancy/">&nbsp;&nbsp;Вакансии&nbsp;&nbsp;</a><br></div>
+<div id="text">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<form action="sender.php" method="post" onSubmit="return checkForm(this);">
+					<tr height="30">
+						<td width="116" height="30"></td>
+						<td height="30"></td>
+						<td width="15" height="30"></td>
+						<td height="30"></td>
+					</tr>
+					<tr>
+						<td width="116"></td>
+						<td></td>
+						<td width="15"></td>
+						<td>
+							<p class="portfolio"><big>Обратная связь</big></p>
+						</td>
+					</tr>
+					<tr height="15">
+						<td width="116" height="15"></td>
+						<td height="15"></td>
+						<td width="15" height="15"></td>
+						<td height="15"></td>
+					</tr>
+					<tr>
+						<td width="116"></td>
+						<td align="right" valign="top">
+							<p class="portfolio">ФИО</p>
+						</td>
+						<td width="15"></td>
+						<td><input type="text" name="name" size="40"></td>
+					</tr>
+					<tr height="13">
+						<td width="116" height="13"></td>
+						<td height="13"></td>
+						<td width="15" height="13"></td>
+						<td height="13"></td>
+					</tr>
+					<tr>
+						<td width="116"></td>
+						<td align="right" valign="top">
+							<p class="portfolio">Эл. адрес</p>
+						</td>
+						<td width="15"></td>
+						<td><input type="text" name="email" size="40"></td>
+					</tr>
+					<tr height="13">
+						<td width="116" height="13"></td>
+						<td height="13"></td>
+						<td width="15" height="13"></td>
+						<td height="13"></td>
+					</tr>
+					<tr>
+						<td width="116"></td>
+						<td align="right" valign="top">
+							<p class="portfolio">Тема</p>
+						</td>
+						<td width="15"></td>
+						<td><input type="text" name="theme" size="40"></td>
+					</tr>
+					<tr height="13">
+						<td width="116" height="13"></td>
+						<td height="13"></td>
+						<td width="15" height="13"></td>
+						<td height="13"></td>
+					</tr>
+					<tr>
+						<td width="116"></td>
+						<td align="right" valign="top">
+							<p class="portfolio">Сообщение</p>
+						</td>
+						<td width="15"></td>
+						<td><textarea name="message" rows="4" cols="40" style="font-family: arial, Verdana, Arial, Helvetica, sans-serif;"></textarea></td>
+					</tr>
+					<tr height="13">
+						<td width="116" height="13"></td>
+						<td height="13"></td>
+						<td width="15" height="13"></td>
+						<td height="13"></td>
+					</tr>
+					<tr align="right" valign="top">
+						<td width="116"></td>
+						<td colspan="3">
+							<table width="180" border="0" cellspacing="0" cellpadding="0">
+								<tr height="30">
+									<td align="left" width="250" height="30">
+										<p class="portfolio"><nobr><font color="#f50000" id="error">Ошибка.</font></nobr></p>
+									</td>
+									<td width="30" height="30"></td>
+									<td width="90" height="30"><input type="submit" name="Отправить" value="Отправить"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr height="30">
+						<td width="116" height="30"></td>
+						<td height="30"></td>
+						<td width="15" height="30"></td>
+						<td align="right" height="30"></td>
+					</tr>
+				</form>
+			</table>
+			<div id="layer1">
+<a href="../"><img src="../images/close.gif" alt="" height="14" width="14" border="0"></a></div>
+		</div>
+		<div id="layer3"></div>
+	 <!-- YaMetrics begin -->
+<script type="text/javascript"><!--
+var ya_cid=88284;
+//--></script>
+<script src="http://bs.yandex.ru/resource/watch.js" type="text/javascript"></script>
+<noscript><div style="display: inline;"><img src="http://bs.yandex.ru/watch/88284" width="1" height="1" alt=""></div></noscript>
+<!-- YaMetrics end --></body>
+
+</html>

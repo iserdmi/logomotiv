@@ -1,16 +1,16 @@
 
 <%= render :partial => "shared/header" %>
 
-
-
+<div class="container">
+<div id="sidebar">
 					<ul class="main_menu">
 					<% if @page.parent %>
 					<% @page.parent.children.all.each do |p| %>
-				      <li><% if @page.path.include? p.permalink %><b><%= p.title %> <%= current_arrow %></b><% else %><a class="nav" href="<%= p.path %>"><%= p.title %></a><% end %></li>
+				      <li><% if @page.path.include? p.permalink %><p><%= p.title %></p><% else %><a href="<%= p.path %>"><%= p.title %></a><% end %></li>
 				   <% end %>
 				   <% else %>
 					<% @page.children.all.each do |p| %>
-				      <li><% if @page.path.include? p.permalink %><b><%= p.title %> <%= current_arrow %></b><% else %><a class="nav" href="<%= p.path %>"><%= p.title %></a><% end %></li>
+				      <li><% if @page.path.include? p.permalink %><p><%= p.title %></p><% else %><a href="<%= p.path %>"><%= p.title %></a><% end %></li>
 				   <% end %>
 				   <% end %>
 					</ul>
@@ -23,11 +23,13 @@
 					  <% end %>
 					<% end %>
 					<% end %>
-			
-				<%#='colspan="2"' unless @page.blocks.first %>>
-<div id="content">
+</div>
+				<%#='colspan="2"' unless @page.blocks.first %>
+<div class="page_content">
    <%= yield %>
 </div>
+</div>
+<div class="clear"></div>
 <%= render :partial => "shared/footer" %>
 
 </body>

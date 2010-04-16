@@ -1,5 +1,5 @@
 body { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; margin: 0; }
-p { color: #333; font-size: 16px; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 22px; }
+/*p { color: #333; font-size: 16px; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 22px; }*/
 /*index*/
 a:link.in { color: #fff; text-decoration: none; }
 a:visited.in { color: #fff; text-decoration: none; }
@@ -35,10 +35,7 @@ a:hover.nav { color: #fff; font-weight: normal; background-color: #e51f1f; lette
 /*portfolio*/
 p.portfolio { color: #333; font-size: 12px; font-family: arial, Verdana, Arial, Helvetica, sans-serif; line-height: 18px; }
 h1 { color: #666; font-size: 17px; font-family: arial, Verdana, sans-serif, Helvetica, sans-serif; font-weight: normal; margin-right: 0; margin-bottom: 15px; margin-left: 0; }
-a:link { color: #069; }
-a:visited { color: #069; }
-a:hover { color: #fb0303; }
-a:active { color: #069; }
+
 p.podpis { color: #333; font-size: 13px; font-family: "times new roman", Verdana, Arial, Helvetica, sans-serif; font-style: italic; line-height: 16px; }
 /*about*/
 h1.company { font-size: 18px; font-family: arial, Verdana, Arial, Helvetica, sans-serif; font-weight: normal; line-height: 21px; margin: 0 0 0; }
@@ -47,9 +44,9 @@ h1.company { font-size: 18px; font-family: arial, Verdana, Arial, Helvetica, san
 h1.history { color: #000; font-size: 16px; margin: 0 0 0.67em; }
 p.history { color: #000; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 21px; }
 p.history2 { color: #4d4d4d; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 21px; }
-a:link.why { color: #fff; font-size: 16px; font-family: arial, Verdana, Helvetica, sans-serif; text-decoration: none; border-bottom: 1px dashed #fff; outline-color: #fff; }
+a:link.why { border-bottom: 2px dashed #000; color: #000; margin-bottom: 4px; font-size: 16px; font-family: arial, Verdana, Helvetica, sans-serif; text-decoration: none; outline-color: #fff; }
 a:visited.why { color: #fff; }
-a:hover.why { color: #fff; }
+
 a:active.why { color: #fff; }
 p.white { color: #fefefe; font-size: 12px; font-family: arial, Verdana, Arial, Helvetica, sans-serif; line-height: 18px; }
 .values { color: #fff; font-size: 18px; font-family: arial, Verdana, Helvetica, sans-serif; line-height: 25px; }
@@ -73,3 +70,63 @@ p.sol { color: #363636; font-size: 18px; font-family: arial, Verdana, Helvetica,
 p.artsmall { color: #333; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; font-style: normal; line-height: 14px; }
 h1.art { color: #000; font-size: 17px; font-family: arial, Verdana, sans-serif, Helvetica, sans-serif; font-weight: normal; line-height: 17px; margin-top: 15px; margin-left: 0; padding-top: 15px; }
 p.first { color: #4b4b4b; font-size: 19px; font-family: arial, Verdana, Arial, Helvetica, sans-serif; line-height: 1.5em; }
+
+#layer2 {
+height:344px;
+left:30px;
+position:absolute;
+top:175px;
+visibility:visible;
+width:190px;
+}
+#head {
+height:49px;
+left:255px;
+position:absolute;
+top:175px;
+visibility:visible;
+width:286px;
+z-index:10;
+}
+
+#copyright {
+color:#4F4F4F;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:9px;
+height:50px;
+left:30px;
+position:absolute;
+top:764px;
+visibility:visible;
+width:930px;
+}
+#text1 {
+	width: 450px;
+}
+#stolb {
+height:433px;
+left:701px;
+position:absolute;
+top:5px;
+visibility:visible;
+width:357px;
+z-index:11;
+display:block;
+}
+#layer1 {
+height:71px;
+left:190px;
+position:absolute;
+top:115px;
+visibility:hidden;
+width:160px;
+z-index:20;
+}
+#layer3 {
+height:71px;
+left:190px;
+position:absolute;
+top:118px;
+visibility:visible;
+width:160px;
+}

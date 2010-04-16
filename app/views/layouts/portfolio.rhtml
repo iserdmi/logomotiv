@@ -4,36 +4,7 @@
 
 <%= yield :layout %>
 
-<!--<table width="100%" id="content">
-	<tbody>
-			<tr valign="top">
-				<td width="20"><img src="/images/spacer.gif" width="20" /></td>
-				<td width="18%" class="left-col">
-					<% if params[:action] != 'images' %>
-					<ul class="clients">
-					<% Project.find(:all, :conditions => {:section => params[:section]}, :group => :client_id).each do |project| %>
-					  <li><% if project==@project %><%= link_to project.client.title, "/portfolio/#{params[:section]}/#{project.id}", :class => "current" %><%= '&nbsp;'+image_tag("arrow-red.gif") %><% else %><%= link_to project.client.title, "/portfolio/#{params[:section]}/#{project.id}" %>	<% end %></li>
-					<% end %>
-					</ul>
-					<% end %>
-					<% if @project && @project.sidebar_left %>
-					<div class="block_left"><%= @project.sidebar_left%></div>
-					<% end %>
-				</td>
-				<td width="3%"><img width="10" src="/images/spacer.gif" /></td>
-				<td  <%='colspan="2"' if params[:action] == 'images' %>>
-					<%= yield %>
-				</td>
-				<td style="min-width: 10px;" width="3%"></td>
-				<td width="16%" id="right_col">
-					<%= yield :sidebar %>
-					</div>
-	
-				</td>
-				<td width="1%">
-			</tr>
-		</tbody>
-</table>-->
+
 <%= render :partial => "shared/footer" %>
 
 </body>

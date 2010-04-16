@@ -1,4 +1,4 @@
-<%= params[:show] == 'overs' ? @project.overs : @project.body %>
+<%	#= params[:show] == 'overs' ? @project.overs : @project.body %>
 
 <% content_for :sidebar do %>
 
@@ -16,4 +16,13 @@
 <div id="sidebar">
 <%= @project.sidebar if @project.sidebar %>
 </div>
+
 <% end %>
+<div class="container">
+<div id="sidebar">
+	<%= yield :sidebar %>
+</div>
+<div class="page_content">
+	<%= render :partial => "portfolio/tpl1", :object => @project %>
+</div>
+</div>
