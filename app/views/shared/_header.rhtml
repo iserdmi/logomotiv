@@ -38,14 +38,14 @@
 		</div>
 		<div class="main_right_col">
 			<p class="phone"><span class="color_gray_light">(812)</span> 572-39-03</p>
-			<a href="#">Контактная информация</a>
-			<a class="blog" href="#">Блог</a>
+			<a href="/contacts/">Контактная информация</a>
+			<a class="blog" href="http://blog.logomotiv.ru/">Блог</a>
 		</div>
 		<div class="main_mid_col">
 			<ul class="main_menu">
 				<% Page.visible.roots.all.each do |p| %>
 
-				<li><% if @page.path.include? p.permalink %><p><%= p.title %></p><% else %><a class="nav" href="<%= p.path unless p.children.first %><%= p.children.first.path if p.children.first %>"><%= p.title %></a><% end %></li>
+				<li><% if @page.path.include? p.permalink %><p><%= p.title %></p><% else %><a href="<%= p.path unless p.children.first %><%= p.children.first.path if p.children.first %>"><%= p.title %></a><% end %></li>
 				<% end %>
 				
 				<% if params[:controller] == 'portfolio' %>

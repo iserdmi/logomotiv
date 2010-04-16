@@ -22,6 +22,7 @@ float: left; overflow: hidden;}
 		line-height: 17px;
 		color: #000;
 		text-decoration: none;
+		font-family: Verdana;
 		display: block;
 		float: left;
 		clear:both;
@@ -102,6 +103,23 @@ float: left; overflow: hidden;}
 	border: 10px solid white;
 
 }
+.gallery_large_controls .arrow_left, .gallery_large_controls .arrow_right {
+	background: transparent;
+	background-repeat: no-repeat;
+	width: 21px;
+	height: 46px;
+	display: block;
+	top: 275px;
+	left: 220px;
+	position: absolute;
+	margin-top: -10px;
+
+}
+.gallery_large_controls .arrow_left {background-image: url("../images/gallery_arrow_left_on.gif"); margin-left: 15px;}
+.gallery_large_controls .arrow_right {background-image: url("../images/gallery_arrow_right_on.gif"); !important; float: right; margin-left: 741px;}
+.gallery_large_controls .arrow_left:hover img {opacity: 0; filter: alpha(opacity = 0);}
+.gallery_large_controls .arrow_right:hover img {opacity: 0; filter: alpha(opacity = 0);}
+/*
 	.gallery_large_controls .arrow_left, .gallery_large_controls .arrow_right {
 		background-image: url("../images/gallery_arrow_left.png");
 		background-repeat: no-repeat;
@@ -128,7 +146,7 @@ float: left; overflow: hidden;}
 		top: 275px;
 		display: block;
 	}
-	.fade_right {}
+	.fade_right {}*/
 	.gallery_large .items_container {
 		width: 30000px;
 		position: relative;
@@ -214,7 +232,7 @@ float: left; overflow: hidden;}
 	.gallery_controls .arrow_right:hover img {opacity: 0; filter: alpha(opacity = 0);}
 	
 .gallery_menu {
-	margin-left: 230px;
+	margin-left: 250px;
 	margin-bottom: 18px;
 	padding-top: 10px;
 }
@@ -320,10 +338,9 @@ float: left; overflow: hidden;}
 	
 .cols_4 {
 	display: inline;
-	width: 21%;
-	//width: 20.85%;
-	margin-right: 2%;
-	margin-left: 2%;
+	width: 22%;
+	margin-right: 1%;
+	margin-left: 1%;
 	float:left;
 }
 	.proj_title {
@@ -356,7 +373,7 @@ float: left; overflow: hidden;}
 	.client_item a {font-size: 12px;}
 	.client_date {font-family: Georgia,serif; font-style: italic; margin-top: -2px; margin-bottom: 5px;}
 	
-.docs {margin: 15px 0px; margin-left: 195px; float: left; display: inline;}
+.docs {margin: 15px 0px; margin-left: 250px; float: left; display: inline;}
 	.docs p {color: #6d6d6d;}
 	.docs a {color: #3e7db7;}
 	.docs a:hover {color: #fb0303;}
@@ -481,9 +498,9 @@ div.items div.active {
 	width: 100%;
 }
 
-#black { background-color: #000; height: 440px; margin-left: -30px; padding: 10px; margin-top: 10px; overflow: hidden; width: 1000px; position: absolute; z-index: 12; left: 0px; padding-left: 50px;	}
+#black { background-color: #000; height: 440px; margin-left: -30px; padding: 10px; overflow: hidden; width: 1000px; position: absolute; z-index: 12; left: 0px; padding-left: 50px;	}
 #black > div { position: relative;}
-.toggle-button { color: black; height: 21px; width: 135px; left: 15px; top: 1px; z-index: 1; visibility: visible; }
+.toggle-button { color: black; height: 26px; width: 135px; left: 15px; top: 1px; z-index: 1; visibility: visible; }
 #shema { height: 319px; width: 536px; left: 180px; top: 60px; position: absolute; z-index: 1; }
 #textwhite1 { height: 73px; width: 330px; left: 440px; top: 30px; position: absolute; z-index: 2; }
 #textwhite2 { height: 40px; width: 330px; left: 440px; top: 332px; position: absolute; z-index: 2; }
@@ -547,4 +564,8 @@ div.items div.active {
 
 .project-nav.active {
 	background: none;
+}
+
+.hidden {
+	display: none;
 }
