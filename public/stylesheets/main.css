@@ -42,7 +42,7 @@ float: left; overflow: hidden;}
 	.sub p {background-image: url("../images/menu_arrow_b.gif");}
 	.v_split_line {
 		float: left;
-		height: 77px;
+		height: 81px;
 		width: 1px;
 		margin: 0px 28px;
 		background-color: #c8c8c8;
@@ -377,7 +377,7 @@ float: left; overflow: hidden;}
 		margin-bottom: 8px;
 	}
 	.proj_item {font-size: 12px; color: #2f2f2f; margin: 8px 0px; line-height: 13px;}
-	.proj_item a {font-size: 12px; color: #2f2f2f; line-height: 13px;}
+	.proj_item a {font-size: 12px; color: #215586; line-height: 13px;}
 	.proj_item a:hover {font-size: 12px; color: #fb0303;}
 	
 .cols_5 {

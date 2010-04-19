@@ -1,5 +1,5 @@
 <div class="gallery_large_portfolio">
-	<div class="items_container">
+	<div class="items_container items">
 		<% Image.all.each do |image| %>
 		<div class="gallery_item"><a class="title" href="<%= image.url %>"><%= image.alt %></a><%= image_tag image.image.url, :alt => image.alt %></div>
 		<% end %>
