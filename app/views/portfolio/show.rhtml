@@ -14,7 +14,7 @@ $("a.review").colorbox({opacity: 0.5});
 <p><img align="left" src="/images/menu_arrow_l.gif" />&nbsp;<a href="/portfolio/<%=h params[:section] %>/companies" class="back_to_list">К списку проектов</a></p><br/><br/>
 
 <% if @project.overs.size > 10 %>
-<% if params[:show] == 'overs' %>
+<% if params[:show] != 'overs' %>
 <%= content_tag('div', "<p>За кадром</p>", :class => 'project-nav') %>
 <%= content_tag('div', link_to("Обзор", "?show=overview"), :class => 'project-nav active') %>
 <% else %>

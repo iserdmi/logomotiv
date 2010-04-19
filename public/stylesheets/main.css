@@ -573,13 +573,14 @@ div.items div.active {
 
 .project-nav {
 	text-align: center;
-	width: 65px;
+	width: 70px;
 	padding-top: 0px;
 	background: #eae7d9;
 	font-size:12px !important;
 	float: left;
 	margin-bottom: 20px;
 	font-family: Verdana,Helvetica,sans-serif;
+	height: 22px;
 }
 .project-nav p, .project-nav a {
 	font-size:12px !important;
