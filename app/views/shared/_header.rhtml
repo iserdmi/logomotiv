@@ -16,7 +16,7 @@
 	<% if @page.meta_description %><meta name="description" content="<%=@page.meta_description%>" /><% end %>
 	<% if @page.meta_keywords %><meta name="keywords" content="<%=@page.meta_keywords%>" /><% end %>
 	<%= javascript_include_tag :defaults %>
-	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" %>
+	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" %>
 	<%= javascript_include_tag "jquery.tools.min" %>
 	<script type="text/javascript">
 	$(function() {
@@ -25,6 +25,7 @@
 	});
 	function open_map() { $('#map').slideToggle(); }
 	</script>
+	<%= yield :head %>
 </head>
 <body>
 

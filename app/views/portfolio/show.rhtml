@@ -1,4 +1,13 @@
 <%	#= params[:show] == 'overs' ? @project.overs : @project.body %>
+<% content_for :head do %>
+<%= stylesheet_link_tag "colorbox" %>
+<%= javascript_include_tag "jquery.colorbox-min" %>
+<script type="text/javascript">
+$(document).ready(function (){
+$("a.review").colorbox({opacity: 0.5});
+});
+</script>
+<% end %>
 
 <% content_for :sidebar do %>
 
@@ -15,15 +24,20 @@
 
 <div id="sidebar">
 <% if @project.review_file_name %>
-<a href="<%= @project.review.url%>" class="toggle_link">Отзыв клиента</a><br/>
+<a href="<%= @project.review.url%>" class="toggle_link review">Отзыв клиента</a><br/>
 <% end %>
+
+<% if @project.case_file_name %>
+<a href="<%= @project.review.url%>" class="case">Скачать кейс (PDF)</a><br/>
+<% end %>
+
 <% if @project.client.projects.find(:all, :conditions => "id != #{@project.id}").size > 0 %>
 Другие проекты:
 <%@project.client.projects.find(:all, :conditions => "id != #{@project.id}").each do |p| %>
 <a href="/portfolio/<%=params[:section]%>/p/<%=p.slug%>"><%= @project.title %></a>
 <% end %>
 <% end %>
-Над проектом работали: <br/>
+<a class="toggle_link" onclick="$('#workers).toggleSlide();">Над проектом работали:</a><br/>
 <div id="workers">
 <%= @project.sidebar if @project.sidebar %>
 </div>
