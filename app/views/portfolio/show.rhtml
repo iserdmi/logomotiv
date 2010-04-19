@@ -29,7 +29,7 @@ $("a.review").colorbox({opacity: 0.5});
 <% end %>
 
 <% if @project.case_file_name %>
-<p><img align="left" src="/images/pdf_icon.png" /><a href="<%= @project.review.url%>" class="case">Скачать кейс (PDF)</a></p><br/>
+<p><img align="left" src="/images/pdf_icon.gif" /><a href="<%= @project.review.url%>" class="case">Скачать кейс (PDF)</a></p><br/>
 <% end %>
 
 <% if @project.client.projects.find(:all, :conditions => "id != #{@project.id}").size > 0 %>
