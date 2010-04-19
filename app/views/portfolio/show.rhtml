@@ -10,6 +10,7 @@ $("a.review").colorbox({opacity: 0.5});
 <% end %>
 
 <% content_for :sidebar do %>
+<p><img align="left" src="/images/menu_arrow_l.gif" />&nbsp;<a href="/portfolio/<%=h params[:section] %>/companies" class="back_to_list">К списку проектов</a></p><br/><br/>
 
 <% if @project.overs.size > 10 %>
 <% if params[:show] == 'overs' %>
@@ -23,13 +24,13 @@ $("a.review").colorbox({opacity: 0.5});
 <br clear="all" />
 
 <div id="sidebar">
-<p><img align="left" src="/images/menu_arrow_l.gif" />&nbsp;<a href="/portfolio/<%=h params[:section] %>/companies" class="back_to_list">К списку проектов</a></p><br/>
+
 <% if @project.review_file_name %>
 <p><a href="<%= @project.review.url%>" class="toggle_link review">Отзыв клиента</a></p><br/>
 <% end %>
 
 <% if @project.case_file_name %>
-<p><img align="left" src="/images/pdf_icon.gif" /><a href="<%= @project.review.url%>" class="case">Скачать кейс (PDF)</a></p><br/>
+<p><img align="left" src="/images/pdf_icon.gif" />&nbsp;<a href="<%= @project.review.url%>" class="case">Скачать кейс (PDF)</a></p><br/><br/>
 <% end %>
 
 <% if @project.client.projects.find(:all, :conditions => "id != #{@project.id}").size > 0 %>
@@ -40,7 +41,7 @@ $("a.review").colorbox({opacity: 0.5});
 </p>
 <% end %>
 <p><a class="toggle_link" onclick="$('#workers').slideToggle();">Над проектом работали:</a><br/>
-<div id="workers">
+<div id="workers"><br/>
 <%= @project.sidebar if @project.sidebar %>
 </div>
 </p>
