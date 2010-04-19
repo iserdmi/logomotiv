@@ -37,7 +37,7 @@ $("a.review").colorbox({opacity: 0.5});
 <a href="/portfolio/<%=params[:section]%>/p/<%=p.slug%>"><%= @project.title %></a>
 <% end %>
 <% end %>
-<a class="toggle_link" onclick="$('#workers).toggleSlide();">Над проектом работали:</a><br/>
+<a class="toggle_link" onclick="$('#workers').slideToggle();">Над проектом работали:</a><br/>
 <div id="workers">
 <%= @project.sidebar if @project.sidebar %>
 </div>
