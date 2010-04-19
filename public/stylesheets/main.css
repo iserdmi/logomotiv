@@ -75,7 +75,7 @@ float: left; overflow: hidden;}
 	margin: 0px 30px;
 	padding-top: 10px;
 	border-top: solid 1px #c8c8c8;
-	width: 900px;
+	width: 960px;
 	background-color: white;
 	height: 155px;
 }
@@ -597,4 +597,8 @@ a.toggle_link {
 	text-decoration: none;
 	border-bottom: 1px dashed;
 	cursor: pointer;
+}
+
+.back_to_list {
+
 }

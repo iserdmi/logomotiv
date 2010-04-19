@@ -23,24 +23,27 @@ $("a.review").colorbox({opacity: 0.5});
 <br clear="all" />
 
 <div id="sidebar">
+<p><img align="left" src="/images/menu_arrow_l.gif" />&nbsp;<a href="/portfolio/<%=h params[:section] %>/companies" class="back_to_list">К списку проектов</a></p><br/>
 <% if @project.review_file_name %>
-<a href="<%= @project.review.url%>" class="toggle_link review">Отзыв клиента</a><br/>
+<p><a href="<%= @project.review.url%>" class="toggle_link review">Отзыв клиента</a></p><br/>
 <% end %>
 
 <% if @project.case_file_name %>
-<a href="<%= @project.review.url%>" class="case">Скачать кейс (PDF)</a><br/>
+<p><img align="left" src="/images/pdf_icon.png" /><a href="<%= @project.review.url%>" class="case">Скачать кейс (PDF)</a></p><br/>
 <% end %>
 
 <% if @project.client.projects.find(:all, :conditions => "id != #{@project.id}").size > 0 %>
-Другие проекты:
+<p>Другие проекты:<br/>
 <%@project.client.projects.find(:all, :conditions => "id != #{@project.id}").each do |p| %>
-<a href="/portfolio/<%=params[:section]%>/p/<%=p.slug%>"><%= @project.title %></a>
+<a href="/portfolio/<%=p.section%>/p/<%=p.slug%>"><%= p.name %></a>
 <% end %>
+</p>
 <% end %>
-<a class="toggle_link" onclick="$('#workers').slideToggle();">Над проектом работали:</a><br/>
+<p><a class="toggle_link" onclick="$('#workers').slideToggle();">Над проектом работали:</a><br/>
 <div id="workers">
 <%= @project.sidebar if @project.sidebar %>
 </div>
+</p>
 </div>
 
 <% end %>

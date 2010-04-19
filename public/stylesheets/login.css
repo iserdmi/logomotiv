@@ -1,7 +1,7 @@
 .client {
 	position: relative;
 	float: right;
-	margin-right: 30px;
+	margin-right: -140px;
 }
 .client a {position: relative;}
 .client a img {
