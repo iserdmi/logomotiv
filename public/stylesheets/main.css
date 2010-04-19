@@ -75,7 +75,7 @@ float: left; overflow: hidden;}
 	margin: 0px 30px;
 	padding-top: 10px;
 	border-top: solid 1px #c8c8c8;
-	width: 960px;
+	width: 920px;
 	background-color: white;
 	height: 155px;
 }
@@ -521,7 +521,7 @@ div.items div.active {
 	width: 100%;
 }
 
-#black { background-color: #000; height: 440px; margin-left: -30px; padding: 10px; overflow: hidden; width: 1000px; position: absolute; z-index: 12; left: 0px; padding-left: 50px;	}
+#black { background-color: #000; height: 440px; margin-left: -30px; padding: 10px; overflow: hidden; width: 1300px; position: absolute; z-index: 12; left: 0px; padding-left: 50px;	}
 #black > div { position: relative;}
 .toggle-button { color: black; height: 26px; width: 135px; left: 15px; top: 1px; z-index: 1; visibility: visible; }
 #shema { height: 319px; width: 536px; left: 180px; top: 60px; position: absolute; z-index: 1; }
