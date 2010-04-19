@@ -30,8 +30,10 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect 'portfolio', :controller => :portfolio
   map.connect 'portfolio/:section', :controller => :portfolio, :action => :section
-  map.connect 'portfolio/:section/:id', :controller => :portfolio, :action => :show, :id => /\d+/
   map.connect 'portfolio/:section/:action', :controller => :portfolio
+  map.connect 'portfolio/:section/p/:slug', :controller => :portfolio, :action => :show
+
+
 
   
   

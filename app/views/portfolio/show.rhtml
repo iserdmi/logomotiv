@@ -14,7 +14,19 @@
 <br clear="all" />
 
 <div id="sidebar">
+<% if @project.review_file_name %>
+<a href="<%= @project.review.url%>" class="toggle_link">Отзыв клиента</a><br/>
+<% end %>
+<% if @project.client.projects.find(:all, :conditions => "id != #{@project.id}").size > 0 %>
+Другие проекты:
+<%@project.client.projects.find(:all, :conditions => "id != #{@project.id}").each do |p| %>
+<a href="/portfolio/<%=params[:section]%>/p/<%=p.slug%>"><%= @project.title %></a>
+<% end %>
+<% end %>
+Над проектом работали: <br/>
+<div id="workers">
 <%= @project.sidebar if @project.sidebar %>
+</div>
 </div>
 
 <% end %>

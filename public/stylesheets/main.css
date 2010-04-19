@@ -47,7 +47,7 @@ float: left; overflow: hidden;}
 		margin: 0px 28px;
 		background-color: #c8c8c8;
 	}
-	.main_menu a:hover {background-color: #fb0303; color: white; font-weight: bold;}
+	.main_menu a:hover {background-color: #fb0303; color: white;}
 	.phone {
 		font-family: Arial,Helvetica,sans-serif;
 		font-size: 22px;
@@ -213,11 +213,11 @@ float: left; overflow: hidden;}
 	width: 830px;
 	margin: 0 auto;
 	margin-left: 30px;
-	height: 300px;
+	height: 338px;
 }
 	.gallery_small .items_container {
 		width: 10000px;
-		height: 300px;
+		height: 338px;
 		overflow: hidden;
 		position: relative;
 		float: left;
@@ -235,7 +235,7 @@ float: left; overflow: hidden;}
 		border-right: solid 1px white;
 		border-bottom: solid 1px white;
 		width: 170px;
-		height: 170px;
+		height: 165px;
 	}
 	.gallery_controls .arrow_left, .gallery_controls .arrow_right {
 		background: transparent;
@@ -444,8 +444,10 @@ div.scrollable {
 div.controls a.nextPage {
 	background: url('../images/right.gif');
 	float: right;
+	cursor: pointer;
 }
 div.controls a.prevPage {
+	cursor: pointer;
 	float: left;
 	background: url('../images/left.gif');
 }

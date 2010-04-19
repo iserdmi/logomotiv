@@ -9,11 +9,11 @@
 		<div class="clear"></div>
 	</div>
 	<% Branch.all.each do |branch| %>
-	<% if branch.projects.count %>
+	<% if branch.projects.find(:all, :conditions => {:section => params[:section]}).size > 0 %>
 	<div class="cols_5">
 		<h2 class="client_tittle"><%= branch.title %></h2>
-		<% branch.projects.each do |project| %>
-		<p class="client_item"><a href="/portfolio/<%=params[:section]%>/<%=project.id%>"><%=project.nav_title%></a></p>
+		<% branch.projects.find(:all, :conditions => {:section => params[:section]}).each do |project| %>
+		<p class="client_item"><%=project.nav_title%></p>
 		<p class="client_date">20.05.09</p>
 		<% end %>
 	</div>

@@ -16,40 +16,40 @@ $('.gallery_large_portfolio').scrollable({size: 1, clickable: true}).circular();
 <div class="content">
 	<div class="cols_4">
 		<a class="proj_title" href="/portfolio/ident/">Айдентика</a>
-		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'ident'}).size %> проектов</p>
+		<p class="proj_count"><%= Project.ident.size %> <%= Russian.p(Project.ident.size, "проект", "проекта", "проектов")%></p>
 	</div>
 	<div class="cols_4">
 		<a class="proj_title" href="/portfolio/graphical_design/">Графический дизайн</a>
-		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'graphical_design'}).size %> проект</p>
+		<p class="proj_count"><%= Project.graph_design.size %> <%= Russian.p(Project.graph_design.size, "проект", "проекта", "проектов")%></p>
 	</div>
 	<div class="cols_4">
 		<a class="proj_title" href="/portfolio/sites/">Сайты</a>
-		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'sites'}).size %> проектов</p>
+		<p class="proj_count"><%= Project.sites.size %> <%= Russian.p(Project.sites.size, "проект", "проекта", "проектов")%></p>
 	</div>
 	<div class="cols_4">
 		<a class="proj_title" href="/portfolio/concepts/">Концепты</a>
-		<p class="proj_count"><%= Project.find(:all, :conditions => {:section => 'concepts'}).size %> проекта</p>
+		<p class="proj_count"><%= Project.concepts.size %> <%= Russian.p(Project.concepts.size, "проект", "проекта", "проектов")%></p>
 	</div>
 	<div class="clear"></div>
 	<div class="split_line_gray"></div>
 	<div class="cols_4">
 		<% Project.find(:all, :conditions => {:section => 'ident'}, :limit => 5).each do |p| %>
-		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= p.nav_title %></a></p>
+		<p class="proj_item"><%= p.nav_title %></p>
 		<% end %>
 	</div>
 	<div class="cols_4">
 		<% Project.find(:all, :conditions => {:section => 'graphical_design'}, :limit => 5).each do |p| %>
-		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= p.nav_title %></a></p>
+		<p class="proj_item"><%= p.nav_title %></p>
 		<% end %>
 	</div>
 	<div class="cols_4">
 		<% Project.find(:all, :conditions => {:section => 'sites'}, :limit => 5).each do |p| %>
-		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= p.nav_title %></a></p>
+		<p class="proj_item"><%= p.nav_title %></p>
 		<% end %>
 	</div>
 	<div class="cols_4">
 		<% Project.find(:all, :conditions => {:section => 'concepts'}, :limit => 5).each do |p| %>
-		<p class="proj_item"><a href="/portfolio/ident/<%=p.id%>"><%= p.nav_title %></a></p>
+		<p class="proj_item"><%= p.nav_title %></p>
 		<% end %>
 	</div>
 	

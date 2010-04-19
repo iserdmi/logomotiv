@@ -5,18 +5,27 @@
 <fieldset>
   <legend></legend>
 <% form_for ["admin", @project], :method => @method, :html => {:multipart => true} do |f| -%>
-  <p>
-	<%= f.label :title, "Заголовок" %><br/>
-    <%= ckeditor_textarea("project", "title", :width => "200px", :height => '40px', :toolbar => "color") %>
+  <p><%= f.label :name, "Название" %>
+	  <%= f.text_field :name %>
   </p>
   <p>
-	<%= f.label :title, "Заголовок (nav)" %><br/>
-    <%= ckeditor_textarea("project", "nav_title", :width => "200px", :height => '40px') %>
+	<%= f.label :title, "Заголовок" %><br/>
+    <%= ckeditor_textarea("project", "title", :width => "700px", :height => '40px', :toolbar => "color") %>
+  </p>
+  <p>
+	<%= f.label :title, "Заголовок (nav) link=portfolio/section/p/slug" %><br/>
+    <%= ckeditor_textarea("project", "nav_title", :width => "700px", :height => '40px') %>
   </p>
   <p>
 	<%= f.label :section, "Тип проекта" %><br/>
 
 	<%= f.select :section, options_for_select(["sites", "graphical_design", "ident", "concepts"], @project.section), :include_blank => true %>
+
+  </p>
+  <p>
+	<%= f.label :slug, "Slug" %><br/>
+
+	<%= f.text_field :slug %>
 
   </p>
   <p>
@@ -29,6 +38,14 @@
 	<%= f.label :image, "Картинка" %><br/>
 	<%= f.file_field :image%>
   <p>
+  <p>
+	<%= f.label :case, "Кейс" %><br/>
+	<%= f.file_field :case %>
+  <p>
+  <p>
+	<%= f.label :image, "Отзыв" %><br/>
+	<%= f.file_field :review %>
+  <p>
 	<%= f.label :client_id, "Клиент" %><br/>
 
 	<%= f.select :client_id, options_from_collection_for_select(Client.all, 'id', 'title', @project.client_id), :include_blank => true %>
@@ -36,18 +53,8 @@
   </p>
 
   <p>
-  <%= f.label :body, "Содержание" %><br/>
-  <%= ckeditor_textarea("project", "body", :width => '780px', :height => '300px') %>
-
-  </p>
-  <p>
   <%= f.label :overs, "За кадром" %><br/>
   <%= ckeditor_textarea("project", "overs", :width => '780px', :height => '300px') %>
-
-  </p>
-  <p>
-  <%= f.label :overs, "Блок справа" %><br/>
-  <%= ckeditor_textarea("project", "sidebar", :width => '400px', :height => '300px') %>
 
   </p>
   <p>
