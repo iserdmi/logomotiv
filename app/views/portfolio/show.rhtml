@@ -15,11 +15,11 @@ $("a.review").colorbox({opacity: 0.5});
 
 <% if @project.overs.size > 10 %>
 <% if params[:show] == 'overs' %>
-<%= content_tag('div', "<p>За кадром</p>", :class => 'project-nav') %>
 <%= content_tag('div', link_to("Обзор", "?show=overview"), :class => 'project-nav active') %>
+<%= content_tag('div', "<p>За кадром</p>", :class => 'project-nav') %>
 <% else %>
-<%= content_tag('div', link_to("За кадром", "?show=overs"), :class => 'project-nav active') %>
 <%= content_tag('div', "<p>Обзор</p>", :class => 'project-nav') %>
+<%= content_tag('div', link_to("За кадром", "?show=overs"), :class => 'project-nav active') %>
 <% end %>
 <% end %>
 <br clear="all" />
