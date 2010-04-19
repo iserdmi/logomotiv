@@ -10,21 +10,22 @@ $("a.review").colorbox({opacity: 0.5});
 <% end %>
 
 <% content_for :sidebar do %>
+<br/>
 <p><img align="left" src="/images/menu_arrow_l.gif" />&nbsp;<a href="/portfolio/<%=h params[:section] %>/companies" class="back_to_list">К списку проектов</a></p><br/><br/>
 
 <% if @project.overs.size > 10 %>
 <% if params[:show] == 'overs' %>
-<%= content_tag('div', "<p>За кадром</p>", :class => 'project-nav active') %>
-<%= content_tag('div', link_to("Обзор", "?show=overview"), :class => 'project-nav') %>
+<%= content_tag('div', "<p>За кадром</p>", :class => 'project-nav') %>
+<%= content_tag('div', link_to("Обзор", "?show=overview"), :class => 'project-nav active') %>
 <% else %>
-<%= content_tag('div', link_to("За кадром", "?show=overs"), :class => 'project-nav') %>
-<%= content_tag('div', "<p>Обзор</p>", :class => 'project-nav active') %>
+<%= content_tag('div', link_to("За кадром", "?show=overs"), :class => 'project-nav active') %>
+<%= content_tag('div', "<p>Обзор</p>", :class => 'project-nav') %>
 <% end %>
 <% end %>
 <br clear="all" />
 
 <div id="sidebar">
-
+<br/><br/>
 <% if @project.review_file_name %>
 <p><a href="<%= @project.review.url%>" class="toggle_link review">Отзыв клиента</a></p><br/>
 <% end %>

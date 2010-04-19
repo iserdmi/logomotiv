@@ -573,9 +573,9 @@ div.items div.active {
 
 .project-nav {
 	text-align: center;
-	width: 80px;
+	width: 65px;
 	padding-top: 0px;
-	background: #f1eadf;
+	background: #eae7d9;
 	font-size:12px !important;
 	float: left;
 	margin-bottom: 20px;
@@ -583,6 +583,7 @@ div.items div.active {
 }
 .project-nav p, .project-nav a {
 	font-size:12px !important;
+	color: black;
 }
 
 .project-nav.active {
