@@ -126,18 +126,20 @@ float: left; overflow: hidden;}
 	position: absolute;
 }
 .gallery_large_portfolio .next, .gallery_large_portfolio .prev {
-	background-image: url("../images/gallery_arrow_left.png");
+	background-position: 0px 100px;
 	background-repeat: no-repeat;
-	width: 16px;
-	height: 33px;
+	width: 32px;
+	height: 297px;
 	position: absolute;
 	margin-top: -10px;
-	top:50%;
+	top:0px;
 	display: block;
 }
 .disabled { display: block !important;}
 .gallery_large_portfolio .prev{margin-left: 15px;}
-.gallery_large_portfolio .next {background-image: url("../images/gallery_arrow_right.png") !important; float: right; margin-left: 741px;}
+.gallery_large_portfolio .prev:hover{background-image: url("../images/gallery_arrow_left.png");}
+.gallery_large_portfolio .next { float: right; margin-left: 871px;}
+.gallery_large_portfolio .next:hover {background-image: url("../images/gallery_arrow_right.png") !important; }
 /*.fade_left:hover .arrow_left, .fade_right:hover .arrow_right {display: block;}
 .fade_left, .fade_right {*/
 /*
@@ -248,7 +250,7 @@ float: left; overflow: hidden;}
 
 	}
 	.gallery_controls .arrow_left {background-image: url("../images/gallery_arrow_left_on.gif"); top: 365px; left: 25px;}
-	.gallery_controls .arrow_right {background-image: url("../images/gallery_arrow_right_on.gif"); left: 945px; bottom: 0px;}
+	.gallery_controls .arrow_right {background-image: url("../images/gallery_arrow_right_on.gif"); left: 925px; bottom: 0px;}
 	.gallery_controls .arrow_left:hover img {opacity: 0; filter: alpha(opacity = 0);}
 	.gallery_controls .arrow_right:hover img {opacity: 0; filter: alpha(opacity = 0);}
 	
@@ -382,8 +384,7 @@ float: left; overflow: hidden;}
 	
 .cols_5 {
 	display: inline;
-	width: 18%;
-	//width: 17.85%;
+	width: 200px;
 	margin-right: 1%;
 	margin-left: 1%;
 	float:left;
@@ -412,8 +413,8 @@ float: left; overflow: hidden;}
 		.gallery_large_portfolio_controls .arrow_left, .gallery_large_portfolio_controls .arrow_right {
 			background-image: url("../images/gallery_arrow_left.png");
 			background-repeat: no-repeat;
-			width: 16px;
-			height: 33px;
+			width: 32px;
+			height: 273px;
 			position: absolute;
 			top: 225px;
 			left: 220px;

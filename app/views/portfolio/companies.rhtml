@@ -4,7 +4,7 @@
 		<h1 class="color_red"><%= t params[:section] %> <span class="color_gray_light">(<%= t params[:section] %>)</span></h1>
 		<ul>
 			<% if params[:action] == 'images' %><li><p>Картинками</p></li<% else %><li><a href="/portfolio/<%=h params[:section]%>/images">Картинками</a></li><% end %>
-			<% if params[:action] =='companies' || params[:action] == 'show' %><li><p>По клиентам</b><% else %><li><a href="/portfolio/<%=h params[:section]%>/companies">По компаниям</a></li><% end %>
+			<% if params[:action] =='companies' || params[:action] == 'show' %><li><p>По компаниям</b><% else %><li><a href="/portfolio/<%=h params[:section]%>/companies">По компаниям</a></li><% end %>
 		</ul>
 		<div class="clear"></div>
 	</div>
@@ -14,7 +14,7 @@
 		<h2 class="client_tittle"><%= branch.title %></h2>
 		<% branch.projects.find(:all, :conditions => {:section => params[:section]}).each do |project| %>
 		<p class="client_item"><%=project.nav_title%></p>
-		<p class="client_date">20.05.09</p>
+		<p class="client_date"><%=project.created_at.strftime("%d.%m.%y")%></p>
 		<% end %>
 	</div>
 	<%= cycle("","","","","",'<div class="clear"><br /></div>' ) %>

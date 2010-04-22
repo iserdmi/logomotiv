@@ -9,7 +9,7 @@
 				      <li><% if @page.path.include? p.permalink %><p><%= p.title %></p><% else %><a href="<%= p.path %>"><%= p.title %></a><% end %></li>
 				   <% end %>
 				   <% else %>
-					<% @page.children.all.each do |p| %>
+					<% @page.children.find(:all, :conditions => {:visible => true}).each do |p| %>
 				      <li><% if @page.path.include? p.permalink %><p><%= p.title %></p><% else %><a href="<%= p.path %>"><%= p.title %></a><% end %></li>
 				   <% end %>
 				   <% end %>
