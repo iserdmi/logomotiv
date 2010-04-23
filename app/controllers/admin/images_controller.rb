@@ -81,6 +81,16 @@ class Admin::ImagesController < AdminController
     end
   end
 
+    def sort
+  #render :text => params['.pages']
+      if params['images']
+        params['images'].each_with_index do |id, index|
+          Image.update_all(['position=?', index+1], ['id=?', id])
+        end
+      end  
+        render :nothing => true
+    end
+    
   private
     def find_Image
       @image = Image.find(params[:id])

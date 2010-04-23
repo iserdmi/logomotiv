@@ -5,9 +5,12 @@
 	<%= yield :actions %>
 </div>
 <div class="container">
+<ul id="images">
 <% @images.each do |image| %>
-  <li><%= image_tag image.image.url %> <%= link_to 'Редактировать', edit_admin_image_path(image) %> <%= link_to 'Удалить', admin_image_path(image), :method => :delete %>
+  <li id="image_<%=image.id%>"><%= image_tag image.image.url %> <%= link_to 'Редактировать', edit_admin_image_path(image) %> <%= link_to 'Удалить', admin_image_path(image), :method => :delete %>
 
 	</li>
 <% end %>
+</ul>
 </div>
+<%= sortable_element("images", :url => { :action => "sort" }	) %>
