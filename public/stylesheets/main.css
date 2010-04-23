@@ -9,7 +9,7 @@ body {
 }
 .main_left_col {float: left; width: 195px;}
 .main_mid_col {margin-left: 250px; margin-right: 250px;}
-.main_right_col {float: right; width: 170px;}
+.main_right_col {float: right; width: 158px;}
 .content_right_col {margin-left: 250px;}
 .content_text_col {width: 100%;
 margin-right: 5%;
@@ -75,7 +75,7 @@ float: left; overflow: hidden;}
 	margin: 0px 30px;
 	padding-top: 10px;
 	border-top: solid 1px #c8c8c8;
-	width: 920px;
+	width: 940px;
 	background-color: white;
 	height: 155px;
 }
@@ -110,12 +110,12 @@ float: left; overflow: hidden;}
 	height: 46px;
 	display: block;
 	top: 275px;
-	left: 220px;
+	left: 225px;
 	position: absolute;
 	margin-top: -10px;
 
 }
-.gallery_large_controls .arrow_left {background-image: url("../images/gallery_arrow_left_on.gif"); margin-left: 15px;}
+.gallery_large_controls .arrow_left {background-image: url("../images/gallery_arrow_left_on.gif"); margin-left: 0px;}
 .gallery_large_controls .arrow_right {background-image: url("../images/gallery_arrow_right_on.gif"); !important; float: right; margin-left: 741px;}
 .gallery_large_controls .arrow_left:hover img {opacity: 0; filter: alpha(opacity = 0);}
 .gallery_large_controls .arrow_right:hover img {opacity: 0; filter: alpha(opacity = 0);}
@@ -213,8 +213,8 @@ float: left; overflow: hidden;}
 	position: relative;
 	overflow: hidden;
 	width: 855px;
-	margin: 0 auto;
-	margin-left: 30px;
+	margin: 0 auto 0 42px;
+
 	height: 340px;
 }
 	.gallery_small .items_container {
@@ -255,8 +255,8 @@ float: left; overflow: hidden;}
 		position: absolute;
 
 	}
-	.gallery_controls .arrow_left {background-image: url("../images/gallery_arrow_left_on.gif"); top: 365px; left: 25px;}
-	.gallery_controls .arrow_right {background-image: url("../images/gallery_arrow_right_on.gif"); left: 925px; bottom: 0px;}
+	.gallery_controls .arrow_left {background-image: url("../images/gallery_arrow_left_on.gif"); top: 365px; left: 42px;}
+	.gallery_controls .arrow_right {background-image: url("../images/gallery_arrow_right_on.gif"); left: 935px; top: 365px;;}
 	.gallery_controls .arrow_left:hover img {opacity: 0; filter: alpha(opacity = 0);}
 	.gallery_controls .arrow_right:hover img {opacity: 0; filter: alpha(opacity = 0);}
 	
@@ -398,7 +398,7 @@ float: left; overflow: hidden;}
 	display: inline;
 	width: 200px;
 	margin-right: 1%;
-	margin-left: 1%;
+	margin-left: 20px;
 	float:left;
 }
 	.client_tittle, .client_item, .client_date {color: #2f2f2f; font-size: 12px;}
