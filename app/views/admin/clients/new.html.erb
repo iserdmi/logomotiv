@@ -9,6 +9,10 @@
     <%= f.text_field :title %>
   </p>
   <p>
+	<%= f.label :image, "Картиночка" %>
+	<%= f.file_field :image %>
+  </p>
+  <p>
     <%= f.submit 'Создать' %>
   </p>
 <% end %>

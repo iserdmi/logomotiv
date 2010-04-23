@@ -32,7 +32,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'portfolio/:section/:action', :controller => :portfolio
   map.connect 'portfolio/:section/p/:slug', :controller => :portfolio, :action => :show
 
-
+  map.connect 'clients', :controller => :clients
 
   
   
