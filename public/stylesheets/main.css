@@ -301,7 +301,7 @@ float: left; overflow: hidden;}
 		position: relative;
 		float: left;
 	}
-	.horizontal_menu li a, .horizontal_menu li p {
+	.horizontal_menu li a, .horizontal_menu li .red {
 		position: relative;
 		display: block;
 		line-height: 31px;
@@ -328,6 +328,12 @@ float: left; overflow: hidden;}
 	}
 	.horizontal_menu li .red_arrow {
 		background-image: url("../images/horizontal_menu_arrow_red.png");
+	}
+	.horizontal_menu .red a {
+	background-color:#FB0303;
+	background-image:none;
+	color:white;
+	font-weight:bold;
 	}
 	.horizontal_menu p {
 		font-weight: bold;
