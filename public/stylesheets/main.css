@@ -242,7 +242,7 @@ float: left; overflow: hidden;}
 	}
 	.gallery_small .items_container .gallery_item:hover img {opacity: 0.2;}
 	.gallery_small .items_container .gallery_item:hover .caption {display:block;}
-	.gallery_small .items_container .gallery_item .caption {display:none; color: white; position: absolute; top:5px; margin-left: 10px;}
+	.gallery_small .items_container .gallery_item .caption {display:none; color: white; width: 140px; position: absolute; top:95px; margin-left: 10px;}
 	.gallery_controls .arrow_left, .gallery_controls .arrow_right {
 		background: transparent;
 		background-repeat: no-repeat;
