@@ -44,7 +44,7 @@ h1.company { font-size: 18px; font-family: arial, Verdana, Arial, Helvetica, san
 h1.history { color: #000; font-size: 16px; margin: 0 0 0.67em; }
 p.history { color: #000; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 21px; }
 p.history2 { color: #4d4d4d; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 21px; }
-a:link.why { height: 26px; padding: 3px; border-bottom: 1px dashed #fff; color: #fff; background: #000; font-size: 16px; font-family: arial, Verdana, Helvetica, sans-serif; text-decoration: none; outline-color: #fff; }
+a:link.why { height: 26px;  border-bottom: 1px dashed #fff; color: #fff; background: #000; font-size: 16px; font-family: arial, Verdana, Helvetica, sans-serif; text-decoration: none; outline-color: #fff; }
 a:visited.why { color: #fff; }
 
 a:active.why { color: #fff; }

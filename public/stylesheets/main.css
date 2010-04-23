@@ -534,9 +534,9 @@ div.items div.active {
 	width: 100%;
 }
 
-#black { background-color: #000; height: 440px; margin-left: -30px; padding: 10px; overflow: hidden; width: 1300px; position: absolute; z-index: 12; left: 0px; padding-left: 50px;	}
+#black { background-color: #000; height: 440px; margin-left: -280px; overflow: hidden; width: 1650px; position: relative; z-index: 12; left: 0px; display: none; 	}
 #black > div { position: relative;}
-.toggle-button { color: black; height: 26px; width: 135px; left: 15px; top: 1px; z-index: 1; visibility: visible; }
+.toggle-button { padding-left: 8px; background: black; height: 30px; padding-top: 3px; margin-top: 10px; width: 135px; left: 15px; top: 1px; z-index: 1; visibility: visible; }
 #shema { height: 319px; width: 536px; left: 180px; top: 60px; position: absolute; z-index: 1; }
 #textwhite1 { height: 73px; width: 330px; left: 440px; top: 30px; position: absolute; z-index: 2; }
 #textwhite2 { height: 40px; width: 330px; left: 440px; top: 332px; position: absolute; z-index: 2; }
