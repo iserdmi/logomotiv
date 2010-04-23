@@ -7,7 +7,7 @@
 					<div class="gallery_large">
 						<div class="items_container items">
 							<% Image.all.each do |image| %>
-							<div class="gallery_item"><a class="title" href="<%= image.url %>"><%= image.alt %></a><%= image_tag image.image.url, :alt => image.alt %></div>
+							<div class="gallery_item"><a class="title" href="<%= image.url %>"><%= image.alt %></a><a href="<%= image.url %>"><%= image_tag image.image.url, :alt => image.alt %></a></div>
 							<% end %>
 						</div>
 						
