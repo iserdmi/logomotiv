@@ -1,7 +1,7 @@
 <div class="container">
 <h1>Создать новичка</h1>
 
-<% form_for(["admin", @client]) do |f| %>
+<% form_for(["admin", @client], :html => {:multipart => true}) do |f| %>
   <%= f.error_messages %>
 
   <p>
