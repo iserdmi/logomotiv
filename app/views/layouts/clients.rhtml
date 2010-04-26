@@ -8,33 +8,28 @@
 
 		<div class="clear"></div>
 	</div>
-	<div class="gallery_small">
-		<div class="items_container items">
+	<div class="gallery_small" style="overflow:auto;height:auto;">
+	
 				<% @clients.each do |client| %>
 				
-		
-				<%=cycle('<div class="gallery_item_container">','', :name => "open")%>
+	
 				<div class="gallery_item">
 					<a href="/portfolio/<%=client.projects.first.slug %>/p/<%=client.projects.first.slug%>"><%= image_tag client.projects.first.image.url %></a>
 				</div>
-			    <%=cycle("","</div>", :name => "close")%>
 
 			    <% if client == @clients.last && current_cycle("close") == "" %></div><% end %>
 	
 				<% end %>
 		
-		</div>
+
 		
 	</div>
-	<div class="left gallery_controls">
+	<!--<div class="left gallery_controls">
 		<a class="arrow_left prev" href="javascript:void(0);"><img src="/images/gallery_arrow_left_off.gif" /></a>
 		<a class="arrow_right next" href="javascript:void(0);"><img src="/images/gallery_arrow_right_off.gif" /></a>
-	</div>
+	</div>-->
 	<div class="clear"></div>
 </div>
-<script type="text/javascript">
-$('.gallery_small').scrollable({clickable: false});
-</script>
 
 
 
