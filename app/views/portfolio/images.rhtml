@@ -14,7 +14,7 @@
 			<%=cycle('<div class="gallery_item_container">','', :name => "open")%>
 			<div class="gallery_item">
 				<a href="/portfolio/<%=h params[:section] %>/p/<%=project.slug%>"><%= image_tag project.image.url %></a>
-			   <div class="caption"><a href="/portfolio/<%=h params[:section] %>/p/<%=project.slug%>"><%=project.name%></a></div>
+			   <div class="caption"><a href="/portfolio/<%=h params[:section] %>/p/<%=project.client.title%>"><%=project.name%></a></div>
 			</div>
 		    <%=cycle("","</div>", :name => "close")%>
 
