@@ -41,11 +41,13 @@ $("a.review").colorbox({opacity: 0.5});
 <% end %>
 </p><br/>
 <% end %>
+<% if @project.sidebar.size > 5 %>
 <p><a class="toggle_link" onclick="$('#workers').slideToggle();">Над проектом работали:</a><br/>
 <div id="workers"><br/>
 <%= @project.sidebar if @project.sidebar %>
 </div>
 </p>
+<% end %>
 </div>
 
 <% end %>

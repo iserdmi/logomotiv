@@ -134,6 +134,7 @@ float: left; overflow: hidden;}
 	margin-top: -10px;
 	top:30px;
 	display: block;
+	cursor: pointer;
 }
 .disabled { display: block !important;}
 .gallery_large_portfolio .prev{margin-left: 15px;}
@@ -432,6 +433,7 @@ float: left; overflow: hidden;}
 			left: 220px;
 			margin-top: -10px;
 			display: block;
+			cursor: pointer;
 		}
 		
 		.gallery_large_portfolio .items_container {
