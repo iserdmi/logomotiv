@@ -58,7 +58,9 @@ class Admin::ProjectsController < AdminController
   # PUT /admin_projects/1.xml
   def update
     @project = Project.find(params[:id])
-
+    if params[:project][:tpl] == 'tpl2' && @project.tpl == 'tpl1'
+      params[:project][:header] = @project.header+@project.about+@project.task+@project.solution+@project.image_html+@project.image_caption
+    end
     respond_to do |format|
       if @project.update_attributes(params[:project])
         flash[:notice] = 'Project was successfully updated.'
