@@ -14,11 +14,10 @@
 				
 	
 				<div class="gallery_item">
-					<a href="/portfolio/<%=client.projects.first.slug %>/p/<%=client.projects.first.slug%>"><%= image_tag client.projects.first.image.url %></a>
+					<a href="/portfolio/<%=client.projects.first.slug %>/p/<%=client.projects.first.slug%>"><%= image_tag client.image.url %></a>
 				</div>
 
-			    <% if client == @clients.last && current_cycle("close") == "" %></div><% end %>
-	
+			    	
 				<% end %>
 		
 
