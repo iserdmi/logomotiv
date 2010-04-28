@@ -12,6 +12,6 @@ module ApplicationHelper
   end
   
   def remove_html(str)
-    return str.sub("<*>", "")
+    return str.sub("<*>", "") if str
   end
 end
