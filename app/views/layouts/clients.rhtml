@@ -14,7 +14,7 @@
 				
 	
 				<div class="gallery_item">
-					<a href="/portfolio/<%=client.projects.first.slug %>/p/<%=client.projects.first.slug%>"><%= image_tag client.image.url, :onmouseover => 'grayscale(this);', :onmouseout=> 'grayscale.reset(this);' %></a>
+					<a href="/portfolio/<%=client.projects.first.slug %>/p/<%=client.projects.first.slug%>"><%= image_tag client.image.url %></a>
 				</div>
 
 			    	
@@ -348,7 +348,15 @@ var grayscale = (function(){
 })();
 
 $(document).ready(function(){
-	grayscale.prepare( $('.gallery_img img') );
-})
+//	grayscale.prepare( $('.gallery_item img') );
+    grayscale($('.gallery_item'));
+$(".gallery_item").mouseover(function(){
+	grayscale.reset($(this));
+});
+$(".gallery_item").mouseout(function(){
+	grayscale($(this));
+});
+});
+
 </script>
 <% end %>
