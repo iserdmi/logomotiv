@@ -12,9 +12,9 @@
 			
 			<% @projects.each do |project| %>
 			<%=cycle('<div class="gallery_item_container">','', :name => "open")%>
-			<div class="gallery_item">
+			<div class="gallery_item" onclick="document.location.href='/portfolio/<%=h params[:section] %>/p/<%=project.slug%>'" style="curosr:pointer;">
 				<a href="/portfolio/<%=h params[:section] %>/p/<%=project.slug%>"><%= image_tag project.image.url %></a>
-			   <div class="caption"><a href="/portfolio/<%=h params[:section] %>/p/<%=project.slug%>"><%=project.nav_title%></a></div>
+			   <div class="caption"><a href="/portfolio/<%=h params[:section] %>/p/<%=project.slug%>"><%=remove_html(project.nav_title)%></a></div>
 			</div>
 		    <%=cycle("","</div>", :name => "close")%>
 

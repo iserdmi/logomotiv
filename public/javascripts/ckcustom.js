@@ -54,8 +54,7 @@ CKEDITOR.addStylesSet( 'my_styles',
     // Block Styles
 
     // Inline Styles
-    { name : 'CSS Style', element : 'span', attributes : { 'class' : 'my_style' } },
-    { name : 'Marker: Yellow', element : 'span', styles : { 'background-color' : 'Yellow' } },
+    { name : 'Заголовок 1', element : 'h1', attributes: { 'class' : 'nil'} },
 	{ name : 'Стиль 1', element : 'span', attributes: { 'class' : 'style1'} },
 	{ name : 'Стиль 2', element : 'span', attributes: { 'class' : 'style2'} },
 	{ name : 'Стиль 3', element : 'span', attributes: { 'class' : 'style3'} },

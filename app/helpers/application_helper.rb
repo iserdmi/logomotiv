@@ -10,4 +10,8 @@ module ApplicationHelper
   def current_arrow
     return '<img src="/images/arrow-red.gif" alt="Arrow-red"/>'
   end
+  
+  def remove_html(str)
+    return str.sub("<*>", "")
+  end
 end
