@@ -350,10 +350,13 @@ var grayscale = (function(){
 $(document).ready(function(){
 //	grayscale.prepare( $('.gallery_item img') );
     grayscale($('.gallery_item'));
+	$(".gallery_item").css("opacity", 0.5)
 $(".gallery_item").mouseover(function(){
+	$(this).css('opacity', 1.0)
 	grayscale.reset($(this));
 });
 $(".gallery_item").mouseout(function(){
+	$(this).css('opacity', 0.5)
 	grayscale($(this));
 });
 });
