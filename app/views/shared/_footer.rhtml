@@ -14,12 +14,13 @@
 			<div class="login hidden">
 				<a class="close" href="javascript:void(0);" onclick="$('.login').slideToggle();">&times;</a>
 				<div class="top"><div class="t_l"></div><div class="t_r"></div></div>
-				<form>
+				<form method="POST" name="redmine" action="http://redmine.boozinga.ru/login">
+				<input type="hidden" value="jiXJVRAY76+JUCxFEDlfaQr9lv5nI48qgCqbS9UrBPk=" name="authenticity_token"/>
 				<p>логин</p>
-				<input type="text" />
+				<input type="text" name="username" />
 				<p>пароль</p>
-				<input type="password" />
-				<a class="submit">Войти</a>
+				<input type="password" name="password" />
+				<a class="submit" style="cursor:pointer;" onclick="document.redmine.submit();">Войти</a>
 				</form>
 				<div class="bottom"><div class="b_l"></div><div class="b_r"></div></div>
 			</div>
