@@ -32,26 +32,14 @@ $('.gallery_large_portfolio').scrollable({size: 1, clickable: true}).circular();
 	</div>
 	<div class="clear"></div>
 	<div class="split_line_gray"></div>
+	<% ['ident', 'graphical_design', 'sites', 'concepts'].each do |section| %>
 	<div class="cols_4">
-		<% Project.find(:all, :conditions => {:section => 'ident'}, :limit => 5).each do |p| %>
+		<% Project.find(:all, :conditions => {:section => section}, :limit => 5, :order => 'created_at DESC').each do |p| %>
 		<p class="proj_item"><%= p.nav_title %></p>
 		<% end %>
 	</div>
-	<div class="cols_4">
-		<% Project.find(:all, :conditions => {:section => 'graphical_design'}, :limit => 5).each do |p| %>
-		<p class="proj_item"><%= p.nav_title %></p>
-		<% end %>
-	</div>
-	<div class="cols_4">
-		<% Project.find(:all, :conditions => {:section => 'sites'}, :limit => 5).each do |p| %>
-		<p class="proj_item"><%= p.nav_title %></p>
-		<% end %>
-	</div>
-	<div class="cols_4">
-		<% Project.find(:all, :conditions => {:section => 'concepts'}, :limit => 5).each do |p| %>
-		<p class="proj_item"><%= p.nav_title %></p>
-		<% end %>
-	</div>
+	<% end %>
+	
 	
 	<div class="clear"><br /><br /></div>
 </div>

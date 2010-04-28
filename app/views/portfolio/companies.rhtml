@@ -9,10 +9,10 @@
 		<div class="clear"></div>
 	</div>
 	<% Branch.all.each do |branch| %>
-	<% if branch.projects.find(:all, :conditions => {:section => params[:section]}).size > 0 %>
+	<% if branch.projects.find(:all, :conditions => {:section => params[:section]}, :order => 'created_at DESC').size > 0 %>
 	<div class="cols_5">
 		<h2 class="client_tittle"><%= branch.title %></h2>
-		<% branch.projects.find(:all, :conditions => {:section => params[:section]}).each do |project| %>
+		<% branch.projects.find(:all, :conditions => {:section => params[:section]}, :order => 'created_at DESC').each do |project| %>
 		<p class="client_item"><%=project.nav_title%></p>
 		<p class="client_date"><%=project.created_at.strftime("%d.%m.%y")%></p>
 		<% end %>
