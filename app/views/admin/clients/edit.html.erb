@@ -14,10 +14,17 @@
 	<%= f.label :image, "Картиночка" %>
 	<%= f.file_field :image %>
   </p>
+  <p>
+	<%= f.label :image, "Картиночка серенькая" %>
+	<%= f.file_field :grey_image %>
+  </p>
 <% if @client.image %>
 <%= image_tag @client.image.url %>
 <% end %>
 
+<% if @client.grey_image %>
+<%= image_tag @client.grey_image.url %>
+<% end %>
 		<div class="clear"></div>
 		
 
