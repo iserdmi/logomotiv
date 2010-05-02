@@ -506,3 +506,15 @@ p, a, label, #projects, #clients {
 	padding: 3px;
 	font-size: 16px;
 }
+
+.slidetoggle {
+  cursor: pointer;
+  border-bottom: 1px dashed;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.slidetoggle:after {
+  clear: both;
+}
+

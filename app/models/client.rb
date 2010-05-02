@@ -3,4 +3,6 @@ class Client < ActiveRecord::Base
   belongs_to :page #, :through => :projects
   has_attached_file :image
   has_attached_file :grey_image
+  default_scope :order => 'position'
+  sortable
 end

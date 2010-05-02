@@ -5,6 +5,8 @@
 <fieldset>
   <legend></legend>
 <% form_for ["admin", @project], :method => @method, :html => {:multipart => true} do |f| -%>
+<a onclick="$('#info').slideToggle();" class="slidetoggle">Общая информация</a><br/>
+<div id="info" style="display:none;">
   <p><%= f.label :name, "Название" %>
 	  <%= f.text_field :name %>
   </p>
@@ -37,17 +39,17 @@
   <p>
 	<%= f.label :image, "Картинка" %><br/>
 	<%= f.file_field :image%><br/>
-	<%= image_tag @project.image.url if @project.image %>
+	<%= image_tag @project.image.url if @project.image.exists? %>
   <p>
   <p>
 	<%= f.label :case, "Кейс" %><br/>
 	<%= f.file_field :case %><br/>
-	<%= link_to @project.case.url if @project.case %>
+	<%= link_to @project.case.name, @project.case.url if @project.case.exists? %>
   <p>
   <p>
 	<%= f.label :image, "Отзыв" %><br/>
 	<%= f.file_field :review %><br/>
-	<%= image_tag @project.review.url, :width => 40, :height => 40 if @project.review %>
+	<%= image_tag @project.review.url, :width => 40, :height => 40 if @project.review.exists? %>
   <p>
 	<%= f.label :client_id, "Клиент" %><br/>
 
@@ -57,16 +59,25 @@
   <p><%= f.label :created_at, "Дата" %>
 	<%= f.date_select :created_at, :start_year => 2003 %>
   </p>
+</div>
+<a onclick="$('#overs').slideToggle();" class="slidetoggle">За кадром</a><br/>
+<div id="overs" style="display:none;">
   <p>
   <%= f.label :overs, "За кадром" %><br/>
   <%= ckeditor_textarea("project", "overs", :width => '780px', :height => '300px') %>
 
   </p>
+</div>
+<a onclick="$('#block').slideToggle();" class="slidetoggle">Блок</a><br/>
+<div id="block" style="display:none;">
   <p>
   <%= f.label :overs, "Блок" %><br/>
   <%= ckeditor_textarea("project", "sidebar", :width => '400px', :height => '300px') %>
 
   </p>
+</div>
+<a onclick="$('#view').slideToggle();" class="slidetoggle">Шаблон и внешний вид</a><br/>
+<div id="view" style="display:none;">
   <p>
 	<%= f.label :template, "Шаблон" %>
 	<%= f.select :template, ["tpl1", "tpl2", "tpl3"] %>

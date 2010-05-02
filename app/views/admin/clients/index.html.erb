@@ -5,18 +5,22 @@
   <tr>
     <th>Название</th>
   </tr>
-
+<ul id="clients">
 <% @clients.each do |client| %>
-  <tr>
-    <td><%=h client.title %></td>
-    <td><%= link_to 'Просмотр', admin_client_path(client) %></td>
-    <td><%= link_to 'Редактировать', edit_admin_client_path(client) %></td>
-    <td><%= link_to 'Уничтожить', admin_client_path(client), :confirm => 'Вы уверены?', :method => :delete %></td>
-  </tr>
+<% content_tag_for("li", client) do %>
+
+    <%=h client.title %>
+    <%= link_to 'Просмотр', admin_client_path(client) %>
+    <%= link_to 'Редактировать', edit_admin_client_path(client) %>
+    <%= link_to 'Уничтожить', admin_client_path(client), :confirm => 'Вы уверены?', :method => :delete %>
+
 <% end %>
+
+<% end %>
+</ul>
 </table>
 
 <br />
-
-<%= link_to 'Новый альбом', new_admin_client_path %>
+<%= sortable_element("clients", :url => { :action => "sort" }	) %>
+<%= link_to 'Новый клиент', new_admin_client_path %>
 </div>

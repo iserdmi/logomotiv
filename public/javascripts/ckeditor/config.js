@@ -1,1 +1,1 @@
-/Users/andreika/logomotiv/public/javascripts/ckcustom.js
+/home/d2nam/rails-projects/logomotiv/public/javascripts/ckcustom.js

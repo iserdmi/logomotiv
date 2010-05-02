@@ -82,4 +82,14 @@ class Admin::ClientsController < AdminController
       format.xml  { head :ok }
     end
   end
+
+  def sort
+      if params['clients']
+        params['clients'].each_with_index do |id, index|
+          Client.update_all(['position=?', index+1], ['id=?', id])
+        end
+      end  
+        render :nothing => true
+    end
+
 end

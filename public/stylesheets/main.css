@@ -629,3 +629,5 @@ em {
 
 .map { position: absolute; top: 90px;}
 .size_14 { font-size: 14px;}
+
+div.page_content a:hover { color: red; }
