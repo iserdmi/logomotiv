@@ -1,0 +1,877 @@
+﻿<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type='text/javascript' src='js/jquery.js'></script>
+	<script type='text/javascript' src='js/jquery.scrollTo-min.js'></script>
+ <script type="text/javascript" src="js/jquery.pngFix.js"></script> 
+ <script type="text/javascript" src="js/jquery.simplemodal.js"></script> 
+ 
+ <script type="text/javascript"> 
+    $(document).ready(function(){ 
+        $(document).pngFix(); 
+    }); 
+</script>
+ 	<link rel="stylesheet" type="text/css" href="jquery.fancybox/jquery.fancybox.css" media="screen" />
+	<script type="text/javascript" src="jquery.fancybox/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="jquery.fancybox/jquery.fancybox-1.2.1.pack.js"></script> 
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			$("a.fancy").fancybox({
+    	hideOnContentClick: true,
+    	overlayShow: true,
+    	zoomSpeedIn: 500,
+    	zoomSpeedOut:600,
+		padding: 0,
+		imageScale: false,
+		centerOnScroll:	false,
+		overlayOpacity		:	0.5
+    });
+
+		});
+	</script> 
+	
+<script type="text/javascript">
+function check_email(email) {
+    var template = /\w+@\w+\.[a-z]{2,4}/;
+    if (template.test(email)) {
+        return true;
+    }
+    return false; 
+}
+
+ function send_form2(){
+		$('#f2_err').html('');
+		$('#f2_res').html('');
+         var fio = $('#f2_name').val();
+         var phone = $('#f2_phone').val();
+         var mail = $('#f2_mail').val();
+         var type = $("input[type=radio][name=f2_type][checked]").attr("value");
+         var design = $("input[type=radio][name=f2_design][checked]").attr("value");
+
+         var tir = $('#f2_tir').val();
+         var text = $('#f2_text').val();
+		 
+
+		// var act=$(":radio[name=rate]").filter(":checked").val();
+		 
+		 if(fio==''){
+		   $('#f2_err').html('Представьтесь!');
+		   return;
+		 }
+		 
+		 if(phone==''){
+		   $('#f2_err').text('Введите контактный телефон');
+		   return;
+		 }
+		 
+		 if(mail==''){
+		   $('#f2_err').text('Введите контактный e-mail');
+		   return;
+		 }
+		 
+		 if (!check_email(mail)){
+		   $('#f2_err').text('E-mail таким быть не может!');
+		   return;
+		 }
+		 
+		 if(tir==''){
+		   $('#f2_err').text('Нам нужно знать тираж');
+		   return;
+		 }
+		 
+		 
+		 
+		 
+	      vars = new Array();
+          vars[0] = new Array('fio', fio);
+          vars[1] = new Array('phone',phone);
+          vars[2] = new Array('mail',mail);
+          vars[4] = new Array('type',type);
+		  vars[5] = new Array('design',design);
+		  vars[6] = new Array('tir',tir);
+		  vars[7] = new Array('text',text);
+
+   process_ajax("zakaz.php",vars, function(){$('#form2').html('Заявка отправлена');}, 'f2_res', loading('f2_res'), false);
+ }
+ 
+ 
+ function send_form1(){
+		$('#f1_err').html('');
+		$('#f1_res').html('');
+         var fio = $('#f1_name').val();
+         var phone = $('#f1_phone').val();
+         var mail = $('#f1_mail').val();
+         var type = $("input[type=radio][name=f1_type][checked]").attr("value");
+
+         var text = $('#f1_text').val();
+		 
+		 if(fio==''){
+		   $('#f1_err').html('Представьтесь!');
+		   return;
+		 }
+		 
+		 if(phone==''){
+		   $('#f1_err').text('Введите контактный телефон');
+		   return;
+		 }
+		 
+		 if(mail==''){
+		   $('#f1_err').text('Введите контактный e-mail');
+		   return;
+		 }
+		 
+		 if (!check_email(mail)){
+		   $('#f1_err').text('E-mail таким быть не может!');
+		   return;
+		 }
+
+	      vars = new Array();
+          vars[0] = new Array('fio', fio);
+          vars[1] = new Array('phone',phone);
+          vars[2] = new Array('mail',mail);
+          vars[4] = new Array('type',type);
+		  vars[7] = new Array('text',text);
+
+   process_ajax("zakaz_ill.php",vars, function(){$('#form1').html('Заявка отправлена');}, 'f1_res', loading('f1_res'), false);
+ }
+ 
+function loading(where) {
+	document.getElementById(where).innerHTML = "<img src='img/loader.gif' />";
+}
+
+function process_ajax(file, vars, oncomplete, element, loading, exec){
+ if(loading!='')
+   loading;
+	   var var_string = new Object;
+	   var_string['was_ajax']=1;
+
+         if(vars!=''){
+			var_string['was_ajax']=1;
+           for(key in vars)
+			var_string[vars[key][0]]=vars[key][1];
+          }
+
+$.post(file, var_string, function(data) { 
+   if(exec){
+     return eval(data);
+    }
+   else{
+    $('#'+element).empty();
+    $('#'+element).append(data);
+   }
+   oncomplete();
+});
+
+}
+</script>
+<link rel="stylesheet" href="main.css" type="text/css" />
+<!--[if gte IE 7]><style type="text/css" media="screen">/* <![CDATA[ */ @import url(ie7.css?1); /* ]]> */</style><![endif]-->
+<!--[if IE 6]><style type="text/css" media="screen">/* <![CDATA[ */ @import url(ie6.css?1); /* ]]> */</style><![endif]-->
+</head>
+<body>
+    <div id="helper"></div>
+	
+<div id="form2" class="form1" style="display: none;">
+  <div>
+  <p class="ftitle">
+    Представьтесь, пожалуйста
+	</p>
+	<p>
+	<input class="txt" type="text" id="f2_name" >
+	</p>
+  </div>
+  
+  <div style="margin-top: 5px">
+  <p class="ftitle">
+    Ваш телефон
+	</p>
+	<p>
+	<input class="txt" type="text" id="f2_phone" >
+	</p>
+  </div>
+  
+  <div style="margin-top: 5px">
+  <p class="ftitle">
+    Эл. почта
+	</p>
+	<p>
+	<input class="txt" type="text" id="f2_mail" >
+	</p>
+  </div>
+ 
+  <div style="margin-top: 20px; float: left">
+  <p class="ftitle" style="float: left">
+    Тип календаря
+	</p>
+	<p style="float: left; margin-left:30px">
+	 <table>
+	   <tr>
+	     <td valign="top" style="padding-top: 3px">
+		  <input value="Трио" type="radio" name="f2_type" />
+		 </td>
+		 <td class="td_t" valign="top">
+		  Трио
+		 </td>
+	   </tr>
+	   <tr>
+	     <td valign="top" style="padding-top: 3px">
+		  <input value="Домик" type="radio" name="f2_type" />
+		 </td>
+		 <td class="td_t" valign="top">
+		  Домик
+		 </td>
+	   </tr>
+	   <tr>
+	     <td valign="top" style="padding-top: 3px">
+		  <input value="что-то другое" type="radio" name="f2_type" />
+		 </td>
+		 <td class="td_t" valign="top">
+		  что-то другое
+		  <br/>
+		  </br/>
+		 </td>
+	   </tr>
+	 </table>
+	</p>
+	<span style="clear: both"></span>
+  </div>
+  
+     <div style="margin-top: 20px; float; left;">
+  <p class="ftitle" style="float: left; width: 40px; margin-left: 30px">
+    Дизайн
+	</p>
+	<p style="float: left; margin-left:30px">
+	 <table>
+	   <tr>
+	     <td valign="top" style="padding-top: 3px">
+		  <input value="есть" type="radio" name="f2_design" />
+		 </td>
+		 <td class="td_t" valign="top">
+		  Есть
+		 </td>
+	   </tr>
+	   <tr>
+	     <td valign="top" style="padding-top: 3px">
+		  <input value="надо делать" type="radio" name="f2_design" />
+		 </td>
+		 <td class="td_t" valign="top">
+		  Надо делать
+		 </td>
+	   </tr>
+	 </table>
+	</p>
+		<span style="clear: both"></span>
+  </div>
+  
+  <div style="margin-top: 10px; clear: both; height: 20px">
+  <p class="ftitle" style="float: left; width: 120px">
+    Тираж 
+	</p>
+	<p style="float: left">
+	<input class="txt" type="text" id="f2_tir" style="width: 100px" > шт.
+	</p>
+  </div>
+  
+  
+    <div style="margin-top: 10px; clear: both">
+  <p class="ftitle">
+    Комментарии
+	</p>
+	<p>
+	<textarea class="txt_ar" id="f2_text" style="height: 50px"></textarea>
+	</p>
+  </div>
+  
+      <div style="margin-top: 10px;" >
+<img style="cursor: pointer; float: left" onclick="send_form2()" src="img/form/knopul.png" border="0"  />
+  <div style="color: red; font-size: 14px; float: left;margin-left: 10px; padding-top: 10px " id="f2_err">
+  </div>
+   <div style="color: green; font-size: 14px; float: left;margin-left: 10px; padding-top: 10px " id="f2_res">
+  </div>
+  </div>
+  
+      <div style="clear: both; position: relative; width: 93px; height: 25px; background: #E7E7E7; color: #272727; font-size: 12px; padding-top: 4px; left: 448px; top: -420px" >
+		<span  class="simplemodal-close" style="border-bottom: 2px dashed #272727; margin-left: 20px; cursor: pointer; ">Закрыть</span>
+  </div>
+  
+</div>
+
+<a href="http://logomotiv.ru">
+<img src="img/headerfuter/logo.png" style=" position: absolute; left: 0; top: 0" border="0" />
+</a>
+<div class="main">
+
+<div class="menu">
+<ul>
+ <li>
+ <a style="position: relative" href="javascript:void(0)" onclick="$('.menu a').removeClass('active'); $(this).addClass('active'); $('#scroll_pane').stop().scrollTo({ top:0, left:-30},700);" class="active">Календарь ТРИО (с фишкой)</a>
+ </li>
+ <li>
+ <a style="position: relative" href="javascript:void(0)" onclick="$('.menu a').removeClass('active'); $(this).addClass('active');$('#scroll_pane').stop().scrollTo('#cont2',700);">Календарь «Домик»</a>
+ </li>
+ <li>
+ <a style="position: relative" id="ill_a" href="javascript:void(0)" onclick="$('.menu a').removeClass('active'); $(this).addClass('active');$('#scroll_pane').stop().scrollTo({ top:0, left:2025},700);">Иллюстрация на календарь</a>
+ </li>
+</ul>
+</div>
+
+<div class="content" id="scroll_pane">
+<div style="width: 30000px" >
+
+<div class="cont" id="cont1" style="width: 800px; position: normal; left 0px; margin-left: 30px; float: left; ">
+<h1>Календарь «Трио»</h1>
+<p class="trio1">
+В этом году он стал стильным.
+</p>
+<p class="trio2">
+Дизайн-студия Logomotiv разработала и внедрила в производство новую календарную сетку для стандартных блоков. Мы выбрали наиболее читабельный шрифт, убрали лишние элементы и подложки, разработали пиктограммы для государственных праздников, что значительно освежило календарь. 
+</p>
+
+<p class="strela_left">
+<img id="strela_left" onclick="setka_left()" style="cursor: pointer; display: none; position: relative"  src="img/trio/strela_left.png" border="0" />
+</p>
+<div class="trio3">
+<div style="width: 527px; height: 270px; overflow: hidden; position: relative; " id="tr1">
+<div style="width: 30000px; height: 270px">
+<div style="position: relative; float: left" id="im1">
+<img  style="position: relative"  src="img/trio/calendar/setka1.gif" border="0" />
+</div>
+<div style="position: relative; float: left" id="im2">
+<img style="position: relative"  src="img/trio/calendar/setka2.gif" border="0" />
+</div>
+<div style="position: relative; float: left" id="im3">
+<img style="position: relative"  src="img/trio/calendar/setka3.gif" border="0" />
+</div>
+<div style="position: relative; float: left" id="im4">
+<img style="position: relative"  src="img/trio/calendar/setka4.gif" border="0" />
+</div>
+</div>
+</div>
+</div>
+<p class="strela_right">
+<img id="strela_right" style="cursor: pointer; position: relative" onclick="setka_right()" src="img/trio/strela_right.png" border="0" />
+</p>
+
+<script type="text/javascript">
+var setka_all=4;
+var setka_current=1;
+function setka_left(){
+
+if(setka_current>1){
+	setka_current--;
+	$('#tr1').stop().scrollTo('#im'+setka_current,700);
+	if(setka_current==1){
+	 $('#strela_left').css('display','none');
+	}
+	if(setka_current<setka_all){
+		$('#strela_right').show();
+	}
+}
+
+}
+
+function setka_right(){
+if(setka_current<setka_all){
+	setka_current++;
+	$('#tr1').stop().scrollTo('#im'+setka_current,700);
+	if(setka_current==setka_all){
+	 $('#strela_right').css('display','none');
+	}
+	if(setka_current>1){
+		$('#strela_left').show();
+	}
+}
+
+}
+</script>
+
+<p class="trio4" onclick="">
+<a style="color:#7FC5D5; border-bottom: 1px dashed #7FC5D5; text-decoration: none" class="fancy" href="img/trio/big_kalendar.jpg">образец календаря</a>
+</p>
+
+<p class="trio5">
+По договоренности «ТРИО» с сеткой от Logomotiv можно изготовить с любым 
+<span style="text-decoration: underline">дизайном шпигеля</span>. 
+</p>
+
+<p class="trio6">
+Стоимость тиража
+<table class="price" cellspacing="0" cellpadding="15px" border="0" width="520px" style="color: #E0E0E0">
+ <tr>
+	<td>
+	Тираж
+	</td>
+	<td>100
+	</td>
+	<td>200
+	</td>
+	<td>300
+	</td>
+	<td><span style="color: #7C8381">шт</span>
+	</td>			
+ </tr>
+ <tr>
+	<td>
+		Цена (за 1 шт.)
+	</td>
+	<td>150
+	</td>
+	<td>130
+	</td>
+	<td>110
+	</td>
+	<td>
+	<img src="img/trio/znak_rublya.png" border="0" />
+	</td>
+ </tr>
+ <tr>
+	<td>
+	Стоимость
+	</td>
+	<td>15.000
+	</td>
+	<td>26.000
+	</td>
+	<td>33.000
+	</td>
+	<td>
+	</td>
+ </tr>
+</table>
+<div style="border-bottom: 2px solid #9A9A9A; width: 528px; height: 30px">
+</div>
+</p>
+
+<p class="trio7">
+
+<img style="cursor: pointer" onclick="$('#form2').modal();"  src="img/trio/krasny_knopul.png" border="0" />
+
+</p>
+
+<div class="trio8">
+<img src="img/trio/fishka2.png" border="0" />
+<p class="el1">
+А вы знаете, что мы можем сделать любой (!) тираж календаря? Да, действительно любой, даже одну штуку!
+</p>
+</div>
+
+<div class="trio9">
+<p  style="font-family: georgia; font-style: italic; font-size: 12px; width: 220px; color: #031327; font-weight: bold; margin-top:20px">
+Технические характеристики
+</p>
+<p  style="font-family: georgia; font-style: italic; font-size: 12px; width: 220px; line-height: 20px; margin-top: 10px">
+<b>шпигель:</b> 300*210 мм (печать 4+0, ламинация, картон 295 г/м кв);<br/>
+<b>блоки:</b> 292*150 мм (печать 2+0, офсетная бумага 80 г/м кВ);<br/>
+<b>размер подложки:</b> 300*180 мм (печать 4+0, картон 295 г/м кв);<br/>
+</p>
+</div>
+
+
+</div>
+
+
+
+<div class="cont" id="cont2" style="width: 900px; position: relative; left: 200px; top: 0px; float: left; padding-left: 30px">
+<p class="domik1">
+Не хотите ничего изобретать? Но хочется чего-то необычного? 
+Рецепт такой: берем всем известную основу и добавляем «фишку». 
+Вот, например, вариант нескучного календаря-домика. А еще лучше можно выделиться, заказав 
+<span style="border-bottom: 1px dashed #6FCCFC; color:#6FCCFC; cursor: pointer; text-decoration: none;" onclick="$('.menu a').removeClass('active'); $('#ill_a').addClass('active');$('#scroll_pane').stop().scrollTo({ top:0, left:2025},700);">авторскую иллюстрацию</span> на календарь.
+</p>
+
+<p class="domik2">
+<h1>Календарь «Домик»</h1>
+</p>
+
+<div class="domik3">
+ <img src="img/domik/krug_1.png" border="0" style="float: left; margin-right: 15px" />
+ <div class="domik_zag">
+ с индивидуальным перекидным блоком и курсором 
+ </div>
+ <div style="clear: both"></div>
+</div>
+
+<p class="trio6">
+Стоимость тиража
+<table class="price" cellspacing="0" cellpadding="15px" border="0" width="520px" style="color: #E0E0E0">
+ <tr>
+	<td>
+	Тираж
+	</td>
+	<td>100
+	</td>
+	<td>200
+	</td>
+	<td>300
+	</td>
+	<td><span style="color: #7C8381">шт</span>
+	</td>			
+ </tr>
+ <tr>
+	<td>
+		Цена (за 1 шт.)
+	</td>
+	<td>150
+	</td>
+	<td>100
+	</td>
+	<td>78
+	</td>
+	<td>
+	<img src="img/trio/znak_rublya.png" border="0" />
+	</td>
+ </tr>
+ <tr>
+	<td>
+	Стоимость
+	</td>
+	<td>15.000
+	</td>
+	<td>20.000
+	</td>
+	<td>23.400
+	</td>
+	<td>
+	</td>
+ </tr>
+</table>
+<div style="border-bottom: 2px solid #9A9A9A; width: 528px; height: 30px">
+</div>
+</p>
+
+<p class="domik4">
+ <img src="img/domik/krug_2.png" border="0" style="float: left; margin-right: 15px" />
+ <div class="domik_zag2">
+без перекидного блока 
+ </div>
+ <div style="clear: both"></div>
+</p>
+
+<p class="trio6">
+Стоимость тиража
+<table class="price" cellspacing="0" cellpadding="15px" border="0" width="520px" style="color: #E0E0E0">
+ <tr>
+	<td>
+	Тираж
+	</td>
+	<td>100
+	</td>
+	<td>200
+	</td>
+	<td>300
+	</td>
+	<td><span style="color: #7C8381">шт</span>
+	</td>			
+ </tr>
+ <tr>
+	<td>
+		Цена (за 1 шт.)
+	</td>
+	<td>39
+	</td>
+	<td>35
+	</td>
+	<td>33
+	</td>
+	<td>
+	<img src="img/trio/znak_rublya.png" border="0" />
+	</td>
+ </tr>
+ <tr>
+	<td>
+	Стоимость
+	</td>
+	<td>3.900
+	</td>
+	<td>7.000
+	</td>
+	<td>9.000
+	</td>
+	<td>
+	</td>
+ </tr>
+</table>
+<div style="border-bottom: 2px solid #9A9A9A; width: 650px; height: 30px">
+</div>
+</p>
+
+<p class="trio7">
+<img  style="cursor: pointer" onclick="$('#form2').modal();" src="img/trio/krasny_knopul.png" border="0" />
+</p>
+
+<div class="domik5">
+<p  style="font-family: georgia; font-style: italic; font-size: 12px; width: 220px; color: #031327; font-weight: bold; margin-top:15px">
+Технические характеристики
+</p>
+<p  style="font-family: georgia; font-style: italic; font-size: 12px; width: 230px; line-height: 20px; margin-top: 5px">
+<b>размер:</b> 115*200 мм<br/>
+<b>печать:</b> 4+0, ламинация, бумага 295 г/м кв); на основу – качественный картон<br/>
+</p>
+</div>
+
+<div class="domik6">
+<p>
+<img  src="img/domik/fishka.png" border="0" style="cursor: pointer; margin-left: 30px; z-index: 2; position: absolute;" onclick="if($('#fishka_open').css('display')=='none'){$('#fishka_open').css('display','inline')}else{$('#fishka_open').css('display','none')}" />
+<img id="fishka_open" onclick="$(this).css('display','none')" src="img/domik/fishka_open.png" style="position: absolute; z-index:1; left:60px; top: 30px; display: none; cursor: pointer" border="0" />
+</p>
+<p style="margin-top:117px;">
+<img src="img/domik/kalendar.png" border="0" style="z-index:-2; position: absolute; top: 200px" />
+</p>
+</div>
+
+</div>
+
+
+<div class="cont" id="cont3" >
+<p class="ill1">
+Авторская иллюстрация на календарь
+</p>
+
+<p class="ill2">
+Сделайте Ваш календарь полностью уникальным! <br/>
+Авторская иллюстрация – это стильное изображение, которое<br/>
+ будет только на вашем календаре. Мы можем сделать<br/> техническую иллюстрацию, коллаж, ручную графику <br/>
+ и 3D моделирование.
+</p>
+
+<p style="margin-top:27px">
+Хотите, чтобы ваш календарь радовал глаз клиентам и<br/> партнерам круглый год? Тогда закажите авторскую графику на<br/> любой тип календаря.
+</p>
+
+<p class="ill4">Примеры наших работ
+</p>
+
+<p class="ill_strela_left">
+<img style="cursor: pointer;display: none" onclick="ill_left()" src="img/trio/strela_left.png" border="0" id="ill_strela_left" />
+</p>
+
+<div class="ill5">
+<div style="overflow: hidden; position: relative" id="tr2" class="tr2">
+<div style="width: 30000px">
+<?
+$path=$_SERVER['DOCUMENT_ROOT'].'/2010/img/illustration/pic';
+ $d = opendir($path);
+ $c = 1;
+ while(($e=readdir($d))!=false)
+  {
+    $type = explode('.',$e);
+	$type = $type[(sizeof($type)-1)];
+	if($type!='jpg' && $type!='JPG' && $type!='gif' && $type!='jpeg' && type!='png')
+	continue;
+	
+?>
+
+
+<?
+ if($c>1){
+?>
+  <img style="margin-left: 11px" id="im_ill<?=$c?>"  src="img/illustration/pic/<?=$e?>" border="0" />
+<?
+ }else{
+?>
+  <img id="im_ill<?=$c?>"  src="img/illustration/pic/<?=$e?>" border="0" />
+<?
+ }
+?>
+
+<?
+	$c++;
+  }
+?>
+
+</div>
+</div>
+</div>
+
+<p class="ill_strela_right">
+<img style="cursor: pointer" onclick="ill_right()" src="img/trio/strela_right.png" border="0" id="ill_strela_right" />
+</p>
+
+<script type="text/javascript">
+var ill_all=<?=$c-1?>;
+var ill_current=1;
+function ill_left(){
+if(ill_current>1){
+	ill_current--;
+	$('#tr2').stop().scrollTo('#im_ill'+ill_current,700);
+	if(ill_current==1){
+	 $('#ill_strela_left').hide();
+	}
+	if(ill_current<ill_all){
+		$('#ill_strela_right').show();
+	}
+}
+
+}
+
+function ill_right(){
+if(ill_current<ill_all){
+	ill_current++;
+	$('#tr2').stop().scrollTo('#im_ill'+ill_current,700);
+	if(ill_current==ill_all){
+	 $('#ill_strela_right').hide();
+	}
+	if(ill_current>1){
+		$('#ill_strela_left').show();
+	}
+}
+
+}
+</script>
+
+<p class="ill6">
+Календарь с нашей графикой будет висеть на стенке весь год, а не отправится сразу в мусорную корзину. :)
+</p>
+
+<p class="ill7">
+<img style="cursor:pointer" onclick="$('#form1').modal();" src="img/illustration/green_knopul.png" border="0" />
+</p>
+
+<div class="ill8">
+<img src="img/illustration/green_pipka.png" border="0" />
+</div>
+
+
+<div id="form1" class="form1" style="display: none">
+  <div>
+  <p class="ftitle">
+    Представьтесь, пожалуйста
+	</p>
+	<p>
+	<input class="txt" type="text" id="f1_name" >
+	</p>
+  </div>
+  
+  <div style="margin-top: 10px">
+  <p class="ftitle">
+    Ваш телефон
+	</p>
+	<p>
+	<input class="txt" type="text" id="f1_phone" >
+	</p>
+  </div>
+  
+  <div style="margin-top: 10px">
+  <p class="ftitle">
+    Эл. почта
+	</p>
+	<p>
+	<input class="txt" type="text" id="f1_mail" >
+	</p>
+  </div>
+ 
+  <div style="margin-top: 20px">
+  <p class="ftitle" style="float: left">
+    Тип иллюстрации
+	</p>
+	<p style="float: left; margin-left:30px">
+	 <table>
+	   <tr>
+	     <td valign="top" style="padding-top: 3px">
+		  <input type="radio" value="Векторная" name="f1_type" />
+		 </td>
+		 <td class="td_t" valign="top">
+		  Векторная
+		 </td>
+	   </tr>
+	   <tr>
+	     <td valign="top" style="padding-top: 3px">
+		  <input value="Пластилин" type="radio" name="f1_type" />
+		 </td>
+		 <td class="td_t" valign="top">
+		  Пластилин
+		 </td>
+	   </tr>
+	   <tr>
+	     <td valign="top" style="padding-top: 3px">
+		  <input value="Фотоколлаж" type="radio" name="f1_type" />
+		 </td>
+		 <td class="td_t" valign="top">
+		  Фотоколлаж
+		 </td>
+	   </tr>
+	   <tr>
+	     <td valign="top" style="padding-top: 3px">
+		  <input value="что-то другое" type="radio" name="f1_type" />
+		 </td>
+		 <td class="td_t" valign="top">
+		  что-то другое
+		 </td>
+	   </tr>
+	 </table>
+	</p>
+  </div>
+  
+    <div style="margin-top: 10px; clear: both">
+  <p class="ftitle">
+    Описание задачи
+	</p>
+	<p>
+	<textarea class="txt_ar" id="f1_text"></textarea>
+	</p>
+  </div>
+  
+      <div style="margin-top: 10px;" >
+<img  style="cursor: pointer; float: left" onclick="send_form1()" src="img/form/knopul.png" border="0" />
+  <div style="color: red; font-size: 14px; float: left;margin-left: 10px; padding-top: 10px " id="f1_err">
+  </div>
+   <div style="color: green; font-size: 14px; float: left;margin-left: 10px; padding-top: 10px " id="f1_res">
+  </div>
+  </div>
+  
+      <div style="clear: both;  position: relative; width: 93px; height: 25px; background: #E7E7E7; color: #272727; font-size: 12px; padding-top: 4px; left: 448px; top: -420px" >
+		<span class="simplemodal-close" style="border-bottom: 2px dashed #272727; margin-left: 20px; cursor: pointer; ">Закрыть</span>
+  </div>
+  
+</div>
+
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<div class="footer">
+
+<div class="manager" style="float: left">
+<p class="ask1">
+  Задать вопрос менеджеру
+</p>
+<p class="ask2">
+<img style="border-style:none" alt="ICQ Status Indicator" src="http://status.icq.com/online.gif?icq=472524437&img=5" />
+<a href="http://web.icq.com/whitepages/message_me?uin=472524437&action=message" style="color: white; text-decoration: none">472524437</a> <span style="color: #939292">(Анна)</span>
+</p>
+ </div>
+ 
+<div class="logomotiv" style="float:left; margin-left: 307px">
+
+<div style="float: left; padding-top: 5px">
+<a href="http://logomotiv.ru"><img src="img/headerfuter/logo_logomotiv.gif" border="0" style="float: left" /></a>
+</div>
+
+<div style="float: left; margin-left: 27px">
+<p class="logo1">
+  Дизайн-студия <a href="http://logomotiv.ru" style="color: white; text-decoration: underline">Logomotiv</a>
+</p>
+<p  class="logo2">
+<span style="color: #939292">(812)</span> 572-39-03
+</p>
+<p  class="logo3">
+Лиговский проспект, <br/>дом 73, офис 606.
+</p>
+</div>
+
+ </div>
+ 
+</div>
+
+
+</div>
+
+</body>
+</html>

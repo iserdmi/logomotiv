@@ -1,0 +1,46 @@
+
+<%= render :partial => "shared/header" %>
+
+<div class="container">
+<div id="sidebar">
+					<ul class="main_menu">
+					<% if @page.parent %>
+					<% @page.parent.children.all.each do |p| %>
+				      <li><% if @page.path.include? p.permalink %><p><%= p.title %></p><% else %><a href="<%= p.path %>"><%= p.title %></a><% end %></li>
+				   <% end %>
+				   <% else %>
+					<% @page.children.find(:all, :conditions => {:visible => true}).each do |p| %>
+				      <li><% if @page.path.include? p.permalink %><p><%= p.title %></p><% else %><a href="<%= p.path %>"><%= p.title %></a><% end %></li>
+				   <% end %>
+				   <% end %>
+					</ul>
+					<br clear="all" />
+					<% if @page.blocks.left.first %>
+					<% @page.blocks.left.each do |block| %>
+					<%= block.content if block.content %>
+   					  <% block.assets.each do |asset|%>
+					    <%= link_to asset_icon(asset)+asset.data_file_name, asset.url %>
+					  <% end %>
+					<% end %>
+					<% end %>
+</div>
+				<%#='colspan="2"' unless @page.blocks.first %>
+<div class="page_content">
+
+Раздел находится в разработке.
+
+	<% @medias.each do |media| %>
+<p class="proj_item">
+<a href="/company/mediateka/<%=media.url %>"><%=media.name %></a>
+</p>
+
+  <% end %>
+				
+</div>
+
+</div>
+<div class="clear"></div>
+<%= render :partial => "shared/footer" %>
+
+</body>
+</html>

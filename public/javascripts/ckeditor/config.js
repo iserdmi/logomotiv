@@ -1,1 +1,1 @@
-/home/d2nam/rails-projects/logomotiv/public/javascripts/ckcustom.js
+/var/www/logomotiv/data/www/logomotiv.boozinga.ru/public/javascripts/ckcustom.js

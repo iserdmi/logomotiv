@@ -1,0 +1,37 @@
+.strela_left{
+position: absolute;
+left: 5px;
+top: 380px;
+}
+.strela_right{
+position: absolute;
+left: 570px;
+top: 380px;
+}
+
+.trio9{
+position: absolute;
+left: 590px;
+top: 160px;
+width: 290px;
+height: 196px;
+background: url(img/trio/teh_harakt.png) no-repeat 0 0;
+padding-left: 40px;
+padding-right:30px
+}
+
+div#cont3{
+width: 800px; position: relative; left: 200px; top: 0px; float: left; margin-left: 120px
+}
+
+.ill_strela_left{
+position: absolute;
+left: -25px;
+top: 515px;
+}
+.ill_strela_right{
+position: absolute;
+left: 707px;
+top: 515px;
+}
+

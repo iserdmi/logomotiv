@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<menu0 name="стартовый слайд">
+		<submenu0 name="стартовый слайд">
+			<slide0 mainTitle="" image="images/0.jpg"></slide0>
+		</submenu0>
+	</menu0>
+	<menu1 name="COMPANY">
+		<menuSlides>
+			слайдов в самом разделе "компания" нет, переходим на подменю "о компании"
+		</menuSlides>
+		<submenu1 name="About Power Machines">
+			<slide0 mainTitle="ABOUT POWER MACHINES" image="images/1.jpg" title="Power Machines»" text="Power Machines is the leading Russian manufacturer and supplier of complex power plant industry solutions, including engineering, production, supply, installation, maintenance and modernization of equipment for thermal, nuclear, hydraulic and combine-cycle power plants."></slide0>
+			<slide1 mainTitle="ABOUT POWER MACHINES" image="images/1.1.1.jpg" title="Company united capacities  of the world famous russian enterprises:" list="Leningradsky Metallichesky Zavod (1857)|Electrosila (1898)|Turbine Blades’ Plant (1966)|Kaluga Turbine Works (1946)|Power Engineering Research and Design Institute – NPO CKTI named after I.I. Polzunov (1927)|Energomachexport (1966)|Power Machines – Reostat Plant (1960)."></slide1>
+			<slide2 mainTitle="ABOUT POWER MACHINES" image="images/1.1.2.jpg" title="Power Machines today" text="Power Machines is the top power engineering plant in Russia, successfully competing on the global market with such international power equipment producers. Equipment of the Company with total output of 300 thousand MW is installed and successfully operates in 57 countries of the world:" list="More than 2,700 steam turbines, 2,550 turbo generators, 700 hydraulic turbines, 600 hydraulic generators.|4th place in the world by amount of installed equipment.|Around 80% of Russia and CIS power equipment market."></slide2>
+		</submenu1>
+		<submenu2 name="History">
+			<slide0 mainTitle="HISTORY" image="images/1.2.1.jpg" title="1857–1919" text="(b)1857.(/b) The largest enterprise specialized in power generating turbine production in Russia – Leningradsky Metallichesky Zavod (LMZ) was founded. During the next 10 years, Russia’s first facility for producing heating and ventilation devices started to operate at LMZ.
+(b)1898.(/b) Russia’s first production of electric machines established. Known worldwide as Electrosila a leading producer of electric machines.
+(b)1907.(/b) The first turbine manufactured by Leningradsky Metallichesky Zavod was commissioned."></slide0>
+			<slide1 mainTitle="HISTORY" image="images/1.2.2.jpg" title="1920–1929"  text="(b)1924.(/b) The first Russian hydro turbine was manufactured by Leningradsky Metallichesky Zavod. 
+Electrosila produced first 500&nbsp;KW  turbo generator for Gomelskaya TPP.
+(b)1927.(/b) CKTI was founded on the base of the Heat-engineering department of the Leningrad Polytechnic Institute (now, Saint-Petersburg State Polytechnic University). It was intended to give a scientific and technique research support to the Russian power generating industry.
+(b)1929.(/b) Electrosila  produced first 24 000&nbsp;KW turbo generator."></slide1>
+			<slide2 mainTitle="HISTORY" image="images/1.2.3.jpg" title="1930–1939" text="(b)1931.(/b) The first  50 000&nbsp;KW turbo generator was manufactured by Electrosila. 
+(b)1933.(/b) the worlds first 25 MW turbine with controlled steam extraction for district heating was produced by LMZ. 
+(b)1937.(/b) Electrosila manufactured 100&nbsp;MW turbogenerator. It became the most powerful bipolar generator in the world.
+(b)1938.(/b) First in Europe 3000&nbsp;rpm steam 100&nbsp;MW turbine was produced by LMZ."></slide2>
+			<slide3 mainTitle="HISTORY" image="images/1.2.4.jpg" title="1940–1949" text="(b)1944.(/b) Moscow department of CKTI (later reorganized to All Union Scientific Experimental Institute of Nuclear Power Engineering – VNIIAM) was organized.
+(b)1945.(/b) CKTI and its Moscow department were enlisted in the service of the USSR Nuclear project."></slide3>
+			<slide4 mainTitle="HISTORY" image="images/1.2.5.jpg" title="1950–1959" text="(b)1950.(/b) Electrosila started design hydrogen-water-cooled turbogenerator. More than 570 turbogenerators of this series were installed worldwide.
+(b)1952.(/b) First in Europe 150&nbsp;MW steam reheat turbine created by LMZ’s specialists.
+(b)1957.(/b) First in the world forced hydrogen-cooled 200&nbsp;MW turbogenerator wes produced. It was awarded with the gold medal at the international exhibition in Brussels.
+(b)1958.(/b) LMZ produced first in the world 200&nbsp;MW turbine (model PVK-200). PVK-200 got the Grand Prix at international exhibition in Brussels."></slide4>
+			<slide5 mainTitle="HISTORY" image="images/1.2.6.jpg" title="1960–1969" text="(b)1964.(/b) Turbine Blades’ Plant was established as an LMZ business unit. First in Europe 800&nbsp;MW steam turbine produced by LMZ. 
+Production of completely water-cooled turbogenerators started at Electrosila; only non-flammable materials were used.
+(b)1966.(/b) Foreign Trade Ministry of Russia established Energomachexport – a state company specializing in power and transport equipment  supply.
+(b)1967.(/b) Contract for Jerada TPP project (Morocco) received by Energomachexport. That was the first contract on a «turnkey» basis for the Russian industry."></slide5>
+			<slide6 mainTitle="HISTORY" image="images/1.2.7.jpg" title="1970–1974" text="(b)1970.(/b) New machine assembly shops and a testing complex were launched on Kaluga Turbine Works.
+(b)1973.(/b) Tender on deliveries of 14 hydro power units (138&nbsp;MW) for Salto Grande HPP (border of Argentina and Uruguay)."></slide6>
+			<slide7 mainTitle="HISTORY" image="images/1.2.8.jpg" title="1975–1979" text="(b)1975.(/b) Contract for supply of equipment for two thermal power plants in Argentina was signed.
+(b)1976.(/b) According to the Russian government decision, the Scientific Development Association on Research and Design of Power Equipment – NPO CKTI was founded on base of CKTI.
+(b)1978.(/b) Unique close-coupled 1200 MW steam turbine K-1200-240 was installed on the Kostromskaya HPP. Original titanic blades of 1200&nbsp;mm long were used for that turbine."></slide7>
+			<slide8 mainTitle="HISTORY" image="images/1.2.9.jpg" title="1980–1989" text="A series of unique high-speed saturated steam 1000&nbsp;MW turbines were produced&nbsp;at&nbsp;LMZ. 
+Energomachexport executed a contract for supply of 10 power units 210&nbsp;MW of each for the four HPP in China."></slide8>
+			<slide9 mainTitle="HISTORY" image="images/1.2.10.jpg" title="1990" text="Production of 1.5 to 350 MW turbogenerators with air-cooling started at Electrosila. These turbogenerators mated various types of turbines. 
+KTZ started development and production of geothermal turbines. Supply of&nbsp;equipment for two hydro power plants in Mexico."></slide9>
+			<slide10 mainTitle="HISTORY" image="images/1.2.11.jpg" title="1993" text="Leningradsky Metallichesky Zavod was awarded the international Golden Star prize for high quality of production. 
+Contracts for delivery of the power units for Tehri HPP (India) and Voyani TPP (Slovakia) were signed.
+Energomachexport carried out supplies of equipment for two HPP in China, Piedro del Agila HPP (Argentina) was put into operation."></slide10>
+			<slide11 mainTitle="HISTORY" image="images/1.2.12.jpg" title="2000" text="Power Machines Group (LMZ, Electrosila, ZTL, KTZ, Energomachexport) created. Power Machines Group – a contractor and supplier of equipment produced by the plants of the Group (LMZ, Electrosila, ZTL, KTZ). Managing company: OJSC Power Machines, sales: Energomachexport."></slide11>
+			<slide12 mainTitle="HISTORY" image="images/1.2.13.jpg" title="2003" text="OJSC Power Machines and Energomachexport (sales unit of the Group) formed a new company called JSC Energomachexport – Power Machines combining two business functions: sales and management. Energomachexport – Power Machines obtained controlling stake in Leningradsky Metallichesky Zavod, Electrosila, Turbine Blade Plant, and also blocking minority ownership in Kaluga Turbine Works. NPO CKTI joined the Power Machines Group. Energomachexport was excluded from the state register of legal entities. All rights, responsibilities and assets of the company were passed OJSC Power Machines."></slide12>
+			<slide13 mainTitle="HISTORY" image="images/1.2.14.jpg" title="2004" text="In the beginning of 2004 ZTL, LMZ and Electrosila were excluded from the state register of legal entities and formed a single legal entity through joining OJSC Power Machines.
+OJSC Power Machines became a universal legal successor of all joined companies. All&nbsprights, responsibilities and assets of the three companies were passed OJSC Power Machines. Adjoined companies received branch status approved by the Board of Directors of OJSC Power Machines."></slide13>
+			<slide15 mainTitle="HISTORY" image="images/1.2.15.jpg" title="2005" text="Power Machines produced a unique 375 MW hydrogenerator for El Cajon HPP (Mexico). It is the most powerful hydrogenerator, ever supplied by Power Machines for foreign hydro power plants.
+Power Machines and Mosenergo signed a Contract on production and supply of gas turbine unit GTE-65 for Mosenergo Combined Heat and Power Plant-29."></slide15>
+			<slide16 mainTitle="HISTORY" image="images/1.2.16.jpg" title="2006" text="100 MW turbogenetator for combined circle power plant OJSC «Ivanovskie PGU» was produced and successfully tested.
+Tianwan NPP (China) made a trial start of its first power unit 1000 MW turbine. After testing and preproduction operation the power unit will be connected to the grid and will be officially commissioned into commercial operation. This is the biggest Power Machines foreign project in the nuclear power sector."></slide16>
+			<slide17 mainTitle="HISTORY" image="images/1.2.17.jpg" title="2007" text="The second hydropower unit of Hydro Power Plant El Cajon Power Machines has put into commercial operation within the scheduled time the main and largest power generating object in Mexico with the total capacity of 750 MW. 
+Power Machines finished the manufacture and integrated tests of a new asynchronized 160-MW turbine generator and an excitation system for Mosenergo’s third power unit."></slide17>
+			<slide18 mainTitle="HISTORY" image="images/1.2.18.jpg" title="2008" text="The specimen of gas turbine unit GTE-65 of 65 MW capacity for TPP-9 of Mosenergo was manufactured and successfully tested. This is the 1st Russian medium capacity gas turbine (within the range from 50 to 100 MW) of domestic production. 
+Power Machines launch development of technical project for low-speed steam turbine K-1200-6,8/25 of 1200 MW capacity with the speed of rotation 1500 rotations per minute for nuclear power plants."></slide18>
+		</submenu2>
+		<submenu3 name="Projects">
+			<slide0 mainTitle="PROJECTS" image="images/1.3.jpg" text="Power Machines equipment with total output of 300 thousand MW is installed and successfully operates in 57 countries of the world. Company has experience in implementing large and complex projects all around the world."></slide0>
+			<slide1 mainTitle="PROJECTS" image="images/1.3.1.jpg" title="Kostromskaya TPP" text="Close to the old town of Kostroma, it is already almost 40 years that Kostromskaya TPP has been operating being one of the biggest and economic thermal power plants in Russia. Power Machines have manufactured unique equipment for Kostromskaya TPP, i.e. a 1,200 MW steam turbine and turbogenerator for 3,000 RPM. The K-1200 turbine has still been considered as the biggest high-speed steam turbine in the world."title2="Sayano-Shushenskaya HPP" text2="On the bank of the Yenisei river Sayano-Shushenskaya HPP is operating being the biggest Russian hydro power plant with a dam height of 242 metres and over one kilometre long. For this hydro power plant, Power Machines enterprises have manufactured a radial-axial hydroturbine being the biggest in the world and a hydrogenerator with the capacity of 640 MW. Altogether, 10 hydro sets have been supplied to the power plant."></slide1>
+			<slide2 mainTitle="PROJECTS" image="images/1.3.2.jpg" title="Bureyskaya HPP" text="The biggest and most important hydro power object in the latest Russian history is situated on the Bureya river in the Amur River region. The total capacity of plant’s six sets equals to 2,000 MW. For this hydro power plant, Power Machines has designed powerful hydrogenerators with air cooling being notable for an increased efficiency (98.7%) and reduced weight and overall dimensions characteristics." title2="Alholma TPP" text2="In the west area of Finland, close to Pietarsaari town, there is situated the Alholma TPP being one of the youngest and most ecologically clean power plants in the country. Power Machines has manufactured a K-255 steam turbine for this power plant. Finnish power engineers speak highly of this machine: “It works like a Swiss watch”. For the first time in Russia, a condenser for TPP has been manufactured with the use of titanium alloys, which allows to increase the element lifetime by more then 2.5 times."></slide2>
+			<slide3 mainTitle="PROJECTS" image="images/1.3.3.jpg" title="Teri HPP" text="At Himalayan foothills, in the picturesque area of confluence of the Bhagirathi and Bhilangana rivers, there is situated the Teri HPP, a hydro power facility being unique by its scale and complexity of engineering embodiment. Power Machines acted as the key construction partner, supplier of power engineering equipment and provider of contractor supervision services during installation, balancing and commissioning." title2="Tianwan NPP" text2="Near Lianyungang City in the eastern part of China, Tianwan NPP is operating being one of the most safe in the world. For this NPP, Power Machines company has designed and manufactured high-speed turbines and generators with the capacity of 1,000 MW having applied a number of innovative solutions. The equipment has been provided with high performance indicators, operating reliability and safety."></slide3>
+			<slide4 mainTitle="PROJECTS" image="images/1.3.4.jpg" title="El Cajon HPP" text="In 2007, El Cajon HPP was launched in the Nayarit State on the Santiago river being the most ambitious hydroelectric project in Mexico during the recent years. The power plant has a dam with the height of 180 meters. Power Machines have carried out supplies of the whole volume of electromechanical and auxiliary equipment for El Cajon HPP as well as have conducted a range of works on the installation, contractor’s supervision, balancing and commissioning of equipment." title2="Aswan HPP" text2="Close to Aswan city, at the Nile river rapids, there is situated the Aswan HPP being the biggest hydro engineering facility on the African continent, a “new Egyptian miracle”. As long ago as in 1960-1970s, Power Machines enterprises supplied 12 radial-axial hydroturbines with the capacity of 180 MW each and the same number of hydrogenerators to this object. At present, the hydrosets have been operated for more than 35 years, the company is conducting a large-scale modernisation of the facility."></slide4>
+		</submenu3>
+		<submenu4 name="References">
+			<slide0 mainTitle="REFERENCES" image="">
+			<country name="AZERBAIJAN" map="azerbaidjan"></country>
+				<country name="ALBANIA" map="albania"></country>				
+				<country name="ALGERIA" map="aljir"></country>				
+				<country name="ANGOLA" map="angola"></country>				
+				<country name="ARGENTINA" map="argentina"></country>				
+				<country name="ARMENIA" map="armenia"></country>				
+				<country name="AFGHANISTAN" map="afganistan"></country>				
+				<country name="BANGLADESH" map="bangladesh"></country>				
+				<country name="BELARUS" map="belarus"></country>				
+				<country name="BULGARIA" map="bolgaria"></country>				
+				<country name="BOLIVIA" map="bolivia"></country>				
+				<country name="BOSNIA AND HERZEGOVINA" map="bosnia"></country>				
+				<country name="BRAZIL" map="brazilia"></country>				
+				<country name="HUNGARY" map="vengria"></country>				
+				<country name="VIETNAM" map="vietnam"></country>				
+				<country name="GERMANY" map="germania"></country>
+				<country name="GREECE" map="grecia"></country>					
+				<country name="GEORGIA" map="gruzia"></country>				
+				<country name="DENMARK" map="dania"></country>				
+				<country name="EGYPT" map="egipet"></country>				
+				<country name="INDIA" map="india"></country>				
+				<country name="IRAQ" map="irak"></country>				
+				<country name="IRAN" map="iran"></country>				
+				<country name="ICELAND" map="islandia"></country>				
+				<country name="ITALY" map="italia"></country>				
+				<country name="YEMEN" map="iemen"></country>				
+				<country name="KAZAKHSTAN" map="kazahstan"></country>				
+				<country name="CANADA" map="canada"></country>				
+				<country name="CYPRUS" map="kipr"></country>				
+				<country name="KYRGYZSTAN" map="kirgizia"></country>				
+				<country name="CHINA" map="kitai"></country>				
+				<country name="DPRK" map="knr"></country>				
+				<country name="COLOMBIA" map="kolumbia"></country>				
+				<country name="CUBA" map="kuba"></country>				
+				<country name="LATVIA" map="latvia"></country>				
+				<country name="LITHUANIA" map="litva"></country>				
+				<country name="MACEDONIA" map="makedonia"></country>				
+				<country name="MOROCCO" map="marokko"></country>				
+				<country name="MEXICO" map="meksika"></country>				
+				<country name="MOLDOVA" map="moldavia"></country>				
+				<country name="MONGOLIA" map="mongolia"></country>				
+				<country name="NIGERIA" map="nigeria"></country>				
+				<country name="NORWAY" map="norvegia"></country>				
+				<country name="UNITED ARAB EMIRATES" map="oae"></country>				
+				<country name="PAKISTAN" map="pakistan"></country>				
+				<country name="PARAGUAY" map="paragvai"></country>				
+				<country name="POLAND" map="polsha"></country>				
+				<country name="RUSSIA" map="russia"></country>				
+				<country name="ROMANIA" map="ruminia"></country>				
+				<country name="MONTENEGRO" map="serbia"></country>				
+				<country name="SYRIA" map="siria"></country>				
+				<country name="SLOVAKIA" map="slovakia"></country>				
+				<country name="USA" map="usa"></country>				
+				<country name="TAJIKISTAN" map="tadjikistan"></country>				
+				<country name="TAIWAN" map="taivan"></country>				
+				<country name="TURKMENISTAN" map="turkmenistan"></country>				
+				<country name="TURKEY" map="turkish"></country>				
+				<country name="UZBEKISTAN" map="uzbekistan"></country>				
+				<country name="UKRAINE" map="ukraina"></country>				
+				<country name="URUGUAY" map="urugvai"></country>				
+				<country name="PHILIPPINES" map="filippini"></country>				
+				<country name="FINLAND" map="finland"></country>				
+				<country name="FRANCE" map="france"></country>				
+				<country name="CROATIA" map="horvatia"></country>				
+				<country name="CZECH" map="chehia"></country>				
+				<country name="SWEDEN" map="shvedcia"></country>				
+				<country name="ESTONIA" map="estonia"></country>				
+				<country name="ETHIOPIA" map="efiopia"></country>				
+				<country name="SOUTH KOREA" map="korea"></country>				
+				<country name="JAPAN" map="japan"></country>
+			</slide0>
+			
+		</submenu4>
+		<submenu5 name="Quality Assurance">
+			<slide0 mainTitle="QUALITY ASSURANCE" image="images/1.5.1.jpg" title="Quality Assurance"text="Power Machines' unified quality management system is certified in accordance with international standart ISO 9001:2000 and national quality standart ГОСТ Р ИСО 9001-2001.
+The scientific and engineering potential and qualification of Power Machines specialists guarantee high quality of research, design and manufacture of equipment as well as its postwarranty maintenance."></slide0>
+		</submenu5>
+	</menu1>
+	<menu2 name="GROUP STRUCTURE">
+		<menuSlides>
+			<slide0 mainTitle="GROUP STRUCTURE" image="images/2.jpg" list="LMZ – turbines for hydro, steam, nuclear and gas power plants.
+			
+|Electrosila – hydro and turbo generators, traction engines, large electric machines and low-voltage equipment.
+
+|KTZ – steam turbines of small and medium capacity. 
+
+|ZTL – machined blades for steam and gas turbines. 
+
+|NPO CKTI – development, research and improvement of power equipment of all kinds. 
+
+|Power Machines-Reostat – control equipment , various electro technical products."></slide0>
+		</menuSlides>
+		<submenu1 name="LMZ">
+			<slide0 mainTitle="LENINGRADSKY METALLICHESKY ZAVOD" image="images/2.1.1.jpg" text="Leningradsky Metallichesky Zavod (LMZ) is the largest Russian power machine building enterprise, which carries out design, production and maintenance of steam, hydro and gas turbines of various capacity. LMZ produced:" list="First in the world turbine of 25 MW capacity with controlled steam extraction for district heating cogeneration (1933).|First in Europe high-speed turbine with capacity of 100 MW, 3000 rpm.|First in Europe steam turbine of 800 MW capacity, 3000 rpm.|High-speed turbines of 1000 MW capacity for nuclear power plants."></slide0>
+			<slide1 mainTitle="LENINGRADSKY METALLICHESKY ZAVOD" image="images/2.1.2.jpg" title="Unique expirience" list="Highest capacity of high-speed turbines in the world.|Small overall dimensions of high-speed turbines for nuclear power plants as compared with their low-speed analogies.|Environmentally safe Kaplan turbines technologies that prevent water pollution.|New generation of microprocessor control systems. |Guaranteed system operating life – 40 years.|In-house developed technology of internal and external shells casting of HPC (high-pressure cylinder) for the saturated steam turbine of 1 mln KW capacity.|Special fire-resistant lubricants used."></slide1>
+		</submenu1>
+		<submenu2 name="Electrosila">
+			<slide0 mainTitle="ELECTROSILA" image="images/2.2.jpg" text="Electrosila is the leading Russian designer and manufacturer of electrical equipment for power generation, metallurgy, shipbuilding, the coal and mining industry, transport and other industries. Main products are turbogenerators and hydrogenerators, various versions of large a.c. and l.c. electrical machines, low voltage equipment." list="Over 1570 turbo generators with the capacity rating of 0.5 to 1200 MW;|More than 600 hydrogenerators with the capacity from 4 to 640 MW have been produced;|Over 500,000 various electrical machines have been manufactured and delivered practically for all industries;|The world’s most powerful air-cooled 335 MW hydrogenerator."></slide0>
+		</submenu2> 
+		<submenu3 name="Turbine Blades’ Plant">
+			<slide0 mainTitle="TURBINE BLADES’ PLANT" image="images/2.3.jpg" text="Turbine Blades’ Plant in St. Petersburg is the major enterprise in Russia specializing in production of blades for steam and gas turbines. The plant started its production in 1964 and since then has been providing turbine blades for all types of power units in the CIS and in about 20 countries abroad. The plant is a permanent partner of the Leningradskiy Metallichesky Zavod. Unique 1200 mm long titanic blades for steam turbines with the capacity of 1000 MW, installed on Bushehr NPP (Iran) and Tianvan NPP (China) were produced at Turbine Blades’ Plant in St. Petersburg."></slide0>
+		</submenu3>
+		<submenu4 name="Kaluga Turbine Works">
+			<slide0 mainTitle="KALUGA TURBINE WORKS" image="images/2.4.jpg" text="Kaluga Turbine Works produces steam and gas turbines of small and medium capacity (up to 35 MW):" list="Steam turbines to direct drive of power units|Driving steam turbines|Package-type turbo generators|Steam geothermal turbines and power units" text2="Kaluga Turbine Works produced:" list2="2642 power sets with the total capacity of 17091 MW.|Unique geothermal turbines for Mutnovskaya geothermal power plant.|Turbine of 37 MW capacity as a part of the 140 MW combined-cycle unit."></slide0>
+		</submenu4>
+		<submenu5 name="NPO CKTI named after I.I. Polzunov">
+			<slide0 mainTitle="Power Engineering Research and Design Institute – NPO CKTI" image="images/2.5.jpg"  title="NPO CKTI took part in development of:" list="Power-generating units for steam power plants with the capacity up to 1200 MW;|Industrial reactors;|The world's first nuclear power plant;|VVER Power-generating units of up to 1000 MW;|RBMK Power-generating units of up to 1000 MW;|BN-350, BN-600, BN-800, BN-1600 power-generating units for gas-turbine plants of up to 150 MW;|Combined cycle gas sets of various configurations;|Hydro turbine equipment;|Equipment for industrial and municipal Power-generating facilities."></slide0>
+			<slide1 mainTitle="Power Engineering Research and Design Institute – NPO CKTI" image="images/2.5.jpg"title="Unique features" list="Highly qualified personnel;|Unique Russian research base;|Power Equipment Testing Center accredited by State Standards Committee of Russia;|Head organization of Russian Gosgortechnadzor specialized on the problems of industrial safety of boilers, vessels and pipelines, analysis and prevention of the man-caused risks."></slide1>
+		</submenu5>
+		<submenu6 name="Reostat">
+			<slide0 mainTitle="POWER MACHINES – REOSTAT" image="images/2.6.jpg" text="Main products of Power Machines - Reostat are control equipment  and various electro technical products. Reostat plant is the only plant in Russia and CIS which produces electromagnetic contactors of KM2000 and K1000 series, push-button assemblies and all types of resistor kits. The plant is one of key manufacturers of electric equipment for subway cars and overground electric trains."></slide0>
+		</submenu6>
+	</menu2>
+	<menu3 name="PRODUCTS">
+		<menuSlides>
+			<slide0 mainTitle="PRODUCTS" image="images/3.jpg" list="Hydraulic turbines and generators from 4 up to 1000 MW;|steam turbine and  turbo generators up to 1200 MW;|geothermal steam turbines from 1.7 MW up to 23 MW (2.5 – 25 MW);|65 MW and 160 MW gas turbines, combine-cycle plants on their basis, complex air purification devices of gas turbines;|auxiliary equipment, including systems of automatic regulation and control, condensers, excitation systems, upstream turbine valves, etc.|large electric machines;|blades for steam and gas turbines."></slide0>
+		</menuSlides>
+		<submenu1 name="Equipment for hydro power plants">
+			<slide0 mainTitle="EQUIPMENT FOR HYDRO POWER PLANTS" image="images/3.1.jpg" text="Power Machines offers following products for hydro power generation. 
+Hydro turbines:" list="Francis turbines up to 1000 MW output and maximum head up to 600 m;|Kaplan turbines up to 300 MW output and maximum head up to 70 m;|horizontal-staft bulb turbines, up to 70 MW output and maximum head up to 25 m;|Pelton turbines up to 180 MW output and maximum head up to 700 m;|pump-turbines up to 300 MW output and maximum head up to 400 m;" text2="Hydrogenerators from 4 up to 1000 MW with different cooling systems and excitation systems:" list2="Vertical-shaft or horizontal-shaft design of umbrella, semi-umbrella and suspension types|Bulb-type generators with the direct and indirect forced cooling|Advanced construction of separate components, units and systems."></slide0>
+			<slide1 mainTitle="EQUIPMENT FOR HYDRO POWER PLANTS" image="images/3.1.1.jpg" title="The hydraulic turbines. Major advantages" text="The hydraulic turbines are distinguished by simple design solutions, easy access to the components in the course of installation and maintenance, high reliability, feasibility of repairs and environmental safety. Major advantages:" list="To increase the service life of blades of bigsized Francis turbines, blade blanks are manufactured of plate steel by die bending.|The runners of Kaplan turbine are environmentally safe. Possibility of oil leakage into water is excluded.|The bushings and plates, that do not require lubrication, are used in friction joints of distributor.|In case of turbine start-up at extremely low head, there may be used replaceable runners to provide additional power generation at the initial stage of operation.|Life time of turbines manufactured by Power Machines exceeds 40 years."></slide1>
+			<slide2 mainTitle="EQUIPMENT FOR HYDRO POWER PLANTS" image="images/3.1.2.jpg" title="Hydrogenerators" text="Power Machines offers wide range of generators from 4 to 1000 MW and operating speeds of 50 to 750 rpm for hydroelectric power stations with low, medium and high water pressure heads. The total production:" list="600 hydrogenerators with a total capacity of 65 million KW — that is approximately 9% of the world's total installed hydro power plants capacity.|140 hydrogenerators with a total capacity of 17,2 mln KW supplied for export.|31 bulb-type generators with a total capacity of 904 MW of different configurations equipped with various cooling systems.|53 hydrogenerators with water-cooled stators of 15,2 mln KW.|27 machines with water-cooled rotors."></slide2>
+			<slide3 mainTitle="EQUIPMENT FOR HYDRO POWER PLANTS" image="images/3.1.3.jpg" title="Auxiliary equipment" text="Auxiliary equipment for hydro turbines and generators:" list="Excitation systems|Turbine shut-off valves|Automatic control systems|Governors|Oil pressure systems|Automatic controls of oil pressure systems|Pumps|Heat exchange equipment."></slide3>
+			<slide4 mainTitle="EQUIPMENT FOR HYDRO POWER PLANTS" image="images/3.1.4.jpg" title="Hydro turbines competitive features" list="Use of 3D modeling of the water passage flow and hydro turbines components tensions|Hydro turbine laboratory bench tests and field tests|Know-how related to the development of environmentally friendly Kaplan turbines|Development of highly reliable, programmable, microprocessor-driven control systems for hydro turbines|Use of high-tensile steel of the 15/4 type for the rotor wheels and guide blades in Francis turbines and Kaplan turbines." text="The total installed capacity of the hydro turbines operating in 30 countries of Europe, Asia, Africa and America exceeds 60,000 MW."></slide4>
+		</submenu1>
+		<submenu2 name="Equipment for steam and nuclear
+power plants">
+			<slide0 mainTitle="EQUIPMENT FOR STEAM AND NUCLEAR POWER PLANTS" image="images/3.2.jpg" text="Power Machines offers following products for steam and nuclear power generation. 
+Steam turbines:" list="condensing turbines up to 1,200 MW for subcritical and supercritical steam parameters;|condensing turbines up to 330 MW with steam extraction for district heating;|extraction turbines up to 80 MW with steam reheat for industrial purposes and district heating;|backpressure turbines up to 85 MW;|turbines for CCP (combined cycle plants) up to 180 MW;|turbines for NPP up to 1,200 MW."></slide0>
+			<slide1 mainTitle="EQUIPMENT FOR STEAM AND NUCLEAR POWER PLANTS" image="images/3.2.jpg" text="Turbogenerators:" list="forced hydrogen-cooled turbogenerators (TВФ);|hydrogen-and-water cooled turbogenerators (TBB);|completely water-cooled turbogenerators (T3B, T3BA);|completely air-cooled turbogenerators (TA, TФ, T3Ф, T3ФA, T3ФAУ);|combined air-and-water cooled turbogenerators (T3ФСУ)."></slide1>
+			<slide2 mainTitle="EQUIPMENT FOR STEAM AND NUCLEAR POWER PLANTS" image="images/3.2.1.jpg"  title="Turbines for nuclear power plants" text="Power Machines is the unique Russian company which provides complete delivery of basic heat-mechanic equipment of turbine island for nuclear power plants and also is the leading company among the several world manufacturers of high-speed turbines with capacity of 800; 1,000 and 1,200 MW for nuclear power-generating units.
+Turbines have a number of design features increasing their reliability and operating life:" list="solid-forged design of rotors;|increased rigidity of new turbine units foundations of their enclosures and supports;|double-flow design of cylinders and their arranging method promote to unload axial bearing;|new design of journal bearing with increased load-carrying capacity."></slide2>
+			<slide3 mainTitle="EQUIPMENT FOR STEAM AND NUCLEAR POWER PLANTS" image="images/3.2.2.jpg" title="Steam turbines. Auxiliary systems and equipment" text="Auxiliary systems and equipment for steam turbines" list="Air condensers|Heaters|Oil coolers|Valves|Air-removing devices|Water filtering units."></slide3>
+			<slide4 mainTitle="EQUIPMENT FOR STEAM AND NUCLEAR POWER PLANTS" image="images/3.2.3.jpg" title="Steam turbines. Unique features" list="Low weight and dimensions characteristics (as compared with those of the low-speed), ensuring reduction of costs associated with creating the turbine island for a nuclear power plant|High economic efficiency of the turbines with steam extraction for district heating|High reliability and serviceability|Economic efficiency of installation and maintenance|Use of fireproof liquid in the control and lubrication systems of steam turbines instead of the flammable hydrocarbon oil"></slide4>
+		</submenu2>
+		<submenu3 name="Gas turbines">
+			<slide0 mainTitle="GAS TURBINES" image="images/3.3.jpg" text="Power Machines  produces 65 MW gas turbines (in-house design) and 160 MW gas turbines (under Siemens license), combine-cycle plants on their basis, complex air purification devices of gas turbines."></slide0>
+		</submenu3>
+		<submenu4 name="Steam geothermal turbines">
+			<slide0 mainTitle="STEAM GEOTHERMAL TURBINES" image="images/3.4.jpg" title="Steam geothermal turbines from 1,7 MW up to 23 MW" text="Power Machines  offers steam geothermal turbines from 1,7 MW up to 23 MW (2,5–25&nbsp;MW):" list="Geothermal modular power-generating units|Geothermal modular turbine units"></slide0>
+			<slide1 mainTitle="STEAM GEOTHERMAL TURBINES" image="images/3.4.1.jpg" title="Geothermal modular power-generating units" text="Small-sized power plants allowing using the steam and water of geothermal fields or utilizing the waste heat industrial plants. Yearly production - up to 12 mln KW. Coal equivalent savings – 4500-7300 tons per year. The units are delivered as ready to-operate container modules of a van type – short time for installation and delivery. The complete equipment also includes plants for heating and cleaning the steam and primary heat- transfer medium of geothermal fields respectively."></slide1>
+			<slide2 mainTitle="STEAM GEOTHERMAL TURBINES" image="images/3.4.2.jpg" title="Geothermal modular turbine units" text="Represented by a standardized inventory of geothermal turbines with a broad range of power generating capacities." list="Unique engineering solutions:|Dual-flow turbine|Heat exchange assemblies with mixing-type water equipment|Large ejectors|Use of plated materials in the equipment exposed to aggressive working environment" text2="Сan co-channel separation system and a special separator cascade within the turbine ensure effective moisture removal (up to 80%) and enhance the turbine degree of efficiency up&nbsp;to&nbsp;1.7%."></slide2>
+		</submenu4>
+		<submenu5 name="Blades for turbines">
+			<slide0 mainTitle="BLADES FOR TURBINES" image="images/3.5.jpg" title="Blades for turbines" text="Power Machines produces:" list="blades steam turbines with the capacity from 20 to 1500 MW|the blanks of the blades for gas turbines and gas-compressor units of 6 to 180 mw capacity."></slide0>
+			<slide1 mainTitle="BLADES FOR TURBINES" image="images/3.5.1.jpg" title="Blades for steam turbines" text="Features:" list="Hot-stamped from chromium stainless steels and titanium alloys|Profile and bands are predominantly machined with an alternating height|Increased economic efficiency|Vibration damping|Blade length — 50 to 1200 mm|Blade width — up to 500 mm|Profile length — up to 1500 mm|Weight — 0.1 to 100 kg"></slide1>
+			<slide2 mainTitle="BLADES FOR TURBINES" image="images/3.5.2.jpg" title="Blades for gas turbines and gas-compressor units" list="Manufactured of superalloys on nickel, austentic and chromium base|By the methods of investment casting, forging and bar technology steels|Protecting coating is applied by the method of plasma application, of gas-circulating application, by the suspension method."></slide2>
+		</submenu5>
+		<submenu6 name="Power electrical equipment">
+			<slide0 mainTitle="POWER ELECTRICAL EQUIPMENT" image="images/3.6.jpg" title="Power electrical equipment" list="AC synchronous motors with capacity from 315 to 11 000 KW|AC asynchronous motors with capacity from 75 to 6000 KW|DC electric motors with capacity from 40 to 14 000 KW|Electrical machine control and commutation equipment."></slide0>
+			
+		</submenu6>
+	</menu3>
+	<menu4 name="SERVICE AND MODERNIZATION">
+		<menuSlides>
+			<slide0 mainTitle="SERVICE AND MODERNIZATION" image="images/4.jpg" text="Service and modernization of power-generating equipment is one of the priority directions of Power Machines activities. The scope of services offered to the customer ensures sound operation of the installed equipment fleet, support and improvement of its announced technical characteristics. Power Machines owns modern engineering and development recourses and offers to customers reliable and effective solutions of power plants modernization."></slide0>
+			<slide1 mainTitle="SERVICE AND MODERNIZATION" image="images/4.1.jpg" title="Integrated equipment supplies services" text="In the implementation of integrated equipment supplies, servicing includes:" list="Technical management of erection, installation, balancing and commissioning of power generating equipment.|Technical management of adjustment works for individual types of equipment.|Warranty maintenance, participation in scheduled repairs, development of repair technologies.|Solving problematic operational issues, assistance in mastering operating conditions on head-end and newly introduced equipment.|Service completion of equipment prototypes after installation.|Training of customer’s personnel, its contractors, consulting services |Post-warranty maintenance services."></slide1>
+			<slide2 mainTitle="SERVICE AND MODERNIZATION" image="images/4.2.jpg" title="Services for operating thermal, hydro and nuclear power plants equipment" list="The reconstruction of main and auxiliary equipment in order to increase the design indicators, add or modify a number of functions  up to the full replacement of equipment with a qualitatively new one.|Modernization of main and auxiliary equipment with the replacement of some main assemblies and mechanisms both in the shop and field conditions.|Modernization and replacement of equipment produced by other manufacturers.|Technical support of scheduled preventive maintenance works.|Warranty services.|Operational service maintenance.|Participation in non-scheduled repairs.|Provision with spare parts and special materials.|Operational supply of spare parts from a “servicing warehouse”.|Assessment of an optimal period of extension of operation by the results of diagnostics and special calculations.|Contractor’s supervision."></slide2>
+			<slide3 mainTitle="SERVICE AND MODERNIZATION" image="images/4.3.jpg" title="Engineering services" list="Examination and diagnostics of operating equipment in order to evaluate its technical condition, operating conditions, possible dates of life extension and determination of conditions thereof.|Development of special technical solutions by the results of examination on the basis of a technical and economic analysis or customer’s proposals.|Vibration investigations and vibration adjustment of equipment, supply of systems for technical inspection, monitoring and diagnostics.|Conduction of special tests of power generating equipment or its individual parts according to customer’s proposals.|Troubleshooting for problems arising in the course of operation and maintenance."></slide3>
+		</menuSlides>
+	</menu4>
+	<menu5 name="CONTACTS">
+		<menuSlides>
+			слайдов в самом разделе "контакты" нет, переходим на подменю "головной офис"
+		</menuSlides>
+		<submenu0 name="Main office contacts">
+			<slide0 mainTitle="CONTACTS" image="images/5.jpg" title="Main office contacts" text="Power Machines
+Russia, 195009, Saint-Petersburg,
+Vatutina str., 3, letter А
+Tel.: +7 812 346-7037
+Fax: +7 812 346-7035
+
+Russia, 129090, Moscow,
+Protopopovsky per., 25А
+Tel.: +7 495 725-2763
+Fax: +7 495 725-2742
+
+E-mail: mail@power-m.ru
+www.power-m.ru"></slide0>
+		</submenu0>
+		<submenu1 name="Representative offices contacts">
+			<slide0 mainTitle="CONTACTS">
+				<country name="ARGENTINA" map="argentina" title="Argentina, Buenos Aires" text="tel.: (5411) 4373 0599, 4373 0699
+argentina@power-m.ru"></country>
+				<country name="BULGARIA" map="bolgaria" title="Bulgaria, Sofia" text="tel.: (3592) 971 3837, 971 3947
+bulgaria@power-m.ru"></country>				
+				<country name="HUNGARY" map="vengria" title="Hungary, Budapest" text="tel.: (361) 325 7263
+hungary@power-m.ru
+"></country>
+				<country name="VIETNAM" map="vietnam" title="Vietnam, Hanoy" text="tel.: (844) 356 22 918, 356 22 919
+vietnam@power-m.ru"></country>				
+				<country name="GERMANY" map="germania" title="Germany, Berlin" text="Enermasch Handels GmbH
+tel.: (4930) 283 5234
+germany@power-m.ru"></country>				
+				<country name="GREECE" map="grecia" title="Greece, Athens" text="tel.: (30 210) 981 8020, 981 7975
+greece@power-m.ru"></country>
+				<country name="EGYPT" map="egipet" title="Egypt, Giza" text="tel.: (202) 376 124 67, 376 247 21
+egypt@power-m.ru"></country>
+				<country name="INDIA" map="india" title="India, Delhi" text="tel.: (91 120) 403 6001, 403 6002
+india@power-m.ru"></country>				
+				<country name="CHINA" map="kitai" title="China, Beijing" text="tel.: (8610) 677 841 25
+china@power-m.ru"></country>
+				<country name="COLOMBIA" map="kolumbia" title="Colombia, Bogota" text="EMEC Ltd
+tel.: (571) 611 4111
+colombia@power-m.ru"></country>				
+				<country name="MEXICO" map="meksika" title="Mexico, Mexico" text="tel.: (5255) 553 69 889
+mexico@power-m.ru"></country>				
+				<country name="MONTENEGRO" map="serbia" title="Serbia, Belgrad" text="tel.: (381 11) 367 4255, 367 4269
+serbia@power-m.ru"></country>
+				<country name="TURKEY" map="turkish" title="Turkey, Ankara" text="tel. (90 312) 436 6092, 436 6093
+turkey@power-m.ru"></country>
+				<country name="RUSSIA" map="russia" title="Russia, Ekaterinburg" text="tel.: (343) 371 7904, 359 4008
+ural_office@power-m.ru"></country>
+			</slide0>
+		</submenu1>
+	</menu5>
+</root>

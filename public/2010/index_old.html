@@ -1,0 +1,468 @@
+﻿<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type='text/javascript' src='js/jquery.js'></script>
+	<script type='text/javascript' src='js/jquery.scrollTo-min.js'></script>
+ <script type="text/javascript" src="js/jquery.pngFix.js"></script> 
+ <script type="text/javascript"> 
+    $(document).ready(function(){ 
+        $(document).pngFix(); 
+    }); 
+</script> 
+<link rel="stylesheet" href="main.css" type="text/css" />
+<!--[if gte IE 7]><style type="text/css" media="screen">/* <![CDATA[ */ @import url(ie7.css?1); /* ]]> */</style><![endif]-->
+</head>
+<body>
+<img src="img/headerfuter/logo.png" style="z-index:-100; position: absolute; left: 0; top: 0" />
+<div class="main">
+
+<div class="menu">
+<ul>
+ <li>
+ <a style="position: relative" href="javascript:void(0)" onclick="$('.menu a').removeClass('active'); $(this).addClass('active'); $('#scroll_pane').stop().scrollTo({ top:0, left:-30},700);" class="active">Календарь ТРИО (с фишкой)</a>
+ </li>
+ <li>
+ <a style="position: relative" href="javascript:void(0)" onclick="$('.menu a').removeClass('active'); $(this).addClass('active');$('#scroll_pane').stop().scrollTo('#cont2',700);">Календарь «Домик»</a>
+ </li>
+ <li>
+ <a style="position: relative" id="ill_a" href="javascript:void(0)" onclick="$('.menu a').removeClass('active'); $(this).addClass('active');$('#scroll_pane').stop().scrollTo({ top:0, left:2025},700);">Иллюстрация на календарь</a>
+ </li>
+</ul>
+</div>
+
+<div class="content" id="scroll_pane">
+<div style="width: 50000px" >
+
+<div class="cont" id="cont1" style="width: 800px; position: normal; left 0px; margin-left: 30px; float: left; ">
+<h1>Календарь «Трио»</h1>
+<p class="trio1">
+В этом году он стал стильным.
+</p>
+<p class="trio2">
+Дизайн-студия Logomotiv разработала и внедрила в производство новую календарную сетку для стандартных блоков. Мы выбрали наиболее читабельный шрифт, убрали лишние элементы и подложки, разработали пиктограммы для государственных праздников, что значительно освежило календарь. 
+</p>
+
+<p class="strela_left">
+<img id="strela_left" onclick="setka_left()" style="cursor: pointer; display: none; position: relative"  src="img/trio/strela_left.png" border="0" />
+</p>
+<div class="trio3">
+<div style="width: 527px; height: 270px; overflow: hidden; position: relative; " id="tr1">
+<div style="width: 30000px; height: 270px">
+<div style="position: relative; float: left" id="im1">
+<img  style="position: relative"  src="img/trio/calendar/setka1.gif" border="0" />
+</div>
+<div style="position: relative; float: left" id="im2">
+<img style="position: relative"  src="img/trio/calendar/setka2.gif" border="0" />
+</div>
+<div style="position: relative; float: left" id="im3">
+<img style="position: relative"  src="img/trio/calendar/setka3.gif" border="0" />
+</div>
+<div style="position: relative; float: left" id="im4">
+<img style="position: relative"  src="img/trio/calendar/setka4.gif" border="0" />
+</div>
+</div>
+</div>
+</div>
+<p class="strela_right">
+<img id="strela_right" style="cursor: pointer; position: relative" onclick="setka_right()" src="img/trio/strela_right.png" border="0" />
+</p>
+
+<script type="text/javascript">
+var setka_all=4;
+var setka_current=1;
+function setka_left(){
+
+if(setka_current>1){
+	setka_current--;
+	$('#tr1').stop().scrollTo('#im'+setka_current,700);
+	if(setka_current==1){
+	 $('#strela_left').css('display','none');
+	}
+	if(setka_current<setka_all){
+		$('#strela_right').show();
+	}
+}
+
+}
+
+function setka_right(){
+if(setka_current<setka_all){
+	setka_current++;
+	$('#tr1').stop().scrollTo('#im'+setka_current,700);
+	if(setka_current==setka_all){
+	 $('#strela_right').css('display','none');
+	}
+	if(setka_current>1){
+		$('#strela_left').show();
+	}
+}
+
+}
+</script>
+
+<p class="trio4" onclick="">
+развернуть образец календаря
+</p>
+
+<p class="trio5">
+По договоренности «ТРИО» с сеткой от Logomotiv можно изготовить с любым 
+<span style="text-decoration: underline">дизайном шпигеля</span>. 
+</p>
+
+<p class="trio6">
+Стоимость тиража
+<table class="price" cellspacing="0" cellpadding="15px" border="0" width="520px" style="color: #E0E0E0">
+ <tr>
+	<td>
+	Тираж
+	</td>
+	<td>100
+	</td>
+	<td>200
+	</td>
+	<td>300
+	</td>
+	<td><span style="color: #7C8381">шт</span>
+	</td>			
+ </tr>
+ <tr>
+	<td>
+		Цена (за 1 шт.)
+	</td>
+	<td>150
+	</td>
+	<td>130
+	</td>
+	<td>100
+	</td>
+	<td>
+	<img src="img/trio/znak_rublya.png" border="0" />
+	</td>
+ </tr>
+ <tr>
+	<td>
+	Стоимость
+	</td>
+	<td>15.000
+	</td>
+	<td>26.000
+	</td>
+	<td>30.000
+	</td>
+	<td>
+	</td>
+ </tr>
+</table>
+</p>
+
+<p class="trio7">
+<a href="mailto:katya@logomotiv.ru">
+<img src="img/trio/krasny_knopul.png" border="0" />
+</a>
+</p>
+
+<div class="trio8">
+<img src="img/trio/fishka2.png" border="0" />
+<p class="el1">
+А вы знаете, что мы можем сделать любой (!) тираж календаря? Да, действительно любой, даже одну штуку!
+</p>
+</div>
+
+<div class="trio9">
+<p  style="font-family: georgia; font-style: italic; font-size: 12px; width: 220px; color: #031327; font-weight: bold; margin-top:20px">
+Технические характеристики
+</p>
+<p  style="font-family: georgia; font-style: italic; font-size: 12px; width: 220px; line-height: 20px; margin-top: 10px">
+<b>шпигель:</b> 300*210 мм (печать 4+0, ламинация, картон 295 г/м кв);<br/>
+<b>блоки:</b> 292*150 мм (печать 2+0, офсетная бумага 80 г/м кВ);<br/>
+<b>размер подложки:</b> 300*180 мм (печать 4+0, картон 295 г/м кв);<br/>
+</p>
+</div>
+
+</div>
+
+
+
+<div class="cont" id="cont2" style="width: 900px; position: relative; left: 200px; top: 0px; float: left; padding-left: 30px">
+<p class="domik1">
+Не хотите ничего изобретать? Но хочется чего-то необычного? 
+Рецепт такой: берем всем известную основу и добавляем «фишку». 
+Вот, например, вариант нескучного календаря-домика. А еще лучше можно выделиться, заказав 
+<span style="color:#6FCCFC; cursor: pointer; text-decoration: underline" onclick="$('.menu a').removeClass('active'); $('#ill_a').addClass('active');$('#scroll_pane').stop().scrollTo({ top:0, left:2025},700);">авторскую иллюстрацию</span> на календарь.
+</p>
+
+<p class="domik2">
+<h1>Календарь «Домик»</h1>
+</p>
+
+<div class="domik3">
+ <img src="img/domik/krug_1.png" border="0" style="float: left; margin-right: 15px" />
+ <div class="domik_zag">
+ с индивидуальным перекидным блоком и курсором 
+ </div>
+ <div style="clear: both"></div>
+</div>
+
+<p class="trio6">
+Стоимость тиража
+<table class="price" cellspacing="0" cellpadding="15px" border="0" width="520px" style="color: #E0E0E0">
+ <tr>
+	<td>
+	Тираж
+	</td>
+	<td>100
+	</td>
+	<td>200
+	</td>
+	<td>300
+	</td>
+	<td><span style="color: #7C8381">шт</span>
+	</td>			
+ </tr>
+ <tr>
+	<td>
+		Цена (за 1 шт.)
+	</td>
+	<td>73
+	</td>
+	<td>70
+	</td>
+	<td>68
+	</td>
+	<td>
+	<img src="img/trio/znak_rublya.png" border="0" />
+	</td>
+ </tr>
+ <tr>
+	<td>
+	Стоимость
+	</td>
+	<td>7.300
+	</td>
+	<td>14.000
+	</td>
+	<td>20.400
+	</td>
+	<td>
+	</td>
+ </tr>
+</table>
+<div style="border-bottom: 2px solid #9A9A9A; width: 528px; height: 30px">
+</div>
+</p>
+
+<p class="domik4">
+ <img src="img/domik/krug_2.png" border="0" style="float: left; margin-right: 15px" />
+ <div class="domik_zag2">
+без перекидного блока 
+ </div>
+ <div style="clear: both"></div>
+</p>
+
+<p class="trio6">
+Стоимость тиража
+<table class="price" cellspacing="0" cellpadding="15px" border="0" width="520px" style="color: #E0E0E0">
+ <tr>
+	<td>
+	Тираж
+	</td>
+	<td>100
+	</td>
+	<td>200
+	</td>
+	<td>300
+	</td>
+	<td><span style="color: #7C8381">шт</span>
+	</td>			
+ </tr>
+ <tr>
+	<td>
+		Цена (за 1 шт.)
+	</td>
+	<td>39
+	</td>
+	<td>35
+	</td>
+	<td>33
+	</td>
+	<td>
+	<img src="img/trio/znak_rublya.png" border="0" />
+	</td>
+ </tr>
+ <tr>
+	<td>
+	Стоимость
+	</td>
+	<td>3.900
+	</td>
+	<td>7.000
+	</td>
+	<td>9.000
+	</td>
+	<td>
+	</td>
+ </tr>
+</table>
+<div style="border-bottom: 2px solid #9A9A9A; width: 650px; height: 30px">
+</div>
+</p>
+
+<p class="trio7">
+<img src="img/trio/krasny_knopul.png" border="0" />
+</p>
+
+<div class="domik5">
+<p  style="font-family: georgia; font-style: italic; font-size: 12px; width: 220px; color: #031327; font-weight: bold; margin-top:15px">
+Технические характеристики
+</p>
+<p  style="font-family: georgia; font-style: italic; font-size: 12px; width: 230px; line-height: 20px; margin-top: 5px">
+<b>размер:</b> 115*200 мм<br/>
+<b>печать:</b> 4+0, ламинация, бумага 295 г/м кв); на основу – качественный картон<br/>
+</p>
+</div>
+
+<div class="domik6">
+<p>
+<img  src="img/domik/fishka.png" border="0" style="cursor: pointer; margin-left: 30px" onclick="if($('#fishka_open').css('display')=='none'){$('#fishka_open').css('display','inline')}else{$('#fishka_open').css('display','none')}" />
+<img id="fishka_open" src="img/domik/fishka_open.png" style="position: absolute; z-index:-1; left:60px; top: 30px; display: none" border="0" />
+</p>
+<p style="margin-top:117px;">
+<img src="img/domik/kalendar.png" border="0" style="z-index:-2; position: absolute" />
+</p>
+</div>
+
+</div>
+
+
+<div class="cont" id="cont3" >
+<p class="ill1">
+Авторская иллюстрация на календарь
+</p>
+
+<p class="ill2">
+Сделайте Ваш календарь полностью уникальным! <br/>
+Авторская иллюстрация – это стильное изображение, которое<br/>
+ будет только на вашем календаре. Мы можем сделать<br/> техническую иллюстрацию, коллаж, ручную графику <br/>
+ и 3D моделирование.
+</p>
+
+<p style="margin-top:27px">
+Хотите, чтобы ваш календарь радовал глаз клиентам и<br/> партнерам круглый год? Тогда закажите авторскую графику на<br/> любой тип календаря.
+</p>
+
+<p class="ill4">Примеры наших работ
+</p>
+
+<p class="ill_strela_left">
+<img style="cursor: pointer;display: none" onclick="ill_left()" src="img/trio/strela_left.png" border="0" id="ill_strela_left" />
+</p>
+
+<div class="ill5">
+<div style="overflow: hidden; position: relative" id="tr2" class="tr2">
+<div style="width: 30000px">
+<img id="im_ill1"  src="img/illustration/pic/img1.jpg" border="0" />
+<img style="margin-left: 11px" id="im_ill2"  src="img/illustration/pic/img2.jpg" border="0" />
+<img style="margin-left: 11px"id="im_ill3"  src="img/illustration/pic/img3.jpg" border="0" />
+<img style="margin-left: 11px" id="im_ill4"  src="img/illustration/pic/img4.jpg" border="0" />
+</div>
+</div>
+</div>
+
+<p class="ill_strela_right">
+<img style="cursor: pointer" onclick="ill_right()" src="img/trio/strela_right.png" border="0" id="ill_strela_right" />
+</p>
+
+<script type="text/javascript">
+var ill_all=4;
+var ill_current=1;
+function ill_left(){
+if(ill_current>1){
+	ill_current--;
+	$('#tr2').stop().scrollTo('#im_ill'+ill_current,700);
+	if(ill_current==1){
+	 $('#ill_strela_left').hide();
+	}
+	if(ill_current<ill_all){
+		$('#ill_strela_right').show();
+	}
+}
+
+}
+
+function ill_right(){
+if(ill_current<ill_all){
+	ill_current++;
+	$('#tr2').stop().scrollTo('#im_ill'+ill_current,700);
+	if(ill_current==ill_all){
+	 $('#ill_strela_right').hide();
+	}
+	if(ill_current>1){
+		$('#ill_strela_left').show();
+	}
+}
+
+}
+</script>
+
+<p class="ill6">
+Календарь с нашей графикой будет висеть на стенке весь год, а не отправится сразу в мусорную корзину. :)
+</p>
+
+<p class="ill7">
+<a href="mailto:katya@logomotiv.ru">
+<img src="img/illustration/green_knopul.png" border="0" />
+</a>
+</p>
+
+<div class="ill8">
+<img src="img/illustration/green_pipka.png" border="0" />
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<div class="footer">
+
+<div class="manager" style="float: left">
+<p class="ask1">
+  Задать вопрос менеджеру
+</p>
+<p class="ask2">
+<img style="border-style:none" alt="ICQ Status Indicator" src="http://status.icq.com/online.gif?icq=436181928&img=5" />
+<a href="http://web.icq.com/whitepages/message_me?uin=436181928&action=message" style="color: white; text-decoration: none">436181928</a> <span style="color: #939292">(Катя)</span>
+</p>
+ </div>
+ 
+<div class="logomotiv" style="float:left; margin-left: 307px">
+
+<div style="float: left; padding-top: 5px">
+<img src="img/headerfuter/logo_logomotiv.gif" border="0" style="float: left" />
+</div>
+
+<div style="float: left; margin-left: 27px">
+<p class="logo1">
+  Дизайн-студия Logomotiv
+</p>
+<p  class="logo2">
+<span style="color: #939292">(812)</span> 572-39-03
+</p>
+<p  class="logo3">
+Лиговский проспект, <br/>дом 73, офис 606.
+</p>
+</div>
+
+ </div>
+ 
+</div>
+
+
+</div>
+
+</body>
+</html>
