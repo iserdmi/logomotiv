@@ -5,6 +5,7 @@ class RedirectController < ApplicationController
     else
       @page = Page.find_by_path("/"+params[:path])
     end
+
     if @page
       #@page = @page.children.first unless @page.content
       render(@page)

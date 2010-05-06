@@ -7,5 +7,8 @@ class PagesController < ApplicationController
   
   def show
     @page = Page.find_by_id(params[:id])
+    if @page.root?
+      @page = @page.children.first
+    end
   end
 end
