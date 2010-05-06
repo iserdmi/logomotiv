@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<menu0 name="стартовый слайд">
+		<submenu0 name="стартовый слайд">
+			<slide0 mainTitle="" image="images/0.jpg"></slide0>
+		</submenu0>
+	</menu0>
+	<menu1 name="SOBRE NOSOTROS">
+		<menuSlides>
+			слайдов в самом разделе "компания" нет, переходим на подменю "о компании"
+		</menuSlides>
+		<submenu1 name="La Compañía">
+			<slide0 mainTitle="La Compañía POWER MACHINES" image="images/1.jpg" title="La Compañía POWER MACHINES" text="Productor líder de Rusia y suministrador de soluciones complejos en el área de construcción de máquinas energéticas que incluyen: ingeniería, producción, suministro, montaje, servicio y modernización de equipo para la central eléctrica térmica, atómica, hidráulica y de turbinas de gas."></slide0>
+			<slide1 mainTitle="La Compañía POWER MACHINES" image="images/1.1.1.jpg" title="La Compañía unifico las ponencias de empresas más conocidas del mundo" list="Leningradsky Metallichesky Zavod (Planta de producción de metales de Leningrad, fundada 1857),|la Fábrica Electrosila (1898),|la Fábrica de Paletas de Turbina (1964),|la Fábrica de Turbinas de Kaluga (1946),|Conjunto industrial científico del Instituto central de calderas y turbinas “I. I. Polzunov (1927),|Energomachexport (1966),|«Power Machines – la Fábrica Reostat»."></slide1>
+			<slide2 mainTitle="La Compañía POWER MACHINES" image="images/1.1.2.jpg" title="POWER MACHINES de hoy" text="Empresa más grande de construcción de máquinas energéticas en Rusia que compete con éxito en el mercado global con los productores mundiales del equipo energético. 
+La maquinaria de la empresa con la potencia total de 300 mil MW es instalada y opera con éxito en 57 países del mundo:" list="más de 2700 turbinas de vapor, 2550 generadores de turbinas, 770 turbinas hidráulicas, 600 generadores hidráulicos;|aproximadamente de 80% del mercado de equipo energético de Rusia y Comunidad de Estados Independientes;|4-to lugar en el mundo según la cantidad del equipo instalado."></slide2>
+		</submenu1>
+		<submenu2 name="Historia">
+			<slide0 mainTitle="HISTORIA" image="images/1.2.1.jpg" title="1857–1919" text="(b)1857 год.(/b) Fue fundada la empresa de construcción de turbinas más grande de Rusia – Planta de producción de metales de Leningrad. Durante los próximos 10 años, en esta empresa fue organizada la primera producción de dispositivos de calefacción y de ventilación en Rusia. 
+(b)1898 год.(/b) La primera producción de maquinas eléctricas fue organizada en Rusia, conocida en todo el mundo como uno de lo líderes del sector – “Electrosila”. 
+(b)1907 год.(/b) La producción de turbinas de baja potencia fue inicializada en Rusia en la Planta de producción de metales de Leningrad. 
+(b)1912 год.(/b) La producción de maquinas eléctricas, motores de tracción, transformadores fue inicializada por “Electrosila”."></slide0>
+			<slide1 mainTitle="HISTORIA" image="images/1.2.2.jpg" title="1920–1929"  text="(b)1924 год.(/b) La producción de turbinas hidráulicas fue inicializada en la Planta de producción de metales de Leningrad.
+El primer turbogenerador con la potencia de 500 kW fue fabricado por “Electrosila” para la Central termoeléctrica de Gomel. 
+(b)1927 год.(/b) Para el abastecimiento científico-técnico de industria energética nacional de construcciones mecánicas y de industria energética, fue organizada la oficina de pruebas termotécnicas, que dio inicio a las pruebas sistemáticas de calderas, turbinas y equipo de calefacción en las condiciones industriales.  Esta empresa será la fundación del Instituto central de calderas y turbinas.
+(b)1929 год.(/b) El primer turbogenerador con la potencia de 24 000 kW fue fabricado en “Electrosila”."></slide1>
+			<slide2 mainTitle="HISTORIA" image="images/1.2.3.jpg" title="1930–1939" text="(b)1931 год.(/b) El primer turbogenerador con la potencia de 50 000 kW fue fabricado por «Electrosila”. 
+(b)1933 год.(/b) La primera turbina de vapor con la potencia de 25 MW con la toma de vapor ajustable para la instalación de calefacción fue fabricada por las especialistas de la Planta de producción de metales de Leningrad. 
+(b)1937 год.(/b) El turbogenerador con la potencia de 100 000 kW que es un generador más potente bipolar en el mundo fue fabricado en “Electrosila”. 
+(b)1938 год.(/b) Fue fabricada la turbina de vapor primera en Europa con la potencia de 100 MW por 3000 rev/min."></slide2>
+			<slide3 mainTitle="HISTORIA" image="images/1.2.4.jpg" title="1940–1949" text="(b)1944 год.(/b) Fue organizado el departamento del Instituto central de calderas y turbinas de Moscú, en adelante convertido en el Instituto de investigación científica y de diseños y proyectos de fabricación de maquinaria energética atómica de Toda Rusia. 
+(b)1945 год.(/b) El Instituto central de calderas y turbinas y su departamento de Moscú fueron invitados a participar en los trabajos en el marco del Proyecto atómico de la URSS.
+(b)1946 год.(/b) El primer taller de herramientas de la Planta de turbinas de Kaluga fue puesto en marcha."></slide3>
+			<slide4 mainTitle="HISTORIA" image="images/1.2.5.jpg" title="1950–1959" text="(b)1950 год.(/b) “Electrosila” fue la primera en todo el mundo que empezó a fabricar turbogeneradores con el enfriamiento directo de hidrógeno y agua.  Más de 570 turbogeneradores en total de esta serie fueron instalados en el mundo. 
+(b)1952 год.(/b) La turbina con el sobrecalentamiento intermedio de vapor primera en Europa con la potencia de 150 MW fue fabricada por la Planta de producción de metales de Leningrad.
+(b)1957 год.(/b) El primer turbogenerador en el mundo con la potencia de 200 kW con el enfriamiento fijo de hidrógeno fue fabricado por “Electrosila”.  El turbogenerador de esta serie recibió el premio superior – medalla de oro “Gran-Pri” en la exposición internacional en Bruselas."></slide4>
+			<slide5 mainTitle="HISTORIA" image="images/1.2.6.jpg" title="1960–1969" text="(b)1964 год.(/b) La Planta de aletas de turbina fundada como parte de la Planta de producción de metales de Leningrad resultó ser una empresa especializada más grande de producción de aletas de turbina. 
+La turbina de vapor primera en Europa con la potencia de 800 MW fue fabricada por la Planta de producción de metales de Leningrad.  
+Los trabajos con turbogeneradores con el enfriamiento total por agua donde se aplican solo materiales incombustibles, fueron inicializados por “Electrosila”. 
+(b)1966 год.(/b) Fue fundada la empresa estatal en el sistema del Ministerio de Comercio Exterior que se especializa en los suministros del equipo energético y de transportación que obtuvo el nombre “Energomashexport”. 
+(b)1967 год.(/b) “Energomashexport” recibió el contrato para el proyecto de central termoeléctrica “Djerada” en Marruecos – proyecto que resultó ser la primera práctica de trabajo de “llave en mano” para la industria nacional."></slide5>
+			<slide6 mainTitle="HISTORIA" image="images/1.2.7.jpg" title="1970–1974" text="(b)1970 год.(/b) En la Planta de turbinas de Kaluga fue inicializada la elaboración y asimilación de las turbinas de transmisión para la industria energética atómica.
+(b)1973 год.(/b) En las condiciones severas de competición, la empresa “Energomashexport” ganó las licitaciones internacionales para el suministro de 14 equipos hidráulicos con la potencia de 138 MW cada uno para la central hidroeléctrica “Salto Grande” en la frontera de Argentina y Uruguay."></slide6>
+			<slide7 mainTitle="HISTORIA" image="images/1.2.8.jpg" title="1975–1979" text="(b)1975 год.(/b) “Energomashexport” firmó los contratos para el suministro del equipo para dos termoestaciones en Argentina. 
+(b)1976 год.(/b) El Conjunto industrial científico de investigación y proyección del equipo energético fue fundado en la base del Instituto central de calderas y turbinas por la decisión del gobierno. 
+(b)1978 год.(/b) La única turbina de vapor de un eje K-1200-240 con la potencia de 1200 MW fue instalada en la Central eléctrica estatal de región de Kostroma, durante la fabricación de la cual fueron usadas las aletas de aleación de titanio con el largo de 1200 mm."></slide7>
+			<slide8 mainTitle="HISTORIA" image="images/1.2.9.jpg" title="1980–1989" text="La serie de turbinas únicas de marcha rápida de vapor saturado fue fabricada por la Planta de producción de metales de Leningrad para la central eléctrica atómica con la potencia de 1000 MW. 
+“Energomashexport” cumplió el contrato para el suministro de 10 bloques de energía  con la potencia de 210 MW cada uno con éxito para cuatro centrales eléctricas hidráulicas en China."></slide8>
+			<slide9 mainTitle="HISTORIA" image="images/1.2.10.jpg" title="1990" text="“Electrosila” inicializó la producción de turbogeneradores con el enfriamiento por aire con la potencia de 1,5 a 350 MW que se unen con diferentes tipos de turbinas. 
+La Planta de turbinas de Kaluga inicializó la elaboración y asimilación de las turbinas geotérmicas. 
+Las pedidas de entrega del equipo a México para las centrales eléctricas hidráulicas “Aguamilpa” y “Uites” fueron recibidas por “Energomashexport”."></slide9>
+			<slide10 mainTitle="HISTORIA" image="images/1.2.11.jpg" title="1993" text="La Planta de producción de metales de Leningrad recibió el premio internacional “Estrella de oro” por la calidad de productos fabricados.  
+“Energomashexport” realizó las entregas de equipos para las centrales termoeléctricas “Shantou” y “Juanen Pekín” y lanzó a explotar la central eléctrica hidráulica “Pedro del Águila” en Argentina. 
+El contrato para la entrega de equipos hidráulicos para la central eléctrica hidráulica “Teri” en India y de bloques de energía para la central termoeléctrica “Voiani” en Eslováquia fue firmado."></slide10>
+			<slide11 mainTitle="HISTORIA" image="images/1.2.12.jpg" title="2000" text="(b)2000 год.(/b) СFue fundada la corporación Power Machines que obtuvo el rol de contratante y suministrador del equipo fabricado tanto por las plantas – participantes de la corporación (Planta de producción de metales de Leningrad, “Electrosila”, Planta de aletas de turbina, Planta de turbinas de Kaluga) como por los otros fabricantes, incluso los Extranjeros. Empresa administradora/ Sociedad Anónima Abierta Power Machines."></slide11>
+			<slide12 mainTitle="HISTORIA" image="images/1.2.13.jpg" title="2003" text="(b)2003 год.(/b) “Energomashexport”  se reunió con la Sociedad Anónima Abierta “Maquinas de fuerza” en la empresa unida Sociedad Anónima Cerrada “Energomashexport – Maquinas de fuerza”.
+Power Machines poseen los paquetes de control de la Planta de producción de metales de Leningrad, “Electrosila”, Planta de aletas de turbina, así como el paquete de bloqueo de acciones de la Planta de turbinas de Kaluga. 
+El Conjunto industrial científico del Instituto central de calderas y turbinas “I. I. Polzunov” entra en Power Machines."></slide12>
+			<slide13 mainTitle="HISTORIA" image="images/1.2.14.jpg" title="2004" text="(b)2004 год.(/b) En el diciembre de 2004, las empresas de holding (Planta de producción de metales de Leningrad, “Electrosila”, Planta de aletas de turbina) se reunieron en la persona jurídica única por medio de la reunión a la Sociedad Anónima Abierta Power Machines.
+La Sociedad Anónima Abierta Power Machines es el derechohabiente universal de todas las empresas reunidas. 
+Todos los derechos, así como los activos de tres empresas se transfirieron a la Sociedad Anónima Abierta Power Machines.
+Las empresas reunidas recibieron el status de filiales, los reglamentos de los cuales fueron aprobados por el consejo de directores de Sociedad Anónima Abierta Power Machines."></slide13>
+			<slide15 mainTitle="HISTORIA" image="images/1.2.15.jpg" title="2005" text="Power Machines realizaron la prueba del segundo 1 MW con éxito para la central eléctrica atómica “Kudankulam” (India). 
+La Sociedad Anónima Abierta Power Machines y la Sociedad Anónima Abierta “Mosenergo” firmaron el contrato para la fabricación y entrega del modelo de cabeza de la instalación de turbinas de gas GTE-65 para TETs-9 de la Sociedad Anónima Abierta “Mosenergo”. El proyecto de la instalación de turbinas de gas GTE-65 es la elaboración perspectiva de la oficina de diseños y proyectos especializada de las turbinas de gas y instalaciones de vapor y gas del filial de la Planta de producción de metales de Leningrad.  
+Power Machines fabricaron y realizaron el suministro del generador único con la potencia de 375 MW para la central eléctrica hidráulica “El Cajon” que se construye en México.  Este es el hidrogenerador más potente entre los que se suministran por Power Machines a las centrales eléctricas hidráulicas extranjeras."></slide15>
+			<slide16 mainTitle="HISTORIA" image="images/1.2.16.jpg" title="2006" text="Power Machines fabricaron y realizaron las pruebas en vivo del generador de turbinas con la potencia de 110 MW con éxito para la instalación de vapor y gas de la nueva central eléctrica de la Sociedad Anónima Abierta “Instalaciones de vapor y gas de Ivanovo”. 
+El equipo de Power Machines empieza la operación en la central eléctrica atómica “Tyanvan” en China.  En 7 de Abril del 2006 fue realizada la activación de prueba de la turbina 1 MW del primer bloque enérgico con la potencia de 1000 MW."></slide16>
+			<slide17 mainTitle="HISTORIA" image="images/1.2.17.jpg" title="2007" text="La central hidroeléctrica más grande de México fue puesta en marcha. Según los resultados de 200 pruebas de reloj del segundo equipo hidráulico de la central hidroeléctrica “El Cajón”, la Power Machines aseguró la puesta en marcha oportuna para el empleo comercial del objeto energético general y más grande de México con la potencia de 750 MW.  
+Power Machines finalizó la fabricación y pruebas complejas del turbogenerador principalmente nuevo no sincronizado con la potencia de 160 MW y del sistema de excitación para el tercer bloque enérgico TETs-27 de la Sociedad Anónima Abierta “Mosenergo”."></slide17>
+			<slide18 mainTitle="HISTORIA" image="images/1.2.18.jpg" title="2008" text="Power Machines fabricaron y realizaron las pruebas del modelo de cabeza de la instalación de turbinas de gas GTE-65 con la potencia de 65 MW con éxito, destinado para TETs-9 de la Sociedad Anónima Abierta “Mosenergo”. Esta es la primera turbina de gas en la case media de potencia (en la banda de 50 a 100 MW), fabricada por la industria nacional. 
+La Sociedad Anónima Abierta Power Machines inicializó la creación del proyecto técnico de la turbina de vapor de velocidad baja K-1200-6,8/25 con la potencia de 1200 MW con la velocidad de rotación de 1500 revoluciones por minuto para las centrales eléctricas atómicas, la cual será la turbina de velocidad baja más potente en Rusia y en la Comunidad de Estados Independientes."></slide18>
+		</submenu2>
+		<submenu3 name="Proyectos grandes">
+			<slide0 mainTitle="PROYECTOS GRANDES" image="images/1.3.jpg" text="En Rusia más del 65% de objetos energéticos están equipados con el equipo de Power Machines, entre los cuales están las empresas más grandes del sector: Central eléctrica atómica de Kalinin, Central hidroeléctrica Sayano-Shushenskaya, de Krasnoyarsk y de Bureya, Central eléctrica estatal de región de Nijnevartovsk, Central termoeléctrica de Kaliningrad, etc."></slide0>
+			<slide1 mainTitle="PROYECTOS GRANDES" image="images/1.3.1.jpg" title="Central eléctrica estatal de región de Kostroma" text="La Central eléctrica estatal de región de Kostroma opera casi 40 años cerca de la ciudad antigua de Kostroma, esta es la central eléctrica más grande comercial y económica en Rusia.  Las empresas de Power Machines fabricaron el equipo único – turbina de vapor y turbogenerador con la potencia de 1200 MW por 3000 revoluciones al minito, para la Central eléctrica estatal de región de Kostroma.  K-1200 opera sin observaciones y hasta el momento se considera la turbina de vapor de alta velocidad más grande del mundo. "title2="Central hidroeléctrica Sayano-Shushenskaya" text2="La central hidroeléctrica más grande de Rusia opera en la orilla del río Enisey con la presa con altura de 242 metros y largo más de un kilómetro – Central hidroeléctrica Sayano-Shushenskaya. La turbina hidráulica radial-axial y el hidrogenerador con la potencia de 640 MW fueron fabricados para esta central hidroeléctrica de la empresa Power Machines.  10 equipos hidráulicos en total funcionan en la central."></slide1>
+			<slide2 mainTitle="PROYECTOS GRANDES" image="images/1.3.2.jpg" title="Central hidroeléctrica de Bureya" text="El objeto hidroenergético más grande y significante en la historia moderna de Rusia – Central hidroeléctrica de Bureya se encuentra en el río Bureya. La potencia total de seis grupos de maquinas de la central es de 2000 MW. Los hidrogeneradores más potentes con el enfriamiento por aire fueron proyectados para esta central hidroeléctrica Power Machines que se diferencian por el grado de eficiencia elevado (98,7%) y las características de dimensiones de masa reducidas." title2="Central termoeléctrica “Aljolma”" text2="La central termoeléctrica “Aljolma” se encuentra en el oeste de Finlandia — una de las más modernas y ecológicamente puras centrales en el país. Power Machines fabricaron la turbina de vapor K-255 para esta central. Los ingenieros energéticos de Finlandia dicen lo siguiente de esta maquina: “La maquina funciona como un reloj suizo”. Por primera vez en Rusia, el condensador para la central termoeléctrica fue fabricado con el uso de aleaciones de titanio, lo que permite aumentar el plazo de empleo de elementos en dos veces y media."></slide2>
+			<slide3 mainTitle="PROYECTOS GRANDES" image="images/1.3.3.jpg" title="Central hidroeléctrica “Teri”" text="La central termoeléctrica “Teri” se encuentra en la zona premontañosa de montes Himalaya, el complejo hidroenergético único según su escala y complejidad de realización técnica. La empresa Power Machines fue el socio clave de construcción, suministrador del equipo energético, servicios de inspección principal de trabajos de montaje y de ajuste de puesta en marcha." title2="Central eléctrica atómica “Tyanvan”" text2="La central eléctrica atómica “Tyanvan”, una de las centrales más seguras del mundo funciona en el oriente de China. La empresa Power Machines proyectó y fabricó las turbinas de alta velocidad y generadores de 1000 MW para la central eléctrica atómica con la aplicación del complejo de soluciones técnicas modernas.  El equipo asegura los índices técnico-económicos altos, seguridad y garantías de empleo."></slide3>
+			<slide4 mainTitle="PROYECTOS GRANDES" image="images/1.3.4.jpg" title="Central hidroeléctrica “El Cajón”" text="El proyecto energético más ambicioso de México de los últimos años – la central hidroeléctrica “El Cajón”, fue realizado en el año de 2007 en el estado de Nayarit en el río Santiago. La central eléctrica tiene la presa con la altura de 180 metros.  Power Machines realizaron la entrega de todo el volumen de equipos electromecánicos y auxiliares, así como ejecutaron la serie de trabajos de montaje, inspección principal y ajuste de puesta en marcha de equipos para la central hidroeléctrica “El Cajón”." title2="Central hidroeléctrica de Asuán" text2="Cerca de la ciudad de Asuán, en los rápidos del río Nilo se encuentra el complejo hidrotécnico más grande en el continente africano, “nuevo milagro del Egipto” – Central hidroeléctrica de Asuán. En los años 1960-1970, las empresas de Power Machines instalaron 12 hidroturbinas radial-axiales de 180 MW en este objeto y la misma cantidad de hidrogeneradores. Al día de hoy los equipos hidráulicos han funcionado exitosamente por más de 35 años."></slide4>
+		</submenu3>
+		<submenu4 name="Referencias">
+			<slide0 mainTitle="REFERENCIAS" image="">
+<country name = "AZERBAIYÁN" map = "azerbaidjan"> </country>
+				<country name = "LA ALBANIA" map = "albania"> </country>				
+				<country name = "ARGELIA" map = "aljir"> </country>				
+				<country name = "ANGOLA" map = "angola"> </country>				
+				<country name = "ARGENTINA" map = "argentina"> </country>				
+				<country name = "ARMÉNIA" map = "armenia"> </country>				
+				<country name = "AFGANISTÁN" map = "afganistan"> </country>				
+				<country name = "LA BANGLADESH" map = "bangladesh"> </country>				
+				<country name = "BIELORRUSIA" map = "belarus"> </country>				
+				<country name = "BULGARIA" map = "bolgaria"> </country>				
+				<country name = "BOLIVIA" map = "bolivia"> </country>				
+				<country name = "LA BOSNIA Y HERZEGOVINA" map = "bosnia"> </country>				
+				<country name = "BRASIL" map = "brazilia"> </country>				
+				<country name = "HUNGRÍA" map = "vengria"> </country>				
+				<country name = "EL VIETNAM" map = "vietnam"> </country>				
+				<country name = "ALEMANIA" map = "germania"> </country>			
+				<country name = "GRECIA" map = "grecia"> </country>			
+				<country name = "GEORGIA" map = "gruzia"> </country>				
+				<country name = "LA DINAMARCA" map = "dania"> </country>				
+				<country name = "EGIPTO" map = "egipet"> </country>				
+				<country name = "INDIA" map = "india"> </country>				
+				<country name = "IRAK" map = "irak"> </country>				
+				<country name = "IRÁN" map = "iran"> </country>				
+				<country name = "LA ISLANDIA" map = "islandia"> </country>				
+				<country name = "ITALIA" map = "italia"> </country>				
+				<country name = "YEMEN" map = "iemen"> </country>				
+				<country name = "KAZAJISTÁN" map = "kazahstan"> </country>				
+				<country name = "CANADÁ" map = "canada"> </country>				
+				<country name = "CHIPRE" map = "kipr"> </country>				
+				<country name = "KIRGUIZIA" map = "kirgizia"> </country>				
+				<country name = "CHINA" map = "kitai"> </country>				
+				<country name = "LA REPÚBLICA POPULAR COREANA" map = "knr"> </country>				
+				<country name = "COLOMBIA" map = "kolumbia"> </country>				
+				<country name = "CUBA" map = "kuba"> </country>				
+				<country name = "LETONIA" map = "latvia"> </country>				
+				<country name = "LITUANIA" map = "litva"> </country>				
+				<country name = "MACEDONIA" map = "makedonia"> </country>				
+				<country name = "MARRUECOS" map = "marokko"> </country>				
+				<country name = "MÉXICO" map = "meksika"> </country>				
+				<country name = "LA MOLDAVIA" map = "moldavia"> </country>				
+				<country name = "LA MONGOLIA" map = "mongolia"> </country>				
+				<country name = "NIGERIA" map = "nigeria"> </country>				
+				<country name = "NORUEGA" map = "norvegia"> </country>				
+				<country name = "LOS EMIRATOS ÁRABES UNIDOS" map = "oae"> </country>				
+				<country name = "PAKISTÁN" map = "pakistan"> </country>				
+				<country name = "PARAGUAY" map = "paragvai"> </country>				
+				<country name = "POLONIA" map = "polsha"> </country>				
+				<country name = "RUSIA" map = "russia"> </country>				
+				<country name = "RUMANÍA" map = "ruminia"> </country>				
+				<country name = "SERBIA Y MONTENEGRO" map = "serbia"> </country>				
+				<country name = "SIRIA" map = "siria"> </country>				
+				<country name = "ESLOVAQUIA" map = "slovakia"> </country>					
+				<country name = "LOS ESTADOS UNIDOS AMÉRICA" map = "usa"> </country>				
+				<country name = "TAYIKISTÁN" map = "tadjikistan"> </country>				
+				<country name = "TAIWÁN" map = "taivan"> </country>				
+				<country name = "TURKMENISTÁN" map = "turkmenistan"> </country>				
+				<country name = "TURQUÍA" map = "turkish"> </country>				
+				<country name = "UZBEKISTÁN" map = "uzbekistan"> </country>				
+				<country name = "UCRANIA" map = "ukraina"> </country>				
+				<country name = "URUGUAY" map = "urugvai"> </country>				
+				<country name = "LAS FILIPINAS" map = "filippini"> </country>				
+				<country name = "FINLANDIA" map = "finland"> </country>				
+				<country name = "FRANCIA" map = "france"> </country>				
+				<country name = "CROACIA" map = "horvatia"> </country>				
+				<country name = "CHEQUIA" map = "chehia"> </country>				
+				<country name = "SUECIA" map = "shvedcia"> </country>				
+				<country name = "ESTONIA" map = "estonia"> </country>				
+				<country name = "ETIOPÍA" map = "efiopia"> </country>				
+				<country name = "COREA DEL SUR" map = "korea"> </country>				
+				<country name = "JAPÓN" map = "japan"> </country>					
+			</slide0>
+		</submenu4>
+		<submenu5 name="Garantías de calidad">
+			<slide0 mainTitle="GARANTÍAS DE CALIDAD" image="images/1.5.1.jpg" title="Garantías de calidad"text="El sistema único de management de calidad de la Sociedad Anónima Abierta Power  Machines tiene el certificado de la correspondencia a los requerimientos del estándar internacional ISO 9001:2000 y estándar nacional GOST R ISO 9001-2001.
+El potencial científico-técnico y la calificación de especialistas de  Power Machines garantizan la calidad alta de ejecución de trabajos de investigación y proyección, fabricación del equipo, así como su mantenimiento."></slide0>
+		</submenu5>
+	</menu1>
+	<menu2 name="COMPOSICIÓN Y ESTRUCTURA">
+		<menuSlides>
+			<slide0 mainTitle="COMPOSICIÓN Y ESTRUCTURA" image="images/2.jpg" list="Planta de producción de metales de Leningrad – turbinas para las centrales eléctricas hidráulicas, térmicas y atómicas.
+|“Electrosila” – generadores para las turbinas hidráulicas, de vapor y gas, motores de tracción, maquinas eléctricas grandes y equipo de bajo voltaje.
+|Planta de turbinas de Kaluga – turbinas de vapor de potencia baja y media. 
+|Planta de aletas de turbina – aletas procesadas mecánicamente para las turbinas de vapor y gas.
+|Conjunto industrial científico del Instituto central de calderas y turbinas “I. I. Polzunov” – elaboración, modernización y perfección de todos los tipos del equipo energético.
+|“Maquinas de fuerza – planta “Reostat” – producción de equipos reguladores de puesta en marcha y otros productos electrotécnicos."></slide0>
+		</menuSlides>
+		<submenu1 name="Planta de producción de metales de leningrad">
+			<slide0 mainTitle="PLANTA DE PRODUCCIÓN DE METALES DE LENINGRAD" image="images/2.1.1.jpg" title="Información de empresa" text="La Planta de producción de metales de Liningrad realiza la producción de turbinas de vapor, hidráulicas y de gas de diferente potencia, equipos auxiliares para las centrales eléctricas hidráulicas, térmicas y atómicas. 
+Las siguientes turbinas se fabrican en la Planta de producción de metales de Leningrad:" list="Primera turbina en el mundo con la potencia de 25 MW con la toma de vapor ajustable para la instalación de calefacción (año 1933).|Primera turbina de alta velocidad en Europa con la potencia de 100 MW por 3000 rev/min.|Primera turbina de vapor en Europa con la potencia de 800 MW.|Turbina de un eje con la potencia de 1200 MW por 3000 rev/min, insuperable en el mundo por la perfección técnica.|Turbinas de alta velocidad con la potencia de 1000 MW para las centrales eléctricas atómicas."></slide0>
+			<slide1 mainTitle="PLANTA DE PRODUCCIÓN DE METALES DE LENINGRAD" image="images/2.1.2.jpg" title="Practica única" list="La potencia más alta de las turbinas de alta velocidad en el mundo.|Las características de dimensiones mínimas de las turbinas de alta velocidad para las centrales eléctricas atómicas en comparación con análogos de baja velocidad.|Las tecnologías ecológicamente puras de las turbinas de aletas giratorias permiten prevenir el ensuciamiento de recursos acuáticos.|Nueva generación de sistemas de microprocesadores de control automático (el plazo garantizado de operación es de 40 años).|Tecnología propia de fundiciones del cuerpo interno y externo del cilindro de presión alta de la turbina del vapor saturado con la potencia de 1 mln kW.|Lubricantes especiales ininflamables en el ajuste y lubricación de turbinas de vapor."></slide1>
+		</submenu1>
+		<submenu2 name="Electrosila">
+			<slide0 mainTitle="ELECTROSILA" image="images/2.2.jpg" title="Información de empresa" text="“Electrosila” se especializa en la producción del equipo eléctrico de alta potencia para la energética, metalurgia, construcción de maquinaria y otros sectores de industria importantes:" list="Turbogeneradores y hidrogeneradores.|Maquinas eléctricas grandes de la corriente alterna y continua de diferentes versiones.|Equipo de bajo voltaje."></slide0>
+			<slide1 mainTitle="ELECTROSILA" image="images/2.2.jpg" title="En “Electrosila” se fabrican:" list="Más de 1570 turbogeneradores con la potencia de 0,5 MW a 1200 MW.|Más de 600 hidrogeneradores con la potencia de 4 a 640 MW.|Más de 500 mil maquinas eléctricas diferentes para los demás sectores principales de industria.|Hidrogenerador más potente en el mundo con el enfriamiento por aire con la potencia de 335 MW."></slide1>
+		</submenu2> 
+		<submenu3 name="Planta de aletas de turbin">
+			<slide0 mainTitle="PLANTA DE ALETAS DE TURBINA" image="images/2.3.jpg" title="Información de empresa" text="Planta es la única empresa en Rusia del ciclo completo de fabricación de aletas de turbina procesadas mecánicamente para las turbinas de vapor y de gas de destino energético y de transportación de gas. 
+En la Planta de aletas de turbina se fabrican las aletas únicas de titanio con el largo de 1200 mm, para las turbinas de vapor de 1M watt instaladas en las centrales eléctricas atómicas “Busher” (Iran) y “Tyanvan” (China)."></slide0>
+		</submenu3>
+		<submenu4 name="Planta de turbinas de Kaluga">
+			<slide0 mainTitle="PLANTA DE TURBINAS DE KALUGA" image="images/2.4.jpg" title="Información de empresa" text="Planta de turbinas de Kaluga realiza la producción de turbinas de potencia baja y media (hasta 35 MW) para las centrales eléctricas térmicas, centrales eléctricas atómicas, centrales eléctricas estatales de región, empresas del complejo de petróleo y gas, industria hullera, metalúrgica, química y de la alimentación:" list="Turbinas de vapor para el accionamiento de generadores eléctricos.|Turbinas de vapor de accionamiento.|Turbogeneradores de bloques.|Turbinas geotérmicas de vapor y bloques enérgicos." text2="En la Planta de turbinas de Kaluga se fabrican:" list2="2642 instalaciones enérgicas con la potencia total de 17 091 MW.|Turbinas geotérmicas para la Central eléctrica geotérmica Mutnovskaya.|Turbina con la potencia de 37 MW como parte de la instalación de vapor y gas con la potencia total de 140 MW."></slide0>
+		</submenu4>
+		<submenu5 name="Conjunto industrial científico del instituto central de calderas y turbinas">
+			<slide0 mainTitle="CONJUNTO INDUSTRIAL CIENTÍFICO DEL INSTITUTO CENTRAL DE CALDERAS Y TURBINAS" image="images/2.5.jpg" title="Información de empresa" text="Tendencias de investigaciones:" list="Producción y perfección del equipo enérgico para las centrales eléctricas atómicas y hidráulicas.|Proyección del equipo de energética industrial y municipal.|Producción del equipo para los objetos energotecnológicos de empresas de diferentes sectores.|Elaboración de los métodos de control de duración del recurso."></slide0>
+			<slide1 mainTitle="CONJUNTO INDUSTRIAL CIENTÍFICO DEL INSTITUTO CENTRAL DE CALDERAS Y TURBINAS" image="images/2.5.jpg" title="Información de empresa" text="El Conjunto industrial científico del Instituto central de calderas y turbinas “I. I. Polzunov” es:" list="Cuerpo de profesionales de alta calificación.|Base única de experimentos y pruebas.|Centro experimental del equipo energético, acreditado por el Comité Estatal de la Estandartización de Rusia.|Organización especializada principal de la Inspección Federal Montañosa e Industrial de Rusia de seguridad industrial de calderas, recipientes y tuberías, de análisis y prevención de riesgos tecnogénicos."></slide1>
+		</submenu5>
+		<submenu6 name="Power Machines – planta “Reostat”">
+			<slide0 mainTitle="POWER MACHINES – PLANTA “REOSTAT”" image="images/2.6.jpg" title="Información de empresa" text="El tipo principal de productos de planta – equipos reguladores de puesta en marcha y otros productos electrotécnicos. 
+La planta “Reostat” es el productor único en Rusia y en países de Comunidad de Estados Independientes de contactores electromagnéticos de serie KМ 2000 y K1000, estaciones de mando de botones y resistores de diferente dirección, así como es uno de los productores principales del equipo eléctrico para los vagones de metropolitano y trenes eléctricos suburbanos."></slide0>
+		</submenu6>
+	</menu2>
+	<menu3 name="PRODUCTOS">
+		<menuSlides>
+			<slide0 mainTitle="PRODUCTOS" image="images/3.jpg" list="Turbinas hidráulicas y hidrogeneradores de 4 a 750 MW.|Turbinas de vapor y turbogeneradores con la potencia de 1200 MW.|Turbinas de vapor geotérmicas de 1,7 МW a 23 МW (2,5 – 25 МW).|Turbinas de gas con la potencia de 65 MW y 160 MW, instalaciones de vapor y gas en su base, dispositivo combinado de purificación del aire de turbinas de gas.|Equipo auxiliar incluso los sistemas de ajuste automático y control, condensadores, sistemas de excitación, compuertas delante de turbinas, etc.|Aletas para las turbinas de vapor y de gas.|Equipo eléctrico."></slide0>
+		</menuSlides>
+		<submenu1 name="Turbinas hidráulicas y hidrogeneradores">
+			<slide0 mainTitle="TURBINAS HIDRÁULICAS Y HIDROGENERADORES DE 4 A 1000 МW" image="images/3.1.jpg" text="Power Machines fabrica el siguiente equipo para las centrales hidroeléctricas." title2="Turbinas hidráulicas:" list2="Turbinas de aletas giratorias (Kaplan) con la potencia de 4 a 300 MW para las cargas de presión de 5 a 70 m.|Turbinas radial-axiales (Francis) con la potencia de 10 a 1000 MW para las cargas de presión de 18 a 600 m.|Turbinas hidráulicas reversibles (Francis pump turbines) con la potencia hasta 300 MW para las cargas de presión hasta 400 m.|Turbinas hidráulicas de caldero (Pelton) con la potencia de 10 a 180 MW para las cargas de presión de 250 a 700 m.|Turbinas hidráulicas de cápsula horizontal con la potencia hasta 70 MW para las cargas de presión hasta 25 m."></slide0>
+			<slide1 mainTitle="TURBINAS HIDRÁULICAS Y HIDROGENERADORES DE 4 A 1000 МW" image="images/3.1.jpg" title="Hidrogeneradores con la potencia de 4 a 1000 MW con diferentes parámetros, sistemas de enfriamiento y excitación." text="Esquemas constructivos de hidrogeneradores fabricados:" list="Con la posición vertical y horizontal del eje.|De versión  aparasolado, semiaparasolado y de suspensión.|Generadores del tipo capsular con diferentes sistemas de enfriamiento.|Con diferentes versiones de construcciones y sistemas individuales."></slide1>
+			<slide2 mainTitle="TURBINAS HIDRÁULICAS Y HIDROGENERADORES DE 4 A 1000 МW" image="images/3.1.1.jpg" title="Turbinas hidráulicas" text="Las turbinas hidráulicas se diferencian por la simplicidad de soluciones constructivas, accesibilidad de los elementos de construcción para el montaje y mantenimiento, seguridad alta, utilidad de reparación y seguridad ecológica. 
+Ventajas principales de turbinas hidráulicas de la Sociedad anónima abierta Power Machines:" list="Para aumentar el recurso de aletas de turbinas radial-axiales grandes, sus lingotes se fabrican en general de laminados con el método de estampado.|Ruedas de trabajo de las turbinas hidráulicas de aletas giratorias se fabrican en versión ecológicamente pura que excluye la posibilidad del escape de aceite en el agua.|Los bujes y listones que no requieren el lubricante, se aplican en los puntos de frotación de dispositivos guía.|En caso de necesidad de puesta en marcha de turbinas en las cargas de presión reducidas en el período de la construcción no terminada, se aplican las ruedas de trabajo de recambio que aseguran la producción adicional de energía eléctrica en el periodo inicial del empleo.|El tiempo de servicio de las turbinas fabricadas por la empresa Power Machines es más de 40 años."></slide2>
+			<slide3 mainTitle="TURBINAS HIDRÁULICAS Y HIDROGENERADORES DE 4 A 1000 МW" image="images/3.1.2.jpg" title="Generadores hidráulicos" text="La sistemática de hidrogeneradores incluye las maquinas con la potencia de 4 a 720 MW con las velocidades nominales de rotación de 50 a 750 rev/min para las centrales eléctricas con las cargas de presión bajas, medias y altas.  
+En total por la Sociedad anónima abierta Power Machines fue fabricado:" list="600 hidrogeneradores de la potencia total de 65 mln kW + aproximadamente del 9% de la potencia total establecida de la central eléctrica hidráulica en el mundo.|31 generadores del tipo capsular de diferentes construcciones y sistemas de enfriamiento con la potencia total de 904 MW.|53 hidrogeneradores con el enfriamiento por agua de rotores con la potencia total de 15,2 mln kW.|27 maquinas con el enfriamiento por agua de rotores."></slide3>
+			<slide4 mainTitle="TURBINAS HIDRÁULICAS Y HIDROGENERADORES DE 4 A 1000 МW" image="images/3.1.3.jpg" title="Equipo auxiliar para las turbinas hidráulicas y hidrogeneradores" text="Equipo auxiliar para las turbinas hidráulicas y hidrogeneradores incluye:" list="Sistemas de excitación.|Compuertas delante de turbinas.|Sistemas de ajuste automático.|Reguladores de electrohidráulicos.|Instalaciones de presión de aceite.|Sistemas de control de instalación de presión de aceite.|Bombas.|Grupos de transferencia de calor."></slide4>
+			<slide5 mainTitle="TURBINAS HIDRÁULICAS Y HIDROGENERADORES DE 4 A 1000 МW" image="images/3.1.4.jpg" title="Competitividad" text="Competitividad en el mercado mundial se asegura por:" list="Utilización amplia del análisis tridimensional del flujo en la parte corriente y del estado tenso en las piezas y unidades de turbinas hidráulicas.|Pruebas detalladas de turbinas hidráulicas en caballetes del laboratorio y en las condiciones exteriores.|Know-how en la elaboración de turbinas hidráulicas de aletas giratorias ecológicamente puras.|Elaboración de sistemas de control programables de alta seguridad de las turbinas hidráulicas con el uso de la técnica de microprocesadores.|Dominio del nuevo acero de alta resistencia de tipo 15/4 para las ruedas de trabajo y aletas del dispositivo guía de las turbinas radial-axiales y turbinas de aletas giratorias." text2="La potencia total de las turbinas hidráulicas instaladas en 30 países de Europa, Asia, África y América no supera el valor de 60 000 MW."></slide5>
+		</submenu1>
+		<submenu2 name="Turbinas de vapor y turbogeneradores">
+			<slide0 mainTitle="TURBINAS DE VAPOR Y TURBOGENERADORES HASTA 1200 МW" image="images/3.2.jpg" text="La empresa “Maquinas de fuerza” fabrica el siguiente equipo para las centrales termoeléctricas." title2="Turbinas de vapor" list2="Turbinas de condensación para los parámetros de vapor superiores y inferiores de los críticos hasta 1200 MW.|Turbinas de condensación con la toma de calefacción hasta 120 MW.|Turbinas de calefacción sin sobrecalefacción intermedia hasta 120 MW con el sobrecalefacción intermedia hasta 185 MW.|Turbinas de calefacción con la toma de producción y de calefacción hasta 80 MW.|Turbinas con contrapresión con la toma de producción hasta 80 MW.|Turbinas con contrapresión hasta 85 MW.|Turbinas para las instalaciónes de vapor y gas hasta 180 MW.|Турбины для АЭС до 1200 МВт."></slide0>
+			<slide1 mainTitle="TURBINAS DE VAPOR Y TURBOGENERADORES HASTA 1200 МW" image="images/3.2.jpg" title="Turbogeneradores:" list="Turbogeneradores con refrigeración forzada con hidrógeno.|Turbogeneradores con refrigeración con hidrógeno y agua.|Turbogeneradores con refrigeración completa por agua.|Turbogeneradores con refrigeración completa por aire."></slide1>
+			<slide2 mainTitle="TURBINAS DE VAPOR Y TURBOGENERADORES HASTA 1200 МW" image="images/3.2.1.jpg"  title="Turbinas para la central eléctrica atómica" text="La empresa “Maquinas de fuerza” fabrica las turbinas de alta velocidad para las centrales eléctricas atómicas con la potencia de 800 a 1200 MW. Estas turbinas poseen una seria de particularidades constructivas que aumentan su seguridad y vida de servicio:" list="Construcción entera forjada de rotores.|Dureza excesiva de bases de grupos de turbinas nuevos, sus cuerpos y soportes.|Construcción en dos cadenas de cilindros y el método de su composición contribuyen a la descarga del cojinete axial.|Nueva construcción del cojinete de apoyo con la capacidad portadora elevada."></slide2>
+			<slide3 mainTitle="TURBINAS DE VAPOR Y TURBOGENERADORES HASTA 1200 МW" image="images/3.2.2.jpg" title="Equipo auxiliar  para las turbinas de vapor" list="Condensadores de aire.|Calentadores.|Refrigerantes de aceite.|Válvulas.|Dispositivos eliminadores de aire.|Filtros para el agua."></slide3>
+			<slide4 mainTitle="TURBINAS DE VAPOR Y TURBOGENERADORES HASTA 1200 МW" image="images/3.2.3.jpg" title="Turbinas de vapor únicas" list="Alta economía de turbinas con la toma de vapor ajustable para la calefacción.|Seguridad alta y utilidad de reparación.|Economía de montaje y mantenimiento.|Utilización de líquido resistente al fuego en lugar del aceite inflamable de petróleo en los sistemas de ajuste y lubricación de turbinas de vapor.|Características reducidas de dimensiones y de peso en comparación con los análogos de baja velocidad que aseguran la reducción de gastos para la producción de la sala de máquinas de la central eléctrica atómica."></slide4>
+		</submenu2>
+		<submenu3 name="Turbinas de gas">
+			<slide0 mainTitle="TURBINAS DE GAS" image="images/3.3.jpg" text="Power Machines fabrica las turbinas de gas con la potencia de 65 MW de elaboración propia y turbinas con la potencia de 160 MW según la licencia de Siemens, así como las instalaciones de vapor y gas en su base, dispositivos combinados de purificación del aire de turbinas de gas."></slide0>
+		</submenu3>
+		<submenu4 name="Turbinas de vapor son geotérmicas">
+			<slide0 mainTitle="TURBINAS DE VAPOR SON GEOTÉRMICAS" image="images/3.4.jpg" title="Turbinas de vapor son geotérmicas de 1,7 MW a 23 MW " text="Power Machines suministra:" list="Bloques de energía geotérmicos de módulos.|Instalaciones geotérmicas de turbinas en bloques."></slide0>
+			<slide1 mainTitle="TURBINAS DE VAPOR SON GEOTÉRMICAS" image="images/3.4.1.jpg" title="Bloques de energía geotérmicos de módulos" text="Las instalaciones se suministran en contenedores del tipo de vagón. El suministro en bloques reduce el tiempo de montaje y asegura la entrega cómoda al lugar del empleo. 
+Los bloques de módulos de suministro de calefacción para el calentamiento del agua con el vapor que sale del módulo de turbogenerador o con el agua geotérmica, entran en el juego de suministro."></slide1>
+			<slide2 mainTitle="TURBINAS DE VAPOR SON GEOTÉRMICAS" image="images/3.4.2.jpg" title="Instalaciones geotérmicas de turbinas en bloques" text="Son representadas con la fila de tipos de dimensiones de las turbinas geotérmicas de la banda ancha de potencias. 
+Soluciones técnicas únicas:" list="Turbina en dos cadenas.|Grupos de transferencia de calor con el equipo de agua del tipo mezclador.|Eyectores de grandes dimensiones.|Aplicación de materiales plaqueados para el equipo que trabaja en las condiciones del medio agresivo." text2="El sistema de separación en el interior de canales y el cuerpo especial de turbina – separador, aseguran la efectividad de deshidratación hasta el 80% y aumentan el grado de eficiencia de la turbina al 1,7%.
+La primera vez en Rusia fueron elaborados, probados y fabricados los condensadores de aire que excluyen por completo el contacto directo del portador geotérmico con el medio ambiente."></slide2>
+		</submenu4>
+		<submenu5 name="Aletas de turbina">
+			<slide0 mainTitle="ALETAS DE TURBINA" image="images/3.5.jpg" title="Aletas de turbina" text="Power Machines fabrica:" list="Aletas de turbina para las turbinas de vapor con la potencia de 20 a 1500 MW.|Aletas de turbina para las turbinas de gas y grupos de bombeo de gas con la potencia de 6 a 180 MW."></slide0>
+			<slide1 mainTitle="ALETAS DE TURBINA" image="images/3.5.1.jpg" title="Aletas de turbina para las turbinas de vapor  con la potencia de 20 a 1500 MW" text="Características:" list="Se fabrican por el método del estampado caliente volumétrico de aceros inoxidables de cromo y aleaciones de titanio.|De preferencia el perfil y bandajes variables fresados por entero según la altura.|Economía elevada.|Amortiguamiento de oscilaciones.|Largo de aletas de 50 a 1200 mm.|Anchura – hasta 500 mm.|Largo de perfil hasta 1500 mm.|Masa – de 0,1 a 100 kg."></slide1>
+			<slide2 mainTitle="ALETAS DE TURBINA" image="images/3.5.2.jpg" title="Aletas de turbina para las turbinas de gas y grupos de bombeo de gas con la potencia de 6 a 180 MW" text="Se fabrican de aleaciones termorresistentes en la base de níquel, aceros austeníticos y de cromo 
+Técnicas de fundición según los modelos fundidos, estampados, técnica en barras 
+Revestimiento de protección por el método de aplicación de plasma, circulación de gas y de suspensión"></slide2>
+		</submenu5>
+		<submenu6 name="Equipo eléctrico">
+			<slide0 mainTitle="EQUIPO ELÉCTRICO" image="images/3.6.jpg" title="Equipo eléctrico" list="Motores eléctricos.|Accionamiento eléctrico y dispositivos completos de corriente alterna.|Accionamiento eléctrico y dispositivos completos de la corriente continua.|Accionamiento eléctrico de tracción.|Equipo de control y conmutación para las maquinas eléctricas.|Sistema de control tecnológico de los generadores “STK-ER”.|Equipo de control y conmutación para las maquinas eléctricas."></slide0>
+			
+		</submenu6>
+	</menu3>
+	<menu4 name="SERVICIO Y MODERNIZACIÓN">
+		<menuSlides>
+			<slide0 mainTitle="SERVICIO Y MODERNIZACIÓN" image="images/4.jpg" text="El Servicio y modernización del equipo energético es una de las tendencias prioritarias de actividad de la empresa Power Machines. 
+El complejo de servicios representados al cliente, asegura el funcionamiento del depósito de equipos instalados, soporte y mejoramiento de sus características. 
+La empresa “Maquinas de fuerza” tiene la base moderna de investigación científica y ofrece a sus clientes las soluciones de modernización de los objetos energéticos y sus componentes técnicamente seguras y materialmente beneficiosas."></slide0>
+			<slide1 mainTitle="SERVICIO Y MODERNIZACIÓN" image="images/4.1.jpg" title="Servicio durante el suministro del equipo complejo" list="Dirección técnica de montaje, trabajos de ajuste de puesta en marcha y entrega al empleo del equipo energético.|Dirección técnica de trabajos de ajuste según los tipos individuales del equipo.|Mantenimiento de garantía, participación en reparaciones planificadas, elaboración de técnicas de reparación.|Solución de problemas del empleo, ayuda en el dominio de modos del empleo en el equipo principal y en el equipo introducido de nuevo.|Acabado de servicio de modelos principales del equipo después del montaje.|Adiestramiento del personal del cliente, sus empresarios, servicios consultivos.|Servicio después de garantía."></slide1>
+			<slide2 mainTitle="SERVICIO Y MODERNIZACIÓN" image="images/4.2.jpg" title="Servicio del equipo operacional de la central termoeléctrica, central eléctrica atómica, central hidroeléctrica:" list="Reconstrucción del equipo principal y auxiliar con el fin de aumentar los índices de proyecto, adición o cambio de la serie de funciones hasta el cambio completo del equipo por el nuevo.|Modernización del equipo principal y auxiliar con el cambio de la parte con unidades principales y mecanismos tanto en las condiciones de fábrica como en el lugar de instalación.|Modernización y cambio del equipo de otros productores.|Seguimiento técnico de las reparaciones preventivas-planificadas.|Mantenimiento de garantía.|Servicio operativo.|Participación en reparaciones no planificadas.|Suministro de piezas de repuesto y materiales específicos.|Suministro directo de piezas de repuesto del almacén de servicios.|Evaluación del plazo óptimo de prolongación del empleo según los resultados de diagnosis y calculaciones específicas.|Inspección de autor."></slide2>
+			<slide3 mainTitle="SERVICIO Y MODERNIZACIÓN" image="images/4.3.jpg" title="Servicios de ingeniería" list="Inspección y diagnóstico del equipo operante para la evaluación de su estado técnico, condiciones de empleo, plazos posibles de prolongación y determinación de condiciones para este fin.|Elaboración de demandas técnicas especificas según los resultados de inspección en la base del análisis técnico-económico o de demandas del cliente.|Investigaciones de vibración y ajuste por vibración del equipo, instalación de sistemas de control técnico, monitoring y de diagnóstico.|Realizaron de investigaciones específicas del equipo energético o de sus partes compuestas según las demandas del cliente.|Búsqueda y eliminación de defectos que aparecieron durante el empleo y mantenimiento técnico."></slide3>
+		</menuSlides>
+	</menu4>
+	<menu5 name="CONTACTOS">
+		<menuSlides>
+			слайдов в самом разделе "контакты" нет, переходим на подменю "головной офис"
+		</menuSlides>
+		<submenu0 name="Головной офис">
+			<slide0 mainTitle="CONTACTOS" image="images/5.jpg" title="Sociedad Anónima Abierta Power Machines" text="
+Rusia, 195009, San Petersburgo,
+Calle: de Vatutin, 3, liter А
+Tel.: +7 812 346-70-37
+Fax: +7 812 346-70-35
+
+Rusia, 129090, Moscú,
+Callejón: Protopopovskiy, 25А
+Tel.: +7 495 725-2763
+Fax: +7 495 725-2742
+
+E-mail: mail@power-m.ru
+www.power-m.ru"></slide0>
+		</submenu0>
+		<submenu1 name="Представительства">
+			<slide0 mainTitle="ПРЕДСТАВИТЕЛЬСТВА">
+				<country name = "Argentina" map = "argentina" title = "Argentina, Buenos Aires" text = "los cuerpos.: (5411) 4373 0599, 4373 0699
+argentina@power-m.ru "> </country>
+				<country name = "Bulgaria" map = "bolgaria" title = "Bulgaria, Sofia" text = "los cuerpos.: (3592) 971 3837, 971 3947
+bulgaria@power-m.ru "> </country>				
+				<country name = "Hungría" map = "vengria" title = "Hungría, Budapest" text = "los cuerpos.: (361) 325 7263
+hungary@power-m.ru
+"> </country>
+				<country name = "el Vietnam" map = "vietnam" title = "el Vietnam, Hanoi" text = "los cuerpos.: (844) 356 22 918, 356 22 919
+vietnam@power-m.ru "> </country>				
+				<country name = "Alemania" map = "germania" title = "Alemania, Berlín" text = "Enermasch Handels GmbH
+De los cuerpos.: (4930) 283 5234
+germany@power-m.ru "> </country>				
+				<country name = "Grecia" map = "grecia" title = "Grecia, Atenas" text = "los cuerpos.: (30 210) 981 8020, 981 7975
+greece@power-m.ru "> </country>
+				<country name = "Egipto" map = "egipet" title = "Egipto, Giza" text = "los cuerpos.: (202) 376 124 67, 376 247 21
+egypt@power-m.ru "> </country>
+				<country name = "India" map = "india" title = "India, Delhi" text = "los cuerpos.: (91 120) 403 6001, 403 6002
+india@power-m.ru "> </country>				
+				<country name = "China" map = "kitai" title = "China, Pekín" text = "los cuerpos.: (8610) 677 841 25
+china@power-m.ru "> </country>
+				<country name = "Colombia" map = "kolumbia" title = "Colombia, Bogotá" text = "EMEC Ltda
+De los cuerpos.: (571) 611 4111
+colombia@power-m.ru "> </country>				
+				<country name = "México" map = "meksika" title = "México, México" text = "los cuerpos.: (5255) 553 69 889
+mexico@power-m.ru "> </country>				
+				<country name = "Serbia Y Montenegro" map = "serbia" title = "Serbia, Belgrado" text = "los cuerpos.: (381 11) 367 4255, 367 4269
+serbia@power-m.ru "> </country>
+				<country name = "Turquía" map = "turkish" title = "Turquía, Ankara" text = "los cuerpos. (90 312) 436 6092, 436 6093
+turkey@power-m.ru "> </country>
+				<country name = "Rusia" map = "russia" title = "Rusia, Ekaterinburgo" text = "los cuerpos.: (343) 371 7904, 359 4008
+ural_office@power-m.ru "> </country>
+			</slide0>
+		</submenu1>
+	</menu5>
+</root>

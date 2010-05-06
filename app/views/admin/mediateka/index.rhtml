@@ -1,0 +1,11 @@
+<% content_for :actions do %>
+  <%= link_to 'Создать медиа-галерею', :action => 'new' %>  
+<% end %>
+<div id="subnav">
+	<%= yield :actions %>
+</div>
+<div class="container">
+<% @medias.each do |media| %>
+  <li><%= media.name %> <%= link_to 'Редактировать', edit_admin_mediateka_path(media) %> <%= link_to 'Удалить', admin_mediateka_path(media), :method => :delete %>
+<% end %>
+</div>

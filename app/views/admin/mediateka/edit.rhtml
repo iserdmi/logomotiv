@@ -1,0 +1,52 @@
+
+
+<div class="container">
+<fieldset>
+  <legend></legend>
+<% form_for :media, :url => { :action => "custom_update" }, :html => {:multipart => true} do |f| %>
+ <input type="hidden" name="id" value="<%=@media.id%>">
+  <p>
+	<%= f.label :typem, "Тип проекта" %><br/>
+	<%= f.select :typem, options_for_select([["видео", "video"], ["картинки", "img"]]), :include_blank => false %>
+
+  </p>
+  
+<p>
+ URL:<br />
+ <%= f.text_field :url %>
+
+</p>
+
+<p>
+ Имя:<br />
+ <%= f.text_field :name %>
+
+</p>
+
+<p>
+ Описание:<br />
+<%= f.text_area :text, :size => "100x5" %>
+
+</p>
+
+<p>
+ Видео (ссылка с ютуба):<br />
+<%= f.text_field :video_tube %>
+
+</p>
+или
+  <p>
+    <%= f.file_field :video%>
+  </p>
+
+
+ <div class="span-4"><%= f.submit "Сохранить" %></div>
+
+<% end %>
+</fieldset>
+</div>
+
+
+
+
+

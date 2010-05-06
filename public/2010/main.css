@@ -1,0 +1,411 @@
+#simplemodal-overlay {
+background-color:#000;
+cursor:default; /* Тут выбираем цвет затемнения */ /* Курсор при наведении на затемненную область */
+filter: alpha(opacity=80); /* Интенсивность затемнения */
+height: 100%;
+}
+
+#modalContainer {
+height:542px;  /* Для растягивания по высоте */
+width:593px;
+left:50%; /*в купе с margin-left, которая равна минус половине ширины центруют по горизонтали*/
+top:10%;  /*центрует по вертикали, вместе с margin-top, если задать высоту*/
+margin-left:-150px;
+/* margin-top: -70px; */
+background-color:#fff;
+} 
+
+#helper {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+z-index: -10;
+}
+
+
+*{
+margin:0;
+padding:0;
+}
+body{
+background: #000 url(img/headerfuter/bgr.jpg) no-repeat 0 0;
+font-family: verdana;
+}
+
+
+div.main{
+width: 1080px;
+height: 100%;
+padding-top:135px;
+}
+
+div.menu{
+background: url(img/headerfuter/menu_bg.png) no-repeat 0 0;
+height: 45px;
+margin-left: 157px;
+width: 770px;
+}
+
+div.menu ul{
+list-style:none;
+width: 700px;
+}
+
+div.menu li{
+float: left;
+margin-left: 31px;
+margin-top: 8px;
+}
+
+div.menu li a,div.menu li a.active{
+	font-family: georgia;
+	font-size: 16px;
+	text-decoration: none;
+	color: #E8DBA8;
+	border-bottom: 1px dashed #E8DBA8;
+	outline: none;
+}
+
+div.menu li a.active{
+	color: #FFAE00;
+	border-bottom: none;
+}
+
+div.content{
+color: white;
+margin-left:135px;
+margin-top: 40px;
+overflow: hidden;
+width: 950px;
+position: relative
+}
+
+div#cont3{
+width: 800px; position: relative; left: 200px; top: 0px; float: left; margin-left: 90px
+}
+
+div.footer{
+color: white;
+margin-left:165px;
+margin-top: 42px;
+padding-bottom: 200px;
+}
+
+div.manager p{
+margin-bottom: 15px;
+}
+
+div.manager p.ask1{
+font-family: Verdana;
+font-size: 14px
+}
+
+div.manager p.ask2{
+font-family: Verdana;
+font-size: 24px;
+margin-bottom: 15px;
+}
+
+div.logomotiv{
+
+}
+
+
+div.logomotiv p.logo1{
+font-family: Verdana;
+font-size: 14px;
+}
+
+div.logomotiv p.logo2{
+margin-top: 15px;
+font-family: Verdana;
+font-size: 24px;
+}
+
+div.logomotiv p.logo3{
+margin-top: 8px;
+font-family: Verdana;
+font-size: 12px;
+color:#939292;
+}
+
+
+h1{
+font-family: Arial;
+font-size: 34px;
+color: #FFB400;
+font-weight: normal;
+}
+
+.trio1{
+ font-family: georgia;
+ font-weight: bold;
+ font-style: italic;
+ font-size: 22px;
+ color: #00EAFF
+}
+
+.trio2{
+ font-family; small fonts;
+ font-size: 18px;
+ color: #ECECEC;
+ width: 530px;
+ margin-top: 38px
+}
+
+.strela_left{
+position: absolute;
+left: 0px;
+top: 440px;
+}
+.strela_right{
+position: absolute;
+left: 570px;
+top: 440px;
+}
+.trio3{
+  margin-top: 45px
+}
+
+.trio4{
+  margin-top: 10px;
+  color: #7FC5D5;
+  font-style: italic;
+  font-family: georgia;
+  font-size: 14px;
+  cursor:pointer;
+  width: 300px
+}
+
+.trio5{
+  margin-top: 40px;
+  width: 480px;
+  color: #A2ABC2;
+  font-size: 14px;
+}
+
+.trio6{
+  margin-top: 30px;
+  color: #FFBB71;
+  font-style: italic;
+  font-family: georgia;
+  font-size: 23px;
+}
+
+table.price{
+  font-style: italic;
+  font-family: georgia;
+  font-size: 18px;
+  color: #E0E0E0;
+  margin-top: 20px;
+}
+
+table.price td{
+padding-bottom: 15px;
+}
+
+.trio7{
+  margin-top: 50px
+}
+
+div.trio8{
+position: absolute;
+left: 600px;
+top: 710px;
+
+}
+.el1{
+  width: 250px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: georgia;
+  font-size: 13px;
+  color: #FFFFFF;
+  margin-top: 14px;
+  margin-left: 13px;
+	line-height:20px
+}
+
+.trio9{
+position: absolute;
+left: 590px;
+top: 220px;
+width: 290px;
+height: 196px;
+background: url(img/trio/teh_harakt.png) no-repeat 0 0;
+padding-left: 40px;
+padding-right:30px
+}
+
+
+.domik1{
+	font-size: 18px;
+	width: 670px
+}
+
+.domik2{
+	font-size: 18px;
+	margin-top: 57px
+}
+
+.domik3{
+margin-top:30px
+}
+
+.domik4{
+margin-top:50px;
+}
+
+.domik_zag{
+float: left; width: 400px;
+font-family:georgia;
+font-size: 22px;
+font-weight: bold;
+font-style: italic;
+color: #00EAFF;
+padding-top:5px;
+margin-left: 10px
+}
+
+.domik_zag2{
+float: left; width: 400px;
+font-family:georgia;
+font-size: 22px;
+font-weight: bold;
+font-style: italic;
+color: #00EAFF;
+padding-top:15px;
+margin-left: 10px
+}
+
+.domik5{
+position: absolute;
+left: 600px;
+top: 730px;
+width: 290px;
+height: 196px;
+background: url(img/domik/tex_xar.png) no-repeat 0 0;
+padding-left: 40px;
+padding-right:30px
+}
+
+.domik6{
+position: absolute;
+left: 540px;
+top: 190px;
+width: 490px;
+height: 196px;
+
+}
+
+.ill1{
+font-family:arial;
+font-size:34px;
+color: #05FE2E;
+}
+
+.ill2{
+font-size: 17px;
+background: url(img/illustration/bgr_start.png) no-repeat 0 0;
+width: 595px;
+height: 141px;
+color: #240202;
+padding-top: 15px;
+padding-left: 17px;
+margin-top: 20px
+}
+
+.ill3{
+font-size: 18px;
+margin-top: 27px;
+width: 440px;
+color: #ECECEC;
+}
+
+.ill4{
+font-family: georgia;
+font-size: 22px;
+margin-top: 27px;
+font-weight:bold;
+font-style:italic;
+color: #00EAFF;
+margin-top:28px
+}
+
+.ill5{
+margin-top:25px;
+background: url(img/illustration/bg_img.gif) no-repeat 0 0;
+padding-left: 11px;
+padding-top: 12px;
+}
+
+.tr2{
+width: 685px;
+height: 362px;
+}
+
+.ill_strela_left{
+position: absolute;
+left: -25px;
+top: 545px;
+}
+.ill_strela_right{
+position: absolute;
+left: 707px;
+top: 545px;
+}
+
+.ill6{
+font-family: georgia;
+font-size: 14px;
+margin-top: 30px;
+font-style:italic;
+color: #FFB55E;
+width: 425px
+}
+
+.ill7{
+margin-top: 76px
+}
+
+.ill8{
+position: absolute;
+left: 720px;
+top: 670px
+}
+
+.form1{
+ width:593px;
+ height: 502px;
+ background: url(img/form/bgr_form.png) repeat-y 0 0;
+ color: #272727;
+ padding-left: 52px;
+ padding-top: 32px
+}
+
+.form1 input.txt{
+ height: 32px;
+ width: 373px;
+ padding-top: 5px
+}
+
+.ftitle{
+ font-size: 12px;
+ margin-bottom: 8px
+}
+
+.td_t{
+ font-family: arial;
+ font-size: 14px;
+ padding-bottom: 4px;
+ padding-left: 14px;
+}
+
+.txt_ar{
+ height: 32px;
+ width: 439px;
+ padding-top: 5px;
+ height: 70px
+}

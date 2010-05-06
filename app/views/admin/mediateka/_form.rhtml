@@ -1,0 +1,108 @@
+<%= error_messages_for :project %>
+
+
+<div class="container">
+<fieldset>
+  <legend></legend>
+<% form_for ["admin", @project], :method => @method, :html => {:multipart => true} do |f| -%>
+<a onclick="$('#info').slideToggle();" class="slidetoggle">Общая информация</a><br/>
+<div id="info" style="display:none;">
+  <p><%= f.label :name, "Название" %>
+	  <%= f.text_field :name %>
+  </p>
+  <p>
+	<%= f.label :title, "Заголовок" %><br/>
+    <%= ckeditor_textarea("project", "title", :width => "700px", :height => '40px', :toolbar => "color") %>
+  </p>
+  <p>
+	<%= f.label :title, "Заголовок (nav) link=portfolio/section/p/slug" %><br/>
+    <%= ckeditor_textarea("project", "nav_title", :width => "700px", :height => '40px') %>
+  </p>
+  <p>
+	<%= f.label :section, "Тип проекта" %><br/>
+
+	<%= f.select :section, options_for_select(["sites", "graphical_design", "ident", "concepts"], @project.section), :include_blank => true %>
+
+  </p>
+  <p>
+	<%= f.label :slug, "Slug" %><br/>
+
+	<%= f.text_field :slug %>
+
+  </p>
+  <p>
+	<%= f.label :branch_id, "Отрасль" %><br/>
+
+	<%= f.select :branch_id, options_from_collection_for_select(Branch.all, 'id', 'title', @project.branch_id) %>
+
+  </p>
+  <p>
+	<%= f.label :image, "Картинка" %><br/>
+	<%= f.file_field :image%><br/>
+	<%= image_tag @project.image.url if @project.image.exists? %>
+  <p>
+  <p>
+	<%= f.label :case, "Кейс" %><br/>
+	<%= f.file_field :case %><br/>
+	<%= link_to @project.case.name, @project.case.url if @project.case.exists? %>
+  <p>
+  <p>
+	<%= f.label :image, "Отзыв" %><br/>
+	<%= f.file_field :review %><br/>
+	<%= image_tag @project.review.url, :width => 40, :height => 40 if @project.review.exists? %>
+  <p>
+	<%= f.label :client_id, "Клиент" %><br/>
+
+	<%= f.select :client_id, options_from_collection_for_select(Client.all, 'id', 'title', @project.client_id), :include_blank => true %>
+
+  </p>
+  <p><%= f.label :created_at, "Дата" %>
+	<%= f.date_select :created_at, :start_year => 2003 %>
+  </p>
+</div>
+<a onclick="$('#overs').slideToggle();" class="slidetoggle">За кадром</a><br/>
+<div id="overs" style="display:none;">
+  <p>
+  <%= f.label :overs, "За кадром" %><br/>
+  <%= ckeditor_textarea("project", "overs", :width => '780px', :height => '300px') %>
+
+  </p>
+</div>
+<a onclick="$('#block').slideToggle();" class="slidetoggle">Блок</a><br/>
+<div id="block" style="display:none;">
+  <p>
+  <%= f.label :overs, "Блок" %><br/>
+  <%= ckeditor_textarea("project", "sidebar", :width => '400px', :height => '300px') %>
+
+  </p>
+</div>
+<a onclick="$('#view').slideToggle();" class="slidetoggle">Шаблон и внешний вид</a><br/>
+<div id="view" style="display:none;">
+  <p>
+	<%= f.label :template, "Шаблон" %>
+	<%= f.select :template, ["tpl1", "tpl2", "tpl3"] %>
+  </p>
+  <p>
+   <%= f.label :template, "Внешний вид" %>
+  <div id="project_template">
+<%
+@project.header = "Шапка"+ckeditor_textarea("project", "header", :value => @project.about, :width => '100%', :height => '100%')
+@project.about = "О клиенте"+ckeditor_textarea("project", "about", :value => @project.about, :width => '100%', :height => '100%')
+@project.image_html = "Картинка (HTML)"+ckeditor_textarea("project", "image_html", :value => @project.about)
+@project.image_caption = "Подпись к картинке"+text_area("project", "image_caption", :value => @project.image_caption)
+@project.solution = "Решение"+ckeditor_textarea("project", "solution", :value => @project.solution, :width => '100%', :height => '100%')
+@project.task = "Задача"+ckeditor_textarea("project", "task", :value => @project.about, :width => '100%', :height => '100%')
+
+%>
+
+   <%= render :partial => 'portfolio/'+@project.template if @project.template %>
+   <%= 'Выберите шаблон и нажмите "сохранить"' unless @project.template %>
+  </div>
+  </p>
+  <p>
+    <div class="span-4"><%= f.submit "Сохранить" %></div>
+    <div class="span-8 last"><%= f.submit "Очистить" %></div>
+  </p>
+<% end -%>
+</fieldset>
+</div>

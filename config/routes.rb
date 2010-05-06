@@ -14,7 +14,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.connect 'pages/context_menu/:id', :controller => :pages, :action => :context_menu
     admin.connect 'items/add_related_item_to_item/:id', :controller => :items, :action => :add_related_item_to_item
     admin.connect 'items/remove_item_relation/:id', :controller => :items, :action => :remove_item_relation
-    admin.resources :pages, :news, :posts, :albums, :projects, :photos, :blocks
+    admin.resources :pages, :news, :posts, :albums, :projects, :photos, :blocks, :mediateka
     admin.resources :clients, :member => {:sort => :any}
     admin.resources :images, :collection => {:sort => :any}
 #TODO: CLEAN FUCKING ROUTES
@@ -41,8 +41,13 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => :pages, :action => :index
   map.resources :pages
   Page.all.each do |p|
+   if(p.permalink != 'mediateka')
     map.connect p.path, :controller => :pages, :action => :show, :id => p.id unless p.path.nil?
+   end
   end
+  
+  map.connect 'company/mediateka', :controller => :mediateka, :action => :index
+  map.connect 'company/mediateka/:slug', :controller => :mediateka, :action => :show
   
   map.connect ':controller/:action'
   map.connect ':path', :controller => :redirect
