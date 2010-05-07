@@ -137,11 +137,12 @@ float: left; overflow: hidden;}
 	top:30px;
 	display: block;
 }
-.disabled { display: block !important;}
+/* .disabled { display: block !important;} */
 .gallery_large_portfolio .prev{margin-left: 15px;}
 .gallery_large_portfolio .prev:hover{background-image: url("../images/gallery_arrow_left.png");}
 .gallery_large_portfolio .next { float: right; margin-left: 871px;}
 .gallery_large_portfolio .next:hover {background-image: url("../images/gallery_arrow_right.png") !important; }
+
 /*.fade_left:hover .arrow_left, .fade_right:hover .arrow_right {display: block;}
 .fade_left, .fade_right {*/
 /*
