@@ -1,12 +1,16 @@
 <% @title = "Дизайн-студия Logomotiv. Продуманные и гибкие графические решения для бизнес-лидеров"%>
-<%= render :partial => "shared/header" %>
 <% content_for :head do %>
 <meta name="description" content="Дизайн-студия Logomotiv  была создана, чтобы помогать компаниям эффективно использовать дизайн в своем развитии." />
 <meta name="keywords" content="фирменный стиль, айдентика, разработка сайтов, брендинг, брендбук, логотип" />
 <script type="text/javascript">
-$(document).ready(function() {$('.gallery_large').scrollable({keyboard: true, size:1, clickable: false}).circular();});
+$(document).ready(function() {
+	$('.gallery_large').scrollable({keyboard: true, size:1, clickable: false}).circular();
+});
 </script>
 <% end %>
+
+<%= render :partial => "shared/header" %>
+
 
 
 					<%#= yield %>
