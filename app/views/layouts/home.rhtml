@@ -17,9 +17,11 @@
 						<a class="prev arrow_left" href="javascript:void(0);"><img src="/images/gallery_arrow_left_off.gif" /></a>
 						<a class="next arrow_right" href="javascript:void(0);"><img src="/images/gallery_arrow_right_off.gif" /></a>
 					</div>
+					<% content_for :head do %>
 					<script type="text/javascript">
-					$(document).ready(function() {$('.gallery_large').scrollable({keyboard: true, size:1, clickable: false}).circular();});
+					$(document).ready(function() {$('.gallery_large').scrollable({keyboard: true, size:1, clickable: false, circular: true});});
 					</script>
+					<% end %>
 					<div class="content">
 						<div class="main_left_col">
 							<!--bannerplace class='clear'-->
