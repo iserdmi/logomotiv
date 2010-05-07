@@ -11,7 +11,7 @@ body {
 .main_mid_col {margin-left: 250px; margin-right: 250px;}
 .main_right_col {float: right; width: 158px;}
 .content_right_col {margin-left: 250px;}
-.content_text_col {width: 100%;
+.content_text_col {width: 680px;
 margin-right: 5%;
 //margin-right: 3%;
 float: left; overflow: hidden;}
@@ -631,6 +631,7 @@ em {
 }
 
 .map { position: absolute; top: 90px;}
-.size_14 { font-size: 14px;}
+.size_14 { font-size: 15px; line-height: 18px;}
 
 div.page_content a:hover { color: red; }
+#icq-number { margin-top: 30px; margin-left: 20px; display:none; clear: both; font-family: Tahoma; font-size: 20px; position: relative; letter-spacing: 1px;}
