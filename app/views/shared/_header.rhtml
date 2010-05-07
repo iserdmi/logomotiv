@@ -49,17 +49,17 @@
 			<ul class="main_menu">
 				<% Page.visible.roots.all.each do |p| %>
 
-				<li><% if @page.path.include? p.permalink %><p><%= p.title %></p><% else %><a href="<%= p.path unless p.children.first %><%= p.children.first.path if p.children.first %>"><%= p.title %></a><% end %></li>
+				<li><% if @page.path.include? p.permalink %><a href="<%= p.path %>" class="current"><%= p.title %></a><% else %><a href="<%= p.path unless p.children.first %><%= p.children.first.path if p.children.first %>"><%= p.title %></a><% end %></li>
 				<% end %>
 				
 				<% if params[:controller] == 'portfolio' %>
 			</ul>
 				<div class="v_split_line"></div>
 				<ul class="main_menu sub">
-					<li><% if params[:section] == "ident" %><p>Айдентика</p><% else %><a href="/portfolio/ident/">Айдентика</a><% end %></li>
-					<li><% if params[:section] == "sites" %><p>Сайты</p><% else %><a href="/portfolio/sites/">Сайты</a><% end %></li>
-					<li><% if params[:section] == "graphical_design" %><p>Графический дизайн</p><% else %><a href="/portfolio/graphical_design/">Графический дизайн</a><% end %></li>
-					<li><% if params[:section] == "concepts" %><p>Интерактив</p><% else %><a href="/portfolio/concepts/">Интерактив</a><% end %></li>
+					<li><% if params[:section] == "ident" %><a href="/portfolio/ident/" class="current">Айдентика</a><% else %><a href="/portfolio/ident/">Айдентика</a><% end %></li>
+					<li><% if params[:section] == "sites" %><a href="/portfolio/ident/" class='current'>Сайты</a><% else %><a href="/portfolio/sites/">Сайты</a><% end %></li>
+					<li><% if params[:section] == "graphical_design" %><a href="/portfolio/graphical_design/" class="current">Графический дизайн</a><% else %><a href="/portfolio/graphical_design/">Графический дизайн</a><% end %></li>
+					<li><% if params[:section] == "concepts" %><a href="/portfolio/concepts/" class="current">Интерактив<0/a><% else %><a href="/portfolio/concepts/">Интерактив</a><% end %></li>
 				</ul>
 				<% end %>
 			

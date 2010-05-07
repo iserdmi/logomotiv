@@ -30,7 +30,7 @@ float: left; overflow: hidden;}
 		padding: 0px 4px;
 		padding-bottom: 2px;
 	}
-	.main_menu p {
+	.main_menu p, .main_menu a.current {
 		float: left;
 		font-weight: bold;
 		background-image: url("../images/menu_arrow_r.gif");

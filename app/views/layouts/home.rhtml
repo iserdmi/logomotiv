@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 					<%#= yield %>
 					<div class="gallery_large">
-						<div class="items_container items" style="left: -671px;">
+						<div class="items_container items" style="left: -1342x;">
 							<% Image.all.each do |image| %>
 							<div class="gallery_item"><a href="<%= image.url %>"><%= image_tag image.image.url, :alt => image.alt %></a></div>
 							<% end %>
@@ -33,7 +33,7 @@ $(document).ready(function() {
 							<!--bannerplace class='clear'-->
 							<div class="consult">
 								<p>Онлайн-консультация:</p>
-								<a class="icq" href="#">ICQ Анна</a>
+								<a class="icq" href="javascript:void(0);" onclick="$('#icq-number').slideToggle();"><span style="border-bottom: 1px dashed">ICQ Анна</span></a><div id="icq-number" style="margin-top: 30px; margin-left: 20px; display:none; clear: both; font-family: Tahoma; font-size: 20px; position: relative;">472524437</div>
 								<!--
 								Skype 'Мой статус' button
 								http://www.skype.com/go/skypebuttons
