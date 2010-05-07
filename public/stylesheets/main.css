@@ -625,6 +625,8 @@ a.toggle_link {
 #workers { display: none;}
 em {
 	font-family: Georgia;
+	line-height: 14px;
+	font-size: 12px;
 }
 
 .map { position: absolute; top: 90px;}

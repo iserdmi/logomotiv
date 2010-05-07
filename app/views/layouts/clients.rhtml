@@ -13,7 +13,7 @@
 				<% @clients.each do |client| %>
 				
 				<div class="gallery_item">
-					<a href="/portfolio/<%=client.projects.first.slug %>/p/<%=client.projects.first.slug%>"><%= image_tag client.image.url, :class => "color", :style => 'display:none;' %> <%= image_tag client.grey_image.url, :class => "grey" %></a>
+					<a href="/portfolio/<%=client.projects.first.section %>/p/<%=client.projects.first.slug%>"><%= image_tag client.image.url, :class => "color", :style => 'display:none;' %> <%= image_tag client.grey_image.url, :class => "grey" %></a>
 				</div>
   							    	
 				<% end %>

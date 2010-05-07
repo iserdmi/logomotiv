@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   
   def show
     @page = Page.find_by_id(params[:id])
-    if @page.root?
+    if @page.root? && @page.children.size > 0
       @page = @page.children.first
     end
   end
