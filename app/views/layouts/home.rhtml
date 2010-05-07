@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 					<%#= yield %>
 					<div class="gallery_large">
-						<div class="items_container items" style="left: -1342px;">
+						<div class="items_container items" style="">
 							<% Image.all.each do |image| %>
 							<div class="gallery_item"><a href="<%= image.url %>"><%= image_tag image.image.url, :alt => image.alt %></a></div>
 							<% end %>
